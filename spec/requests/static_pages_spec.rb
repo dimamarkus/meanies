@@ -8,5 +8,11 @@ describe "Static pages" do
 			visit '/static_pages/about'
 			page.should have_content('Michael Klambatsen')
 		end
+
+		it "should have the correct title" do
+			visit '/static_pages/about'
+			page.should have_selector('title', :text => "March of the Meanies | About")
+		end
+
 	end
 end
