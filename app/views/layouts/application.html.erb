@@ -3,13 +3,48 @@
 	<head>
 	  <title><%= full_title(yield(:title)) %></title>
 	  <%= stylesheet_link_tag    "application", media: "all" %>
+	  <%= stylesheet_link_tag    "custom", media: "all" %>
 	  <%= javascript_include_tag "application" %>
 	  <%= csrf_meta_tags %>
 	</head>
 
 	<body>
+		<div class='container'>
+			<h1>march of the meanies</h2>
 
-		<%= yield %>
+			<section>
+				<%= yield %>
+			</section>
+		</div>
+		
+			<nav>
+				<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Archive</a></li>
+						<li><a href="#">Donate</a></li>
+					</ul>
+			</nav>
 
+	<!-- jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+			<!-- http://bohemianalps.com/tools/grid/ -->
+		<%= stylesheet_link_tag    "hugrid", media: "all" %>
+	  <%= javascript_include_tag "hugrid" %>
+		<script type="text/javascript">
+		    $(document).ready(function() {
+		        pageUnits = 'px';
+		        colUnits = 'px';
+		        pagewidth = 940;
+		        columns = 16;
+		        columnwidth = 40;
+		        gutterwidth = 20;
+		        pagetopmargin = 24;
+		        rowheight = 24;
+		        gridonload = 'on';
+		        makehugrid();
+		        setgridonload();
+		    });
+		</script>
 	</body>
 </html>

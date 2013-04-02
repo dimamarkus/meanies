@@ -1,0 +1,72 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html{
+	background: black;
+}
+
+h1 { 
+  font-size: 48px; 
+  line-height: 72px;
+  padding-top: 8px;
+  padding-left: 16px;
+  margin-bottom: 16px; 
+}
+
+a{
+	font-size: 16px;
+	line-height: 24px;
+}
+
+ul{
+		margin-bottom: 16px; 
+}
+
+.container {
+	border-radius: .5em;
+	background: #FFFCE2;
+	margin: 0 auto;
+	margin-top: 24px;
+	margin-bottom: 24px;
+
+/*	background: lightblue;*/
+	width: 940px;
+
+}
+
+.comic {
+	border: 1px solid black;
+	margin: 0 auto;
+	max-width: 460px;
+	max-height: 460px;
+}
+
+.comic img {
+	width: 100%;
+	padding-top: 4px;
+}
+
+.comicnav {
+	text-align: center;
+}
+
+.comicnav ul li{
+	display: inline-block;
+}
+
+nav {
+	border-radius: .5em;
+	background: #FFFCE2;
+	width: 940px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+nav ul li{
+	display: inline-block;
+}
