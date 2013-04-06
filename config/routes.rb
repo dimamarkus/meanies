@@ -1,5 +1,11 @@
 Meanies::Application.routes.draw do
-  get "static_pages/about"
+
+  root to: 'static_pages#coming_soon'
+
+  match '/about',   to: 'static_pages#about'
+  match '/home',    to: 'static_pages#home'
+  match '/archive', to: 'comics#index'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
