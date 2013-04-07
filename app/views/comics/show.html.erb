@@ -6,14 +6,6 @@
 
 <div class="comicnav">
 	<ul>
-		<% unless @comic == Comic.first %>
-			<li><%= link_to 'First', comic_url(Comic.first.number) %></li>
-			<li><%= link_to 'Previous', comic_url(@comic.number-1) %></li>
-		<% end %>
-			<li><%= link_to 'Random', comic_url(Comic.last.number-1) %></li>
-		<% unless @comic == Comic.last %>
-			<li><%= link_to 'Next', comic_url(@comic.number+1) %></li>
-			<li><%= link_to 'Last', comic_url(Comic.last.number) %></li>
-		<% end %>
+
 	</ul>
 </div>

@@ -4,7 +4,7 @@
 
 <table class="gridtable">
   <tr>
-    <th></th>
+    <th>Thumbnail</th>
     <th><%= link_to 'Number',    '#' %></th>
     <th><%= link_to 'Title',     '#' %></th>
     <th><%= link_to 'Upload Date',     '#' %></th>
@@ -12,9 +12,9 @@
 
 <% @comics.each do |comic| %>
   <tr>
-    <td><a href="#"><%= image_tag comic.image_url(:thumb) %></td></a>
-    <td><a href="#"><td><%= comic.number %></td></a>
-    <td><a href="#"><td><%= comic.title %></td></a>
+    <td><%= link_to (image_tag comic.image_url(:thumb)), page_url(comic.number.to_s) %></td>
+    <a href="#"><td><%= comic.number %></td></a>
+    <a href="#"><td><%= comic.title %></td></a>
     <td><%= comic.created_at  %></td>
     <td><%= link_to 'Edit', edit_comic_path(comic) %></td>
     <td><%= link_to 'Destroy', comic, method: :delete, data: { confirm: 'Are you sure?' } %></td>

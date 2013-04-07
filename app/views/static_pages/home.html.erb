@@ -7,7 +7,7 @@
 <div class="comicnav">
 	<ul>
 		<li><%= link_to 'First', '#' %></li>
-		<li><%= link_to 'Previous', comic_url(Comic.last.number-1) %></li>
+		<li><%= link_to 'Previous', page_url(Comic.last.number-1) %></li>
 		<li><a href="#">Random</a></li>
 	</ul>
 </div>

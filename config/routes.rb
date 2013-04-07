@@ -1,6 +1,6 @@
 Meanies::Application.routes.draw do
 
-  resources :comics, :except => :show
+  resources :comics
 
   root to: 'static_pages#coming_soon'
 
@@ -9,7 +9,8 @@ Meanies::Application.routes.draw do
   # match '/archive', to: 'comics#index'
   match '/admin',   to: 'comics#index'
   match '/archive', to: 'comics#archive'
-  match '/:number', to: 'comics#show', as: :comic
+  match '/:number', to: 'comics#view', as: :page
+
 
 
 

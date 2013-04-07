@@ -8,8 +8,12 @@ class ComicsController < ApplicationController
     @comics = Comic.all
   end
 
-  def show
+  def view
     @comic = Comic.find_by_number(params[:number])
+  end
+
+  def show
+    @comic = Comic.find(params[:id])
   end
 
   def new
@@ -25,7 +29,7 @@ class ComicsController < ApplicationController
     @comic = Comic.new(params[:comic])
     @comic.number = Comic.count+1
     if @comic.save
-      redirect_to comics_url, notice: 'Comic was successfully created.' 
+      redirect_to @comic, notice: 'Comic was successfully created.' 
     else 
       render 'new'
     end
@@ -33,11 +37,9 @@ class ComicsController < ApplicationController
 
 
   def update
-    new_number = params[:comic].delete(:number)
     @comic = Comic.find(params[:id])
     if @comic.update_attributes(params[:comic])
-      @comic.move_to_number(new_number)
-      redirect_to @comic, notice: 'Comic was successfully updated.' 
+      redirect_to @comic , notice: 'Comic was successfully updated.' 
     else
       render 'edit'
     end
@@ -49,12 +51,11 @@ class ComicsController < ApplicationController
     @comic.move_to_number(nil)
     @comic.destroy
 
-    redirect_to comics_url
+    redirect_to comics_path
   end
 
-  def previous
-    @comic = Comic.find_by_number(@comic.number-1)
-  end
+
+  
 
 
 end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<div class="comic">
+	<%= image_tag @comic.image_url %>
+</div>
+
+<div class="comicnav">
+	<ul>
+		<% unless @comic == Comic.first %>
+			<li><%= link_to 'First', page_url(Comic.first.number) %></li>
+			<li><%= link_to 'Previous', page_url(@comic.number-1) %></li>
+		<% end %>
+			<li><%= link_to 'Random', page_url(Comic.last.number-1) %></li>
+		<% unless @comic == Comic.last %>
+			<li><%= link_to 'Next', page_url(@comic.number+1) %></li>
+			<li><%= link_to 'Last', page_url(Comic.last.number) %></li>
+		<% end %>
+	</ul>
+</div>
