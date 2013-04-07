@@ -136,10 +136,7 @@ article {
 	padding-bottom: 24px;
 }
 
-section {
-	margin: 0 auto;
-	max-width: 820px;
-}
+
 
 
 .admin_image{
@@ -189,7 +186,18 @@ table.gridtable {
 	color: black;
 	text-decoration: none;
 	border-bottom: 1px solid black;
+	}
 }
+
+section {
+	overflow: auto;
+	margin: 0 auto;
+	max-width: 820px;
+	div.thumb {
+		float: left;
+		padding: 50px;
+	}
+
 }
 
 

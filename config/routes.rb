@@ -9,6 +9,7 @@ Meanies::Application.routes.draw do
   match '/home',    to: 'static_pages#home'
   # match '/archive', to: 'comics#index'
   match '/admin',   to: 'comics#index'
+  match '/archive', to: 'comics#archive'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

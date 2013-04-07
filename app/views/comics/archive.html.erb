@@ -1,0 +1,5 @@
+<% @comics.each do |comic| %>
+	<div class="thumb">
+		<%= image_tag comic.image_url(:thumb) %>
+	</div>
+<% end %>
