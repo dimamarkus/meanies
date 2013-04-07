@@ -1,10 +1,11 @@
-/*---------------------------------Colors---------------------------------
-Black      :   #2E2C26
-Light Cream:   #FFFCE2
-Dark Cream :   #F2EAD5
-Yellow     :   #E8E6A5
-Dark Swamp :   #616353
-*/
+/*---------------------------------Colors--------------------------------- */
+$black: 		  #2E2C26;
+$light_cream: #FFFCE2;
+$dark_cream:  #F2EAD5;
+$yellow:      #E8E6A5;
+$dark_swamp:  #616353;
+$red: 				#f8B1BE;
+
 
 
 @font-face {
@@ -32,7 +33,7 @@ br {
 }
 
 html{
-	background: #F2EAD5;
+	background: $dark_cream;
 }
 
 h1 { 
@@ -45,14 +46,19 @@ h1 {
   margin-bottom: 16px; 
 }
 
+h2 {
+		font-family: 'Tenor Sans', sans-serif;
+
+}
+
 p {
 	font-size: 16px;	
 	line-height: 24px;
-	color: #2E2C26;
+	color: $dark_swamp;
 	// font-family: 'Istok Web', sans-serif;
-// font-family: 'Radley', serif;
-// font-family: 'Carme', sans-serif;
-font-family: 'Tenor Sans', sans-serif;
+	// font-family: 'Radley', serif;
+	// font-family: 'Carme', sans-serif;
+	font-family: 'Tenor Sans', sans-serif;
 }
 
 a{
@@ -66,12 +72,14 @@ ul {
 
 .container {
 	border-radius: .5em;
-	background: #FFFCE2;
+	background: $light_cream;
 	margin: 0 auto;
 	margin-top: 24px;
 	margin-bottom: 24px;
 	width: 940px;
 }
+
+
 
 /*-------------------------------Comic Panel------------------------------*/
 .comic {
@@ -96,7 +104,7 @@ ul {
 /*------------------------------Site Navigation---------------------------*/
 nav {
 	border-radius: .5em;
-	background: #FFFCE2;
+	background: $light_cream;
 	width: 940px;
 	text-align: center;
 	margin: 0 auto;
@@ -127,3 +135,63 @@ article {
 	max-width: 460px;
 	padding-bottom: 24px;
 }
+
+section {
+	margin: 0 auto;
+	max-width: 820px;
+}
+
+
+.admin_image{
+	text-align: center;
+}
+
+.form {
+	font-family: 'Tenor Sans', sans-serif;
+	text-align: center;
+	ul{
+		display: inline-block;
+		padding: 8px;
+		list-style: none;
+	}
+}
+
+#error_explanation {
+	background: $red;
+	margin: 0 auto;
+	max-width: 580px;
+	font-family: 'Tenor Sans', sans-serif;
+	ul {
+		list-style: none;
+	}
+}
+
+.field_with_errors {
+  padding: 5px;
+  background-color: $red;
+}
+
+table, th, td {
+	/*border: 1px solid black;*/
+}
+
+table.gridtable {
+	font-family: 'Tenor Sans', sans-serif;
+	text-align: left;
+	width: 100%;
+	th {
+		&:first-child{
+			max-width: 160px;
+			padding: 0;
+		}
+	}
+	th a {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+}
+}
+
+
+
+

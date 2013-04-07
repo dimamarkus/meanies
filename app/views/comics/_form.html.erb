@@ -1,0 +1,37 @@
+k<%= form_for @comic, html:  { multipart: true } do |f| %>
+  <% if @comic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@comic.errors.count, "error") %> prohibited this comic from being saved:</h2>
+
+      <ul>
+      <% @comic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="admin_image"><%= image_tag @comic.image_url(:med_thumb) %></div>
+  
+  <div class="form">
+    <ul>
+      <li><%= f.label      :number %> </li>
+      <li><%= f.text_field :number, placeholder: @comic.number, size: 18 %></li>
+    </ul>
+    <ul>
+     <li><%= f.label       :image %></li>
+     <li><%= f.file_field  :image%></li>
+    </ul>
+    <ul>
+     <li><%= f.label       :title %></li>
+     <li><%= f.text_field  :title, placeholder: @comic.title  %></li>
+    </ul>
+    <ul>
+      <li><%= f.label      :permalink %></li>
+      <li><%= f.text_field :permalink, placeholder: @comic.permalink %></li>
+    </ul>
+  <%= f.submit  %>
+  </div>
+
+
+<% end %>

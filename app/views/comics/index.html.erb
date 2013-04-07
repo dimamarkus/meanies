@@ -1,0 +1,29 @@
+
+
+<h2>Listing comics</h2>
+
+<table class="gridtable">
+  <tr>
+    <th></th>
+    <th><%= link_to 'Number',    '#' %></th>
+    <th><%= link_to 'Title',     '#' %></th>
+    <th><%= link_to 'Upload Date',     '#' %></th>
+  </tr>
+
+<% @comics.each do |comic| %>
+  <tr>
+    <td><a href="#"><%= image_tag comic.image_url(:thumb) %></td></a>
+    <td><a href="#"><td><%= comic.number %></td></a>
+    <td><a href="#"><td><%= comic.title %></td></a>
+    <td><%= comic.created_at  %></td>
+    <td><%= link_to 'Edit', edit_comic_path(comic) %></td>
+    <td><%= link_to 'Destroy', comic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Comic', new_comic_path %>
+
+
