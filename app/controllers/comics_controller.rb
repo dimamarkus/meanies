@@ -9,7 +9,7 @@ class ComicsController < ApplicationController
   end
 
   def show
-    @comic = Comic.find(params[:id])
+    @comic = Comic.find_by_number(params[:number])
   end
 
   def new
@@ -51,4 +51,10 @@ class ComicsController < ApplicationController
 
     redirect_to comics_url
   end
+
+  def previous
+    @comic = Comic.find_by_number(@comic.number-1)
+  end
+
+
 end

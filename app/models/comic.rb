@@ -8,4 +8,8 @@ class Comic < ActiveRecord::Base
 
   mount_uploader :image, ComicUploader
 
+  def to_params
+  	"#{number.parameterize}"
+ 	end
+
 end
