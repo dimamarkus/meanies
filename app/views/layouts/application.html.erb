@@ -12,22 +12,24 @@
 	</head>
 
 	<body>
-		<div class='container2'>
+		<div class='container'>
 			<h1>march of the meanies</h2>
 
-			<div class="container1">
+			<nav>
+				<ul>
+					<li><%= link_to 'Home',    home_path %></li>
+					<li><%= link_to 'Archive', archive_path %></li>
+					<li><%= link_to 'About',   about_path %></li>
+					<li><%= link_to 'Admin',   admin_path %></li>
+				</ul>
+			</nav>
+
+			<div class="content">
 				<%= yield %>
 			</div>
 		</div>
 		
-			<nav>
-				<ul>
-						<li><%= link_to 'Home',    home_path %></li>
-						<li><%= link_to 'Archive', archive_path %></li>
-						<li><%= link_to 'About',   about_path %></li>
-						<li><%= link_to 'Admin',   admin_path %></li>
-					</ul>
-			</nav>
+		
 
 	<!-- jQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>

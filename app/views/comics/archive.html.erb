@@ -1,4 +1,4 @@
-<div class="container">
+<div class="archive-gallery">
 	<% @comics.each do |comic| %>
 	   <div class="galleryItem">
 	     <%= link_to (image_tag comic.image_url(:thumb)), page_url(comic.number) %>

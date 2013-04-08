@@ -1,4 +1,6 @@
-/*---------------------------------Colors--------------------------------- */
+/*-------------------------------------------------------------------------*/
+/*----------------------------------Colors---------------------------------*/
+/*-------------------------------------------------------------------------*/
 $black: 		  #2E2C26;
 $html-back:   black;
 $container:   white;
@@ -9,7 +11,9 @@ $button-back: white;
 $button-text: #616353;
 
 
-
+/*-------------------------------------------------------------------------*/
+/*----------------------------------Global---------------------------------*/
+/*-------------------------------------------------------------------------*/
 @font-face {
     font-family: 'SFCartoonistHandRegular';
     src: url('SF_Cartoonist_Hand-webfont.eot');
@@ -19,117 +23,91 @@ $button-text: #616353;
          url('SF_Cartoonist_Hand-webfont.svg#SFCartoonistHandRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 * {
 	padding: 0;
-	margin: 0;
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;         /* Opera/IE 8+ */
+	margin:  0;
+ -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+ -moz-box-sizing:    border-box; /* Firefox, other Gecko */
+	box-sizing:        border-box; /* Opera/IE 8+ */
 }
 
 br {
 	line-height: 24px;
 }
 
-html{
+html {
 	background: $html-back;
 }
 
 h1 { 
 	font-family: 'SFCartoonistHandRegular';
-	// font-family: 'Sacramento', cursive;
-  font-size: 48px; 
-  line-height: 72px;
-  padding-top: 8px;
-  padding-left: 32px;
+	line-height:   72px;
+	font-size:     48px; 
+  padding-top:    8px;
+  padding-left:  32px;
   margin-bottom: 16px; 
 }
 
 h2 {
-		font-family: 'Tenor Sans', sans-serif;
-
-}
-
-p {
-	font-size: 16px;	
-	line-height: 24px;
-	color: $dark_swamp;
-/*	// font-family: 'Istok Web', sans-serif;
-	// font-family: 'Radley', serif;
-	// font-family: 'Carme', sans-serif;*/
 	font-family: 'Tenor Sans', sans-serif;
 }
 
-a{
-	font-size: 16px;
+p, a {
 	line-height: 24px;
+	font-size:   16px;	
+	color:       $dark_swamp;
+	font-family: 'Tenor Sans', sans-serif;
 }
 
-ul {
-		margin-bottom: 16px; 
-}
-
-.container2 {
-	border-radius: .5em;
-	background: $container;
+.button {
+	padding: 5px;
 	margin: 0 auto;
-	margin-top: 24px;
-	margin-bottom: 16px;
-	max-width: 940px;
-
-		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;  
-}
-
-.container1 {
-	border-radius: .5em;
-	background: $container;
-	margin: 0 auto;
-	margin-top: 24px;
-	margin-bottom: 16px;
-	max-width: 940px;
-	padding: 24px 0 24px 0;
-		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;  
-}
-
-
-
-/*-------------------------------Comic Panel------------------------------*/
-.comic {
-	/*border: 1px solid black;*/
-	margin: 0 auto;
-	max-width: 480px;
-	max-height: 480px;
-	img {
-		width: 100%;
-	}
-}
-
-/*-----------------------------Comic Navigation---------------------------*/
-.comicnav {
-	padding-top: 16px;
+	width: 5em;
 	text-align: center;
-	ul li {
-		padding: 0 0.5em 0 0.5em;
-		display: inline-block;
+	background-color: $button-back;
+	border-radius: 5px;
+	color: $button-text;
+	a{
+		text-decoration: none;
+		color: $button-text;
+		text-align: center;
+	}
+	&.admin{
+		margin-left: 8px;
 	}
 }
 
-/*------------------------------Site Navigation---------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+/*---------------------------------Layout----------------------------------*/
+/*-------------------------------------------------------------------------*/
+.container {
+	border-radius: .5em;
+	background: $container;
+	margin: 0 auto;
+	margin-top: 24px;
+	margin-bottom: 16px;
+	max-width: 940px;
+}
+
+.content {
+	border-radius: .5em;
+	background: $container;
+	margin: 0 auto;
+	margin-top: 24px;
+	margin-bottom: 16px;
+	max-width: 900px;
+	padding: 24px 0 24px 0;
+}
+  
 nav {
 	border-radius: .5em;
-	background: $html-back;
-		border: 1px solid black;
 	width: 480px;
-		margin: 0 auto;
+  margin: 0 auto;
 	text-align: center;
-
 	ul li {
 		display: inline-block;
 		padding: 0 4px;
@@ -139,28 +117,118 @@ nav {
 			text-decoration: none;
 			font-weight: bold;
 			letter-spacing: .5px;
-			font-family: 'Cinzel', serif;/*
-			// font-family: 'Istok Web', sans-serif;
-			// font-family: 'Carme', sans-serif;
-			// font-family: 'Tinos', serif;
-			// font-family: 'Playfair Display', serif;*/
+			font-family: 'Cinzel', serif;
 			&:hover {
 				color: #F2A675;
-			}
-		}
+			} /***** nav ul li a &:hover */
+		} /******** nav ul li a         */
+	} /********* nav ul li           */
+} /*********** nav                 */
+
+
+
+/*-------------------------------------------------------------------------*/
+/*--------------------------------Home Page--------------------------------*/
+/*-------------------------------------------------------------------------*/
+.comic {
+	margin: 0 auto;
+	max-width: 480px;
+	max-height: 480px;
+	img {
+		width: 100%;
 	}
 }
 
-/*-------------------------------About Text-------------------------------*/
-article {
+.comicnav {
+	padding-top: 16px;
+	text-align: center;
+	ul li {
+		padding: 0 0.5em 0 0.5em;
+		display: inline-block;
+	}
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------------Archive Page------------------------------*/
+/*-------------------------------------------------------------------------*/
+.archive-gallery {
+	max-width: 860px;
+  margin: 0px auto;
+  padding-left: 60px;
+  overflow: hidden;
+}
+
+.galleryItem {
+  color: #797478;
+  font: 10px/1.5 Verdana, Helvetica, sans-serif;
+  float: left;
+  padding: 0 10px 0 10px;    
+  width: 160px;
+  margin: 0 10px 0 10px;
+}
+ 
+.galleryItem h3 {
+  text-transform: uppercase;
+}
+ 
+.galleryItem img {
+	max-width: 100%;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+  border-radius: 5px;
+	float: left;
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+/*--------------------------------About Page-------------------------------*/
+/*-------------------------------------------------------------------------*/
+.about-body {
 	margin: 0 auto;
 	max-width: 460px;
 }
 
+#portrait {
+	max-width: 150px;
+	float: left;
+}
 
 
 
-.admin_image{
+/*-------------------------------------------------------------------------*/
+/*--------------------------------Admin Page-------------------------------*/
+/*-------------------------------------------------------------------------*/
+table.gridtable {
+	font-family: 'Tenor Sans', sans-serif;
+  text-align: center;
+	width: 100%;
+	th {
+		&:first-child{
+			max-width: 160px;
+			padding: 0;
+		}
+	}
+	thumb a {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	}
+}
+
+.add_comic {
+	width: 6em;
+	border: 1px solid black;
+}
+
+.index_head a {
+	text-decoration: none;
+	color: $button-text;
+}
+
+.edit-preview {
 	text-align: center;
 }
 
@@ -187,108 +255,4 @@ article {
 .field_with_errors {
   padding: 5px;
   background-color: $red;
-}
-
-table, th, td {
-	/*border: 1px solid black;*/
-}
-
-table.gridtable {
-	font-family: 'Tenor Sans', sans-serif;
-	text-align: left;
-	width: 100%;
-	th {
-		&:first-child{
-			max-width: 160px;
-			padding: 0;
-		}
-	}
-	thumb a {
-	color: black;
-	text-decoration: none;
-	border-bottom: 1px solid black;
-	}
-}
-
-/*section {
-	overflow: auto;
-	margin: 0 auto;
-	max-width: 820px;
-	border: 1px solid black;
-	div.thumb {
-		float: left;
-		padding-top: 4px;
-		padding-right: 46px;
-		&:img{
-			max-width: 100%;
-		}
-	}
-}
-*/
-
-
-
-.container {
-	/*border: 1px solid black;*/
-   	max-width: 860px;
-    margin: 0px auto;
-    padding-left: 60px;
-    overflow: hidden;
-}
-
-.galleryItem {
-
-    color: #797478;
-    font: 10px/1.5 Verdana, Helvetica, sans-serif;
-    float: left;
-    padding: 0 10px 0 10px;    
-     
-    width: 160px;
-    margin: 0 10px 0 10px;
-  
-
-}
- 
-.galleryItem h3 {
-    text-transform: uppercase;
-}
- 
-.galleryItem img {
-    max-width: 100%;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-		float: left;
-}
-
-.button {
-	padding: 5px;
-	margin: 0 auto;
-	width: 5em;
-	text-align: center;
-	background-color: $button-back;
-	border-radius: 5px;
-	color: $button-text;
-	a{
-		text-decoration: none;
-		color: $button-text;
-		text-align: center;
-	}
-	&.admin{
-		margin-left: 8px;
-	}
-}
-
-.add_comic {
-	width: 6em;
-	border: 1px solid black;
-}
-
-.index_head a{
-	text-decoration: none;
-	color: $button-text;
-}
-
-tr.index-row {
-	border-bottom: 1px solid black;
 }

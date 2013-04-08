@@ -1,29 +1,27 @@
 
-<div class="container">
-  <h2>Listing comics</h2>
 
-  <table class="gridtable">
-    <tr class="index_head">
-      <th></th>
-      <th><%= link_to 'Number',    '#' %></th>
-      <th><%= link_to 'Title',     '#' %></th>
-      <th><%= link_to 'Upload Date',     '#' %></th>
-    </tr>
+<h2>Listing comics</h2>
+
+<table class="gridtable">
+  <tr class="index_head">
+    <th></th>
+    <th><%= link_to 'Number',    '#' %></th>
+    <th><%= link_to 'Title',     '#' %></th>
+    <th><%= link_to 'Upload Date',     '#' %></th>
+  </tr>
 
   <% @comics.each do |comic| %>
-    <tr class="index-row">
-      <td><%= link_to (image_tag comic.image_url(:thumb)), page_url(comic.number.to_s) %></td>
-      <a href="#"><td><%= comic.number %></td></a>
-      <a href="#"><td><%= comic.title %></td></a>
-      <td><%= comic.created_at  %></td>
-      <td><%= button_to "Edit", edit_comic_path(comic), class: 'button', :method => "get" %>
-      </td>
-      <td><%= button_to "Destroy", comic, method: :delete, data: { confirm: 'Are you sure?'}, class: 'button' %>
-      </td>
-    </tr>
+  <tr class="index-row">
+    <td><%= link_to (image_tag comic.image_url(:thumb)), page_url(comic.number.to_s) %></td>
+    <a href="#"><td><%= comic.number %></td></a>
+    <a href="#"><td><%= comic.title %></td></a>
+    <td><%= comic.created_at  %></td>
+    <td><%= button_to "Edit", edit_comic_path(comic), class: 'button', :method => "get" %></td>
+    <td><%= button_to "Destroy", comic, method: :delete, data: { confirm: 'Are you sure?'}, class: 'button' %></td>
+  </tr>
   <% end %>
-  </table>
+</table>
   <br />
 
   <div class="button add_comic"><%= link_to 'Add Comic', new_comic_path %></div>
-</div>
+
