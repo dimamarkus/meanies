@@ -10,7 +10,7 @@ Meanies::Application.routes.draw do
   match '/admin',   to: 'comics#index'
   match '/archive', to: 'comics#archive'
   match '/:number', to: 'comics#view', as: :page
-
+ 
 
 
 

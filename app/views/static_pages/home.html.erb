@@ -6,8 +6,8 @@
 
 <div class="comicnav">
 	<ul>
-		<li><%= link_to 'First', '#' %></li>
-		<li><%= link_to 'Previous', page_url(Comic.last.number-1) %></li>
-		<li><a href="#">Random</a></li>
+		<li><%= button_to 'First',    page_url(Comic.first.number),  method: 'get', class: 'button' %></li>
+		<li><%= button_to 'Previous', page_url(Comic.last.number-1), method: 'get', class: 'button' %></li>
+		<li><%= button_to 'Random',   page_url(Comic.last.number-1), method: 'get', class: 'button' %></li>
 	</ul>
 </div>

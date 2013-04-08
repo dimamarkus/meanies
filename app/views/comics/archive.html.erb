@@ -1,5 +1,8 @@
-<% @comics.each do |comic| %>
-	<div class="thumb">
-		<%= link_to (image_tag comic.image_url(:thumb)), page_url(comic.number) %>
-	</div>
-<% end %>
+<div class="container">
+	<% @comics.each do |comic| %>
+	   <div class="galleryItem">
+	     <%= link_to (image_tag comic.image_url(:thumb)), page_url(comic.number) %>
+	   </div>
+	<% end %>
+</div>
+

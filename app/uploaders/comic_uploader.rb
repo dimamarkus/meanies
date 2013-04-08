@@ -37,7 +37,7 @@ class ComicUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
    version :thumb do
-     process :resize_to_limit => [150, 150]
+     process :resize_to_limit => [160, 160]
    end
 
    version :med_thumb do

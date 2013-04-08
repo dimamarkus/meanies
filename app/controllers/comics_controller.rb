@@ -29,7 +29,7 @@ class ComicsController < ApplicationController
     @comic = Comic.new(params[:comic])
     @comic.number = Comic.count+1
     if @comic.save
-      redirect_to @comic, notice: 'Comic was successfully created.' 
+      redirect_to comics_path, notice: 'Comic was successfully created.' 
     else 
       render 'new'
     end
