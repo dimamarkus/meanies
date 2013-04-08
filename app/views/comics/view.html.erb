@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="comic">
-	<%= image_tag @comic.image_url %>
+	<%= link_to image_tag(@comic.image_url), page_url(@comic.number-1) %> <!-- unless comic.number is 1 -->
 </div>
 </br>
 

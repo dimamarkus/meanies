@@ -1,0 +1,219 @@
+/*---------------------------------Colors--------------------------------- */
+@font-face {
+  font-family: 'SFCartoonistHandRegular';
+  src: url("SF_Cartoonist_Hand-webfont.eot");
+  src: url("SF_Cartoonist_Hand-webfont.eot?#iefix") format("embedded-opentype"), url("SF_Cartoonist_Hand-webfont.woff") format("woff"), url("SF_Cartoonist_Hand-webfont.ttf") format("truetype"), url("SF_Cartoonist_Hand-webfont.svg#SFCartoonistHandRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+br {
+  line-height: 24px; }
+
+html {
+  background: black; }
+
+h1 {
+  font-family: 'SFCartoonistHandRegular';
+  font-size: 48px;
+  line-height: 72px;
+  padding-top: 8px;
+  padding-left: 32px; }
+
+h2 {
+  font-family: "Tenor Sans", sans-serif; }
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #616353;
+  /*	// font-family: 'Istok Web', sans-serif;
+  	// font-family: 'Radley', serif;
+  	// font-family: 'Carme', sans-serif;*/
+  font-family: "Tenor Sans", sans-serif; }
+
+a {
+  font-size: 16px;
+  line-height: 24px; }
+
+ul {
+  margin-bottom: 16px; }
+
+.big-container {
+  border-radius: .5em;
+  background: white;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  max-width: 940px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
+
+.container1 {
+  border-radius: .5em;
+  background: white;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  max-width: 940px;
+  padding: 16px 0 24px 0;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
+
+/*-------------------------------Comic Panel------------------------------*/
+.comic {
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+  max-width: 480px;
+  max-height: 480px; }
+  .comic img {
+    width: 100%; }
+
+/*-----------------------------Comic Navigation---------------------------*/
+.comicnav {
+  padding-top: 16px;
+  text-align: center; }
+  .comicnav ul li {
+    padding: 0 0.5em 0 0.5em;
+    display: inline-block; }
+
+/*------------------------------Site Navigation---------------------------*/
+nav {
+  border-radius: .5em;
+  background: white;
+  border: 1px solid black;
+  width: 480px;
+  margin: 0 auto;
+  text-align: center; }
+  nav ul li {
+    display: inline-block;
+    padding: 0 4px;
+    margin: 0 4px; }
+    nav ul li a {
+      color: #616353;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: .5px;
+      font-family: "Cinzel", serif;
+                             /*
+// font-family: 'Istok Web', sans-serif;
+// font-family: 'Carme', sans-serif;
+// font-family: 'Tinos', serif;
+// font-family: 'Playfair Display', serif;*/ }
+      nav ul li a:hover {
+        color: #F2A675; }
+
+/*-------------------------------About Text-------------------------------*/
+article {
+  margin: 0 auto;
+  max-width: 460px; }
+
+.admin_image {
+  text-align: center; }
+
+.form {
+  font-family: "Tenor Sans", sans-serif;
+  text-align: center; }
+  .form ul {
+    display: inline-block;
+    padding: 8px;
+    list-style: none; }
+
+#error_explanation {
+  background: #f8b1be;
+  margin: 0 auto;
+  max-width: 580px;
+  font-family: "Tenor Sans", sans-serif; }
+  #error_explanation ul {
+    list-style: none; }
+
+.field_with_errors {
+  padding: 5px;
+  background-color: #f8b1be; }
+
+table, th, td {
+  /*border: 1px solid black;*/ }
+
+table.gridtable {
+  font-family: "Tenor Sans", sans-serif;
+  text-align: left;
+  width: 100%; }
+  table.gridtable th:first-child {
+    max-width: 160px;
+    padding: 0; }
+  table.gridtable thumb a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black; }
+
+.container {
+  /*border: 1px solid black;*/
+  max-width: 860px;
+  margin: 0px auto;
+  padding-left: 60px;
+  overflow: hidden; }
+
+.galleryItem {
+  color: #797478;
+  font: 10px/1.5 Verdana, Helvetica, sans-serif;
+  float: left;
+  padding: 0 10px 0 10px;
+  width: 160px;
+  margin: 0 10px 0 10px; }
+
+ 
+.galleryItem h3 {
+      text-transform: uppercase; }
+
+ 
+.galleryItem img {
+      max-width: 100%;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+  float: left; }
+
+.button {
+  padding: 5px;
+  margin: 0 auto;
+  width: 5.5em;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  color: #616353; }
+  .button a {
+    text-decoration: none;
+    color: #616353;
+    text-align: center; }
+  .button.admin {
+    margin-left: 8px; }
+
+.add_comic {
+  width: 6em;
+  border: 1px solid black; }
+
+.index_head a {
+  text-decoration: none;
+  color: #616353; }
+
+tr.index-row {
+  border-bottom: 1px solid black; }
+
+img.portrait {
+  max-width: 200px;
+  float: left; }
