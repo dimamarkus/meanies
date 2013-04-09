@@ -7,6 +7,7 @@ gem 'will_paginate', '3.0.3'
 gem 'jquery-rails', '2.0.2'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'entypo-rails'
 
 
 group :development, :test do

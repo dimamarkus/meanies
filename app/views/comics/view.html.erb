@@ -1,20 +1,21 @@
 <p id="notice"><%= notice %></p>
 
+<div class="title"><h2><%= @comic.title %></h2></div>
 <div class="comic">
 	<%= link_to image_tag(@comic.image_url), page_url(@comic.number-1) %> <!-- unless comic.number is 1 -->
 </div>
-</br>
+
 
 <div class="comicnav">
 	<ul>
 		<% unless @comic == Comic.first %>
-			<li><%= button_to 'First',    page_url(Comic.first.number),  method: 'get', class: 'button' %></li>
-			<li><%= button_to 'Previous', page_url(@comic.number-1),     method: 'get', class: 'button' %></li>
+			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-to-start' %></li>
+			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-triangle-left' %></li>
 		<% end %>
-			<li><%= button_to 'Random',   page_url(Comic.last.number-1), method: 'get', class: 'button' %></li>
+			<li><%= link_to '', page_url(Comic.last.number-1), method: 'get', class: 'icon-shuffle' %></li>
 		<% unless @comic == Comic.last %>
-			<li><%= button_to 'Next',     page_url(@comic.number+1), 	   method: 'get', class: 'button' %></li>
-			<li><%= button_to 'Last',     page_url(Comic.last.number),	 method: 'get', class: 'button' %></li>
+			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-triangle-right' %></li>
+			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-to-end' %></li>
 		<% end %>
 	</ul>
 </div>

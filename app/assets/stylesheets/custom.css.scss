@@ -1,19 +1,36 @@
+//= require entypo-fonts
+@charset "UTF-8";
+
 /*-------------------------------------------------------------------------*/
 /*----------------------------------Colors---------------------------------*/
 /*-------------------------------------------------------------------------*/
-$black: 		  #2E2C26;
-$html-back:   black;
+$background:  black;
 $container:   white;
-$yellow:      #E8E6A5;
-$dark_swamp:  #616353;
-$red: 				#f8B1BE;
+$banner:      black;
+$content:     #CCCCCC;
+$title:       #DDDDDD;
+$heading:     #616353;
+$body:        #616353;
 $button-back: white;
 $button-text: #616353;
+$error:       red;
+$nav-link:    #e7e8ea;
+$hover:       #bdbec0;
 
 
 /*-------------------------------------------------------------------------*/
 /*----------------------------------Global---------------------------------*/
 /*-------------------------------------------------------------------------*/
+
+@font-face {
+font-family: 'entypo';
+src: url('entypo.eot');
+src: url('entypo.eot?#iefix') format('embedded-opentype'),
+     url('entypo.woff') format('woff'),
+     url('entypo.ttf') format('truetype'),
+     url('entypo.svg#svgFontName') format('svg'); 
+}
+
 @font-face {
     font-family: 'SFCartoonistHandRegular';
     src: url('SF_Cartoonist_Hand-webfont.eot');
@@ -24,6 +41,151 @@ $button-text: #616353;
     font-weight: normal;
     font-style: normal;
 }
+
+
+@font-face {
+    font-family: 'AaarghNormal';
+    src: url('Aaargh-webfont.eot');
+    src: url('Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aaargh-webfont.woff') format('woff'),
+         url('Aaargh-webfont.ttf') format('truetype'),
+         url('Aaargh-webfont.svg#AaarghNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BloklettersPotlood';
+    src: url('Blokletters-Potlood-webfont.eot');
+    src: url('Blokletters-Potlood-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Blokletters-Potlood-webfont.woff') format('woff'),
+         url('Blokletters-Potlood-webfont.ttf') format('truetype'),
+         url('Blokletters-Potlood-webfont.svg#BloklettersPotlood') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BloklettersBalpen';
+    src: url('Blokletters-Balpen-webfont.eot');
+    src: url('Blokletters-Balpen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Blokletters-Balpen-webfont.woff') format('woff'),
+         url('Blokletters-Balpen-webfont.ttf') format('truetype'),
+         url('Blokletters-Balpen-webfont.svg#BloklettersBalpen') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BloklettersViltstift';
+    src: url('Blokletters-Viltstift-webfont.eot');
+    src: url('Blokletters-Viltstift-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Blokletters-Viltstift-webfont.woff') format('woff'),
+         url('Blokletters-Viltstift-webfont.ttf') format('truetype'),
+         url('Blokletters-Viltstift-webfont.svg#BloklettersViltstift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NewCicleFina';
+    src: url('New_Cicle_Fina-webfont.eot');
+    src: url('New_Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
+         url('New_Cicle_Fina-webfont.woff') format('woff'),
+         url('New_Cicle_Fina-webfont.ttf') format('truetype'),
+         url('New_Cicle_Fina-webfont.svg#NewCicleFina') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NewCicleFinaItalic';
+    src: url('New_Cicle_Fina_Italic-webfont.eot');
+    src: url('New_Cicle_Fina_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('New_Cicle_Fina_Italic-webfont.woff') format('woff'),
+         url('New_Cicle_Fina_Italic-webfont.ttf') format('truetype'),
+         url('New_Cicle_Fina_Italic-webfont.svg#NewCicleFinaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NewCicleSemi';
+    src: url('New_Cicle_Semi-webfont.eot');
+    src: url('New_Cicle_Semi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('New_Cicle_Semi-webfont.woff') format('woff'),
+         url('New_Cicle_Semi-webfont.ttf') format('truetype'),
+         url('New_Cicle_Semi-webfont.svg#NewCicleSemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NewCicleSemiItalic';
+    src: url('New_Cicle_Semi_Italic-webfont.eot');
+    src: url('New_Cicle_Semi_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('New_Cicle_Semi_Italic-webfont.woff') format('woff'),
+         url('New_Cicle_Semi_Italic-webfont.ttf') format('truetype'),
+         url('New_Cicle_Semi_Italic-webfont.svg#NewCicleSemiItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NewCicleGordita';
+    src: url('New_Cicle_Gordita-webfont.eot');
+    src: url('New_Cicle_Gordita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('New_Cicle_Gordita-webfont.woff') format('woff'),
+         url('New_Cicle_Gordita-webfont.ttf') format('truetype'),
+         url('New_Cicle_Gordita-webfont.svg#NewCicleGordita') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NewCicleGorditaItalic';
+    src: url('New_Cicle_Gordita_Italic-webfont.eot');
+    src: url('New_Cicle_Gordita_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('New_Cicle_Gordita_Italic-webfont.woff') format('woff'),
+         url('New_Cicle_Gordita_Italic-webfont.ttf') format('truetype'),
+         url('New_Cicle_Gordita_Italic-webfont.svg#NewCicleGorditaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: '!PaulMaulRegular';
+    src: url('!PaulMaul-webfont.eot');
+    src: url('!PaulMaul-webfont.eot?#iefix') format('embedded-opentype'),
+         url('!PaulMaul-webfont.woff') format('woff'),
+         url('!PaulMaul-webfont.ttf') format('truetype'),
+         url('!PaulMaul-webfont.svg#!PaulMaulRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: '!PaulMaulBold';
+    src: url('!PaulMaul-b-webfont.eot');
+    src: url('!PaulMaul-b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('!PaulMaul-b-webfont.woff') format('woff'),
+         url('!PaulMaul-b-webfont.ttf') format('truetype'),
+         url('!PaulMaul-b-webfont.svg#!PaulMaulBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 * {
 	padding: 0;
@@ -38,36 +200,29 @@ br {
 }
 
 html {
-	background: $html-back;
+	background: $background;
 }
 
 h1 { 
-	font-family: 'SFCartoonistHandRegular';
-<<<<<<< HEAD
-	line-height:   72px;
-	font-size:     48px; 
-  padding-top:    8px;
+  font-family: '!PaulMaulRegular';
+  line-height:   76px;
+  font-size:     48px; 
   padding-left:  32px;
-  margin-bottom: 16px; 
-=======
-	// font-family: 'Sacramento', cursive;
-  font-size: 48px; 
-  line-height: 72px;
-  padding-top: 8px;
-  padding-left: 32px;
- 
->>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
+  a {
+    text-decoration: none;
+    color: $banner;
+  } 
 }
 
 h2 {
 	font-family: 'Tenor Sans', sans-serif;
 }
 
-p, a {
+p {
 	line-height: 24px;
 	font-size:   16px;	
-	color:       $dark_swamp;
-	font-family: 'Tenor Sans', sans-serif;
+	color:       $body;
+	font-family: 'NewCicleFina';
 }
 
 .button {
@@ -88,17 +243,17 @@ p, a {
 	}
 }
 
+.button-first {
+    padding-left: 16px;
+    height: 45px;
+    width: 45px;
+}
 
-<<<<<<< HEAD
 
 /*-------------------------------------------------------------------------*/
 /*---------------------------------Layout----------------------------------*/
 /*-------------------------------------------------------------------------*/
 .container {
-=======
-.big-container {
->>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
-	border-radius: .5em;
 	background: $container;
 	margin: 0 auto;
 	margin-top: 24px;
@@ -108,39 +263,30 @@ p, a {
 
 .content {
 	border-radius: .5em;
-	background: $container;
 	margin: 0 auto;
-	margin-top: 24px;
+	margin-top: 16px;
 	margin-bottom: 16px;
-<<<<<<< HEAD
 	max-width: 900px;
-	padding: 24px 0 24px 0;
-=======
-	max-width: 940px;
-	padding: 16px 0 24px 0;
-		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box;  
->>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
 }
   
 nav {
-	border-radius: .5em;
-	width: 480px;
+  padding-top: 8px;
+  padding-left: 32px;
+  background: $background;
   margin: 0 auto;
-	text-align: center;
 	ul li {
 		display: inline-block;
 		padding: 0 4px;
 		margin: 0 4px;
 		a {
-			color: #616353;
+			color: $nav-link;
 			text-decoration: none;
-			font-weight: bold;
+			font-weight: bolder;
 			letter-spacing: .5px;
-			font-family: 'Cinzel', serif;
+      font-size: 16px;
+			font-family: 'AaarghNormal';
 			&:hover {
-				color: #F2A675;
+				color: $hover;
 			} /***** nav ul li a &:hover */
 		} /******** nav ul li a         */
 	} /********* nav ul li           */
@@ -148,9 +294,17 @@ nav {
 
 
 
+
+
 /*-------------------------------------------------------------------------*/
 /*--------------------------------Home Page--------------------------------*/
 /*-------------------------------------------------------------------------*/
+
+.title{
+  text-align: center;
+  width: 100%;
+}
+
 .comic {
 	margin: 0 auto;
 	max-width: 480px;
@@ -161,25 +315,22 @@ nav {
 }
 
 .comicnav {
-	padding-top: 16px;
 	text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
 	ul li {
-		padding: 0 0.5em 0 0.5em;
-		display: inline-block;
+		 display: inline-block;
+    a {
+      margin: 0 auto;
+      color: $hover;
+      text-decoration: none;
+      font-size: 48px;
+      &:hover {
+        color: $nav-link;
+      }
+    }
 	}
 }
-
-<<<<<<< HEAD
-=======
-/*------------------------------Site Navigation---------------------------*/
-nav {
-	border-radius: .5em;
-	background: $container;
-		border: 1px solid black;
-	width: 480px;
-		margin: 0 auto;
-	text-align: center;
->>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
 
 
 /*-------------------------------------------------------------------------*/
@@ -244,19 +395,18 @@ table.gridtable {
 		}
 	}
 	thumb a {
-	color: black;
+	color: $body;
 	text-decoration: none;
 	border-bottom: 1px solid black;
 	}
 }
 
-<<<<<<< HEAD
+
 .add_comic {
 	width: 6em;
 	border: 1px solid black;
 }
-=======
->>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
+
 
 .index_head a {
 	text-decoration: none;
@@ -267,25 +417,19 @@ table.gridtable {
 	text-align: center;
 }
 
-<<<<<<< HEAD
 .form {
 	font-family: 'Tenor Sans', sans-serif;
-=======
-.button {
-	padding: 5px;
-	margin: 0 auto;
-	width: 5.5em;
->>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
 	text-align: center;
-	ul{
+	ul {
 		display: inline-block;
 		padding: 8px;
 		list-style: none;
 	}
 }
 
+
 #error_explanation {
-	background: $red;
+	background: $error;
 	margin: 0 auto;
 	max-width: 580px;
 	font-family: 'Tenor Sans', sans-serif;
@@ -294,18 +438,7 @@ table.gridtable {
 	}
 }
 
-<<<<<<< HEAD
 .field_with_errors {
   padding: 5px;
-  background-color: $red;
+  background-color: $error;
 }
-=======
-tr.index-row {
-	border-bottom: 1px solid black;
-}
-
-img.portrait {
-	max-width: 200px;
-	float: left;
-}
->>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d

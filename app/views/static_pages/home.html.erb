@@ -1,13 +1,19 @@
 <% provide(:title, 'Home')  %>
 
+<div class="title">
+	<h2>
+		<%= Comic.last.title %>
+	</h2>
+</div>
+
 <div class="comic">
 	<%= link_to image_tag(Comic.last.image_url), page_url(Comic.last.number-1) %>
 </div>
 
 <div class="comicnav">
 	<ul>
-		<li><%= button_to 'First',    page_url(Comic.first.number),  method: 'get', class: 'button' %></li>
-		<li><%= button_to 'Previous', page_url(Comic.last.number-1), method: 'get', class: 'button' %></li>
-		<li><%= button_to 'Random',   page_url(Comic.last.number-1), method: 'get', class: 'button' %></li>
+		<li><%= link_to '', page_url(Comic.first.number),  class: 'icon-to-start' %></li>
+		<li><%= link_to '', page_url(Comic.last.number-1), class: 'icon-triangle-left' %></li>
+		<li><%= link_to '', page_url(Comic.last.number-1), class: 'icon-shuffle' %></li>
 	</ul>
 </div>

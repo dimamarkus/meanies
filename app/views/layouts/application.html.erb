@@ -3,7 +3,7 @@
 	<head>
 	  <title><%= full_title(yield(:title)) %></title>
 	  <%= stylesheet_link_tag    "application", media: "all" %>
-	  <%= stylesheet_link_tag    "custom", media: "all" %>
+	  <%= stylesheet_link_tag    "custom",      media: "all" %>
 	  <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Sacramento|Special+Elite', media: "all" %>
 	  <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700|Radley|Carme|Tenor+Sans|Tinos:400,700|Playfair+Display:400,700,900|Cinzel:400,900,700' rel='stylesheet' type='text/css'>
 	  <%= javascript_include_tag "application" %>
@@ -12,29 +12,24 @@
 	</head>
 
 	<body>
-<<<<<<< HEAD
 		<div class='container'>
-=======
-		<div class='big-container'>
->>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
-			<h1>march of the meanies</h2>
+
+			<h1><%= link_to 'march of the meanies', root_path %></h2>
+
+			<div class="content">
+				<%= yield %>
+			</div>
 
 			<nav>
 				<ul>
 					<li><%= link_to 'Home',    home_path %></li>
 					<li><%= link_to 'Archive', archive_path %></li>
 					<li><%= link_to 'About',   about_path %></li>
-					<li><%= link_to 'Admin',   admin_path %></li>
+					<li><%= link_to '',   admin_path %></li>
 				</ul>
 			</nav>
-
-			<div class="content">
-				<%= yield %>
-			</div>
 		</div>
 		
-		
-
 	<!-- jQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 			<!-- http://bohemianalps.com/tools/grid/ -->
@@ -50,7 +45,7 @@
 		        gutterwidth = 20;
 		        pagetopmargin = 24;
 		        rowheight = 24;
-		        gridonload = 'on';
+		        gridonload = 'off';
 		        makehugrid();
 		        setgridonload();
 		    });

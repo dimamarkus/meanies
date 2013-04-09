@@ -1,8 +1,103 @@
-/*---------------------------------Colors--------------------------------- */
+@charset "UTF-8";
+/*-------------------------------------------------------------------------*/
+/*----------------------------------Colors---------------------------------*/
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+/*----------------------------------Global---------------------------------*/
+/*-------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'entypo';
+  src: url("entypo.eot");
+  src: url("entypo.eot?#iefix") format("embedded-opentype"), url("entypo.woff") format("woff"), url("entypo.ttf") format("truetype"), url("entypo.svg#svgFontName") format("svg"); }
+
 @font-face {
   font-family: 'SFCartoonistHandRegular';
   src: url("SF_Cartoonist_Hand-webfont.eot");
   src: url("SF_Cartoonist_Hand-webfont.eot?#iefix") format("embedded-opentype"), url("SF_Cartoonist_Hand-webfont.woff") format("woff"), url("SF_Cartoonist_Hand-webfont.ttf") format("truetype"), url("SF_Cartoonist_Hand-webfont.svg#SFCartoonistHandRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AaarghNormal';
+  src: url("Aaargh-webfont.eot");
+  src: url("Aaargh-webfont.eot?#iefix") format("embedded-opentype"), url("Aaargh-webfont.woff") format("woff"), url("Aaargh-webfont.ttf") format("truetype"), url("Aaargh-webfont.svg#AaarghNormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BloklettersPotlood';
+  src: url("Blokletters-Potlood-webfont.eot");
+  src: url("Blokletters-Potlood-webfont.eot?#iefix") format("embedded-opentype"), url("Blokletters-Potlood-webfont.woff") format("woff"), url("Blokletters-Potlood-webfont.ttf") format("truetype"), url("Blokletters-Potlood-webfont.svg#BloklettersPotlood") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BloklettersBalpen';
+  src: url("Blokletters-Balpen-webfont.eot");
+  src: url("Blokletters-Balpen-webfont.eot?#iefix") format("embedded-opentype"), url("Blokletters-Balpen-webfont.woff") format("woff"), url("Blokletters-Balpen-webfont.ttf") format("truetype"), url("Blokletters-Balpen-webfont.svg#BloklettersBalpen") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BloklettersViltstift';
+  src: url("Blokletters-Viltstift-webfont.eot");
+  src: url("Blokletters-Viltstift-webfont.eot?#iefix") format("embedded-opentype"), url("Blokletters-Viltstift-webfont.woff") format("woff"), url("Blokletters-Viltstift-webfont.ttf") format("truetype"), url("Blokletters-Viltstift-webfont.svg#BloklettersViltstift") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NewCicleFina';
+  src: url("New_Cicle_Fina-webfont.eot");
+  src: url("New_Cicle_Fina-webfont.eot?#iefix") format("embedded-opentype"), url("New_Cicle_Fina-webfont.woff") format("woff"), url("New_Cicle_Fina-webfont.ttf") format("truetype"), url("New_Cicle_Fina-webfont.svg#NewCicleFina") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NewCicleFinaItalic';
+  src: url("New_Cicle_Fina_Italic-webfont.eot");
+  src: url("New_Cicle_Fina_Italic-webfont.eot?#iefix") format("embedded-opentype"), url("New_Cicle_Fina_Italic-webfont.woff") format("woff"), url("New_Cicle_Fina_Italic-webfont.ttf") format("truetype"), url("New_Cicle_Fina_Italic-webfont.svg#NewCicleFinaItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NewCicleSemi';
+  src: url("New_Cicle_Semi-webfont.eot");
+  src: url("New_Cicle_Semi-webfont.eot?#iefix") format("embedded-opentype"), url("New_Cicle_Semi-webfont.woff") format("woff"), url("New_Cicle_Semi-webfont.ttf") format("truetype"), url("New_Cicle_Semi-webfont.svg#NewCicleSemi") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NewCicleSemiItalic';
+  src: url("New_Cicle_Semi_Italic-webfont.eot");
+  src: url("New_Cicle_Semi_Italic-webfont.eot?#iefix") format("embedded-opentype"), url("New_Cicle_Semi_Italic-webfont.woff") format("woff"), url("New_Cicle_Semi_Italic-webfont.ttf") format("truetype"), url("New_Cicle_Semi_Italic-webfont.svg#NewCicleSemiItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NewCicleGordita';
+  src: url("New_Cicle_Gordita-webfont.eot");
+  src: url("New_Cicle_Gordita-webfont.eot?#iefix") format("embedded-opentype"), url("New_Cicle_Gordita-webfont.woff") format("woff"), url("New_Cicle_Gordita-webfont.ttf") format("truetype"), url("New_Cicle_Gordita-webfont.svg#NewCicleGordita") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NewCicleGorditaItalic';
+  src: url("New_Cicle_Gordita_Italic-webfont.eot");
+  src: url("New_Cicle_Gordita_Italic-webfont.eot?#iefix") format("embedded-opentype"), url("New_Cicle_Gordita_Italic-webfont.woff") format("woff"), url("New_Cicle_Gordita_Italic-webfont.ttf") format("truetype"), url("New_Cicle_Gordita_Italic-webfont.svg#NewCicleGorditaItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: '!PaulMaulRegular';
+  src: url("!PaulMaul-webfont.eot");
+  src: url("!PaulMaul-webfont.eot?#iefix") format("embedded-opentype"), url("!PaulMaul-webfont.woff") format("woff"), url("!PaulMaul-webfont.ttf") format("truetype"), url("!PaulMaul-webfont.svg#!PaulMaulRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: '!PaulMaulBold';
+  src: url("!PaulMaul-b-webfont.eot");
+  src: url("!PaulMaul-b-webfont.eot?#iefix") format("embedded-opentype"), url("!PaulMaul-b-webfont.woff") format("woff"), url("!PaulMaul-b-webfont.ttf") format("truetype"), url("!PaulMaul-b-webfont.svg#!PaulMaulBold") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -23,146 +118,115 @@ html {
   background: black; }
 
 h1 {
-  font-family: 'SFCartoonistHandRegular';
+  font-family: '!PaulMaulRegular';
+  line-height: 76px;
   font-size: 48px;
-  line-height: 72px;
-  padding-top: 8px;
   padding-left: 32px; }
+  h1 a {
+    text-decoration: none;
+    color: black; }
 
 h2 {
   font-family: "Tenor Sans", sans-serif; }
 
 p {
-  font-size: 16px;
   line-height: 24px;
-  color: #616353;
-  /*	// font-family: 'Istok Web', sans-serif;
-  	// font-family: 'Radley', serif;
-  	// font-family: 'Carme', sans-serif;*/
-  font-family: "Tenor Sans", sans-serif; }
-
-a {
   font-size: 16px;
-  line-height: 24px; }
+  color: #616353;
+  font-family: 'NewCicleFina'; }
 
-ul {
-  margin-bottom: 16px; }
+.button {
+  padding: 5px;
+  margin: 0 auto;
+  width: 5em;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  color: #616353; }
+  .button a {
+    text-decoration: none;
+    color: #616353;
+    text-align: center; }
+  .button.admin {
+    margin-left: 8px; }
 
-.big-container {
-  border-radius: .5em;
+.button-first {
+  padding-left: 16px;
+  height: 45px;
+  width: 45px; }
+
+/*-------------------------------------------------------------------------*/
+/*---------------------------------Layout----------------------------------*/
+/*-------------------------------------------------------------------------*/
+.container {
   background: white;
   margin: 0 auto;
   margin-top: 24px;
   margin-bottom: 16px;
-  max-width: 940px;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box; }
+  max-width: 940px; }
 
-.container1 {
+.content {
   border-radius: .5em;
-  background: white;
   margin: 0 auto;
-  margin-top: 24px;
+  margin-top: 16px;
   margin-bottom: 16px;
-  max-width: 940px;
-  padding: 16px 0 24px 0;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box; }
+  max-width: 900px; }
 
-/*-------------------------------Comic Panel------------------------------*/
+nav {
+  padding-top: 8px;
+  padding-left: 32px;
+  background: black;
+  margin: 0 auto;
+  /********* nav ul li           */ }
+  nav ul li {
+    display: inline-block;
+    padding: 0 4px;
+    margin: 0 4px;
+    /******** nav ul li a         */ }
+    nav ul li a {
+      color: #e7e8ea;
+      text-decoration: none;
+      font-weight: bolder;
+      letter-spacing: .5px;
+      font-size: 16px;
+      font-family: 'AaarghNormal';
+      /***** nav ul li a &:hover */ }
+      nav ul li a:hover {
+        color: #bdbec0; }
+
+/*********** nav                 */
+/*-------------------------------------------------------------------------*/
+/*--------------------------------Home Page--------------------------------*/
+/*-------------------------------------------------------------------------*/
+.title {
+  text-align: center;
+  width: 100%; }
+
 .comic {
-  /*border: 1px solid black;*/
   margin: 0 auto;
   max-width: 480px;
   max-height: 480px; }
   .comic img {
     width: 100%; }
 
-/*-----------------------------Comic Navigation---------------------------*/
 .comicnav {
-  padding-top: 16px;
-  text-align: center; }
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto; }
   .comicnav ul li {
-    padding: 0 0.5em 0 0.5em;
     display: inline-block; }
-
-/*------------------------------Site Navigation---------------------------*/
-nav {
-  border-radius: .5em;
-  background: white;
-  border: 1px solid black;
-  width: 480px;
-  margin: 0 auto;
-  text-align: center; }
-  nav ul li {
-    display: inline-block;
-    padding: 0 4px;
-    margin: 0 4px; }
-    nav ul li a {
-      color: #616353;
+    .comicnav ul li a {
+      margin: 0 auto;
+      color: #bdbec0;
       text-decoration: none;
-      font-weight: bold;
-      letter-spacing: .5px;
-      font-family: "Cinzel", serif;
-                             /*
-// font-family: 'Istok Web', sans-serif;
-// font-family: 'Carme', sans-serif;
-// font-family: 'Tinos', serif;
-// font-family: 'Playfair Display', serif;*/ }
-      nav ul li a:hover {
-        color: #F2A675; }
+      font-size: 48px; }
+      .comicnav ul li a:hover {
+        color: #e7e8ea; }
 
-/*-------------------------------About Text-------------------------------*/
-article {
-  margin: 0 auto;
-  max-width: 460px; }
-
-.admin_image {
-  text-align: center; }
-
-.form {
-  font-family: "Tenor Sans", sans-serif;
-  text-align: center; }
-  .form ul {
-    display: inline-block;
-    padding: 8px;
-    list-style: none; }
-
-#error_explanation {
-  background: #f8b1be;
-  margin: 0 auto;
-  max-width: 580px;
-  font-family: "Tenor Sans", sans-serif; }
-  #error_explanation ul {
-    list-style: none; }
-
-.field_with_errors {
-  padding: 5px;
-  background-color: #f8b1be; }
-
-table, th, td {
-  /*border: 1px solid black;*/ }
-
-table.gridtable {
-  font-family: "Tenor Sans", sans-serif;
-  text-align: left;
-  width: 100%; }
-  table.gridtable th:first-child {
-    max-width: 160px;
-    padding: 0; }
-  table.gridtable thumb a {
-    color: black;
-    text-decoration: none;
-    border-bottom: 1px solid black; }
-
-.container {
-  /*border: 1px solid black;*/
+/*-------------------------------------------------------------------------*/
+/*-------------------------------Archive Page------------------------------*/
+/*-------------------------------------------------------------------------*/
+.archive-gallery {
   max-width: 860px;
   margin: 0px auto;
   padding-left: 60px;
@@ -178,30 +242,41 @@ table.gridtable {
 
  
 .galleryItem h3 {
-      text-transform: uppercase; }
+    text-transform: uppercase; }
 
  
 .galleryItem img {
-      max-width: 100%;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
+  max-width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+   border-radius: 5px;
   float: left; }
 
-.button {
-  padding: 5px;
+/*-------------------------------------------------------------------------*/
+/*--------------------------------About Page-------------------------------*/
+/*-------------------------------------------------------------------------*/
+.about-body {
   margin: 0 auto;
-  width: 5.5em;
+  max-width: 460px; }
+
+#portrait {
+  max-width: 150px;
+  float: left; }
+
+/*-------------------------------------------------------------------------*/
+/*--------------------------------Admin Page-------------------------------*/
+/*-------------------------------------------------------------------------*/
+table.gridtable {
+  font-family: "Tenor Sans", sans-serif;
   text-align: center;
-  background-color: white;
-  border-radius: 5px;
-  color: #616353; }
-  .button a {
-    text-decoration: none;
+  width: 100%; }
+  table.gridtable th:first-child {
+    max-width: 160px;
+    padding: 0; }
+  table.gridtable thumb a {
     color: #616353;
-    text-align: center; }
-  .button.admin {
-    margin-left: 8px; }
+    text-decoration: none;
+    border-bottom: 1px solid black; }
 
 .add_comic {
   width: 6em;
@@ -211,9 +286,25 @@ table.gridtable {
   text-decoration: none;
   color: #616353; }
 
-tr.index-row {
-  border-bottom: 1px solid black; }
+.edit-preview {
+  text-align: center; }
 
-img.portrait {
-  max-width: 200px;
-  float: left; }
+.form {
+  font-family: "Tenor Sans", sans-serif;
+  text-align: center; }
+  .form ul {
+    display: inline-block;
+    padding: 8px;
+    list-style: none; }
+
+#error_explanation {
+  background: red;
+  margin: 0 auto;
+  max-width: 580px;
+  font-family: "Tenor Sans", sans-serif; }
+  #error_explanation ul {
+    list-style: none; }
+
+.field_with_errors {
+  padding: 5px;
+  background-color: red; }
