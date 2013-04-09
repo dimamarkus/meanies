@@ -1,192 +1,44 @@
-//= require entypo-fonts
 @charset "UTF-8";
 
 /*-------------------------------------------------------------------------*/
 /*----------------------------------Colors---------------------------------*/
 /*-------------------------------------------------------------------------*/
-$background:  black;
-$container:   white;
-$banner:      black;
-$content:     #CCCCCC;
-$title:       #DDDDDD;
-$heading:     #616353;
-$body:        #616353;
-$button-back: white;
-$button-text: #616353;
-$error:       red;
-$nav-link:    #e7e8ea;
-$hover:       #bdbec0;
 
 
+/* #000000;  /******Black******/
+/* #FFFFFF;  /******White******/
+/* #FFBF2A;  /*****Yellow******/
+/* #403D3D;  /****Dark Grey****/
+/* #7F797B;  /****Light Grey***/
+
+
+$background:         #000000;  /******Black******/
+  $container:        #FFFFFF;  /******White******/
+    $banner-text:    #000000;  /******Black******/
+    $content-box:    #FFFFFF;  /******White******/
+      $title-text:   #000000;  /******Black******/
+      $body-text:    #000000;  /******Black******/
+
+      $com-nav-bg:   #FFFFFF;  /******White******/
+      $com-nav-txt:  #000000;  /******Black******/
+      $com-nav-hov:     blue;
+    
+    $navigation:     #000000;  /******Black******/
+      $nav-btn-bg:   #000000;  /******Black******/
+      $nav-btn-txt:  #FFBF2A;  /*****Yellow******/
+      $nav-btn-hov:  #403D3D;  /****Dark Grey****/
+
+
+$button-bg:          #FFFFFF;  /******White******/
+$button-txt:         #000000;  /******Black******/
+$button-hov:            blue;
+
+$error-bg:               red;
+$error-txt:          #000000;  /******Black******/
+ 
 /*-------------------------------------------------------------------------*/
 /*----------------------------------Global---------------------------------*/
 /*-------------------------------------------------------------------------*/
-
-@font-face {
-font-family: 'entypo';
-src: url('entypo.eot');
-src: url('entypo.eot?#iefix') format('embedded-opentype'),
-     url('entypo.woff') format('woff'),
-     url('entypo.ttf') format('truetype'),
-     url('entypo.svg#svgFontName') format('svg'); 
-}
-
-@font-face {
-    font-family: 'SFCartoonistHandRegular';
-    src: url('SF_Cartoonist_Hand-webfont.eot');
-    src: url('SF_Cartoonist_Hand-webfont.eot?#iefix') format('embedded-opentype'),
-         url('SF_Cartoonist_Hand-webfont.woff') format('woff'),
-         url('SF_Cartoonist_Hand-webfont.ttf') format('truetype'),
-         url('SF_Cartoonist_Hand-webfont.svg#SFCartoonistHandRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'AaarghNormal';
-    src: url('Aaargh-webfont.eot');
-    src: url('Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Aaargh-webfont.woff') format('woff'),
-         url('Aaargh-webfont.ttf') format('truetype'),
-         url('Aaargh-webfont.svg#AaarghNormal') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BloklettersPotlood';
-    src: url('Blokletters-Potlood-webfont.eot');
-    src: url('Blokletters-Potlood-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Blokletters-Potlood-webfont.woff') format('woff'),
-         url('Blokletters-Potlood-webfont.ttf') format('truetype'),
-         url('Blokletters-Potlood-webfont.svg#BloklettersPotlood') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'BloklettersBalpen';
-    src: url('Blokletters-Balpen-webfont.eot');
-    src: url('Blokletters-Balpen-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Blokletters-Balpen-webfont.woff') format('woff'),
-         url('Blokletters-Balpen-webfont.ttf') format('truetype'),
-         url('Blokletters-Balpen-webfont.svg#BloklettersBalpen') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'BloklettersViltstift';
-    src: url('Blokletters-Viltstift-webfont.eot');
-    src: url('Blokletters-Viltstift-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Blokletters-Viltstift-webfont.woff') format('woff'),
-         url('Blokletters-Viltstift-webfont.ttf') format('truetype'),
-         url('Blokletters-Viltstift-webfont.svg#BloklettersViltstift') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'NewCicleFina';
-    src: url('New_Cicle_Fina-webfont.eot');
-    src: url('New_Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
-         url('New_Cicle_Fina-webfont.woff') format('woff'),
-         url('New_Cicle_Fina-webfont.ttf') format('truetype'),
-         url('New_Cicle_Fina-webfont.svg#NewCicleFina') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'NewCicleFinaItalic';
-    src: url('New_Cicle_Fina_Italic-webfont.eot');
-    src: url('New_Cicle_Fina_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('New_Cicle_Fina_Italic-webfont.woff') format('woff'),
-         url('New_Cicle_Fina_Italic-webfont.ttf') format('truetype'),
-         url('New_Cicle_Fina_Italic-webfont.svg#NewCicleFinaItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'NewCicleSemi';
-    src: url('New_Cicle_Semi-webfont.eot');
-    src: url('New_Cicle_Semi-webfont.eot?#iefix') format('embedded-opentype'),
-         url('New_Cicle_Semi-webfont.woff') format('woff'),
-         url('New_Cicle_Semi-webfont.ttf') format('truetype'),
-         url('New_Cicle_Semi-webfont.svg#NewCicleSemi') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'NewCicleSemiItalic';
-    src: url('New_Cicle_Semi_Italic-webfont.eot');
-    src: url('New_Cicle_Semi_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('New_Cicle_Semi_Italic-webfont.woff') format('woff'),
-         url('New_Cicle_Semi_Italic-webfont.ttf') format('truetype'),
-         url('New_Cicle_Semi_Italic-webfont.svg#NewCicleSemiItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'NewCicleGordita';
-    src: url('New_Cicle_Gordita-webfont.eot');
-    src: url('New_Cicle_Gordita-webfont.eot?#iefix') format('embedded-opentype'),
-         url('New_Cicle_Gordita-webfont.woff') format('woff'),
-         url('New_Cicle_Gordita-webfont.ttf') format('truetype'),
-         url('New_Cicle_Gordita-webfont.svg#NewCicleGordita') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'NewCicleGorditaItalic';
-    src: url('New_Cicle_Gordita_Italic-webfont.eot');
-    src: url('New_Cicle_Gordita_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('New_Cicle_Gordita_Italic-webfont.woff') format('woff'),
-         url('New_Cicle_Gordita_Italic-webfont.ttf') format('truetype'),
-         url('New_Cicle_Gordita_Italic-webfont.svg#NewCicleGorditaItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: '!PaulMaulRegular';
-    src: url('!PaulMaul-webfont.eot');
-    src: url('!PaulMaul-webfont.eot?#iefix') format('embedded-opentype'),
-         url('!PaulMaul-webfont.woff') format('woff'),
-         url('!PaulMaul-webfont.ttf') format('truetype'),
-         url('!PaulMaul-webfont.svg#!PaulMaulRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: '!PaulMaulBold';
-    src: url('!PaulMaul-b-webfont.eot');
-    src: url('!PaulMaul-b-webfont.eot?#iefix') format('embedded-opentype'),
-         url('!PaulMaul-b-webfont.woff') format('woff'),
-         url('!PaulMaul-b-webfont.ttf') format('truetype'),
-         url('!PaulMaul-b-webfont.svg#!PaulMaulBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 * {
 	padding: 0;
 	margin:  0;
@@ -210,7 +62,7 @@ h1 {
   padding-left:  32px;
   a {
     text-decoration: none;
-    color: $banner;
+    color: $banner-text;
   } 
 }
 
@@ -221,7 +73,7 @@ h2 {
 p {
 	line-height: 24px;
 	font-size:   16px;	
-	color:       $body;
+	color:       $body-text;
 	font-family: 'NewCicleFina';
 }
 
@@ -230,13 +82,16 @@ p {
 	margin: 0 auto;
 	width: 5em;
 	text-align: center;
-	background-color: $button-back;
+	background-color: $button-bg;
 	border-radius: 5px;
-	color: $button-text;
+	color: $button-txt;
 	a{
 		text-decoration: none;
-		color: $button-text;
+		color: $button-txt;
 		text-align: center;
+    &:hover {
+      background-color: $button-hov;
+    }
 	}
 	&.admin{
 		margin-left: 8px;
@@ -267,26 +122,28 @@ p {
 	margin-top: 16px;
 	margin-bottom: 16px;
 	max-width: 900px;
+  background-color: $content-box
 }
   
 nav {
   padding-top: 8px;
   padding-left: 32px;
-  background: $background;
+  background: $navigation;
   margin: 0 auto;
 	ul li {
 		display: inline-block;
 		padding: 0 4px;
 		margin: 0 4px;
 		a {
-			color: $nav-link;
+      background: $nav-btn-bg;
+			color: $nav-btn-txt;
 			text-decoration: none;
 			font-weight: bolder;
 			letter-spacing: .5px;
       font-size: 16px;
 			font-family: 'AaarghNormal';
 			&:hover {
-				color: $hover;
+				color: $nav-btn-hov;
 			} /***** nav ul li a &:hover */
 		} /******** nav ul li a         */
 	} /********* nav ul li           */
@@ -303,7 +160,8 @@ nav {
 /*--------------------------------Home Page--------------------------------*/
 /*-------------------------------------------------------------------------*/
 
-.title{
+.title {
+  color: $title-text;
   text-align: center;
   width: 100%;
 }
@@ -325,11 +183,12 @@ nav {
 		 display: inline-block;
     a {
       margin: 0 auto;
-      color: $hover;
+      background: $com-nav-bg;
+      color: $com-nav-txt;
       text-decoration: none;
       font-size: 48px;
       &:hover {
-        color: $nav-link;
+        color: $com-nav-hov;
       }
     }
 	}
@@ -398,7 +257,7 @@ table.gridtable {
 		}
 	}
 	thumb a {
-	color: $body;
+	color: $body-text;
 	text-decoration: none;
 	border-bottom: 1px solid black;
 	}
@@ -413,7 +272,7 @@ table.gridtable {
 
 .index_head a {
 	text-decoration: none;
-	color: $button-text;
+	color: $title-text;
 }
 
 .edit-preview {
@@ -432,16 +291,17 @@ table.gridtable {
 
 
 #error_explanation {
-	background: $error;
+	background: $error-bg;
 	margin: 0 auto;
 	max-width: 580px;
 	font-family: 'Tenor Sans', sans-serif;
 	ul {
+    color: $error-txt;
 		list-style: none;
 	}
 }
 
 .field_with_errors {
   padding: 5px;
-  background-color: $error;
+  background-color: $error-bg;
 }
