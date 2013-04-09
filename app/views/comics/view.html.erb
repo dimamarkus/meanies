@@ -12,7 +12,7 @@
 			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-to-start' %></li>
 			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-triangle-left' %></li>
 		<% end %>
-			<li><%= link_to '', page_url(Comic.last.number-1), method: 'get', class: 'icon-shuffle' %></li>
+			<li><%= link_to '', page_url(random), method: 'get', class: 'icon-shuffle' %></li>
 		<% unless @comic == Comic.last %>
 			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-triangle-right' %></li>
 			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-to-end' %></li>
