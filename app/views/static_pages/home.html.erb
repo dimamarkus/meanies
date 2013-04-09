@@ -15,5 +15,7 @@
 		<li><%= link_to '', page_url(Comic.first.number),  class: 'icon-to-start' %></li>
 		<li><%= link_to '', page_url(Comic.last.number-1), class: 'icon-triangle-left' %></li>
 		<li><%= link_to '', page_url(random), class: 'icon-shuffle' %></li>
+		<li><%= link_to '', '#', class: 'icon-triangle-right hidden' %></li>
+		<li><%= link_to '', '#', class: 'icon-to-end hidden' %></li>
 	</ul>
 </div>

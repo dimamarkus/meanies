@@ -13,15 +13,15 @@
 
 
 $background:         #000000;  /******Black******/
-  $container:        #FFFFFF;  /******White******/
-    $banner-text:    #000000;  /******Black******/
-    $content-box:    #FFFFFF;  /******White******/
-      $title-text:   #000000;  /******Black******/
-      $body-text:    #000000;  /******Black******/
+  $container:        #000000;  /******Black******/
+    $banner-text:    #FFFFFF;  /******White******/
+    $content-box:    #000000;  /******Black******/
+      $title-text:   #FFFFFF;  /******White******/
+      $body-text:    #FFFFFF;  /******White******/
 
-      $com-nav-bg:   #FFFFFF;  /******White******/
-      $com-nav-txt:  #000000;  /******Black******/
-      $com-nav-hov:     blue;
+      $com-nav-bg:   #000000;  /******Black******/
+      $com-nav-txt:  #403D3D;  /****Dark Grey****/
+      $com-nav-hov:  #7F797B;  /****Light Grey***/
     
     $navigation:     #000000;  /******Black******/
       $nav-btn-bg:   #000000;  /******Black******/
@@ -68,6 +68,9 @@ h1 {
 
 h2 {
 	font-family: 'Tenor Sans', sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+
 }
 
 p {
@@ -111,7 +114,7 @@ p {
 .container {
 	background: $container;
 	margin: 0 auto;
-	margin-top: 24px;
+	// margin-top: 24px;
 	margin-bottom: 16px;
 	max-width: 940px;
 }
@@ -122,7 +125,8 @@ p {
 	margin-top: 16px;
 	margin-bottom: 16px;
 	max-width: 900px;
-  background-color: $content-box
+  background-color: $content-box;
+  height: 576px;
 }
   
 nav {
@@ -202,7 +206,8 @@ nav {
 	max-width: 860px;
   margin: 0px auto;
   padding-left: 60px;
-  overflow: hidden;
+  height: 576px;
+  overflow: auto;
 }
 
 .galleryItem {
@@ -239,6 +244,7 @@ nav {
 #portrait {
 	max-width: 150px;
 	float: left;
+  margin-right: 24px; 
 }
 
 
