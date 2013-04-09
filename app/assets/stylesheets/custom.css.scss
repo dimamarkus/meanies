@@ -43,11 +43,20 @@ html {
 
 h1 { 
 	font-family: 'SFCartoonistHandRegular';
+<<<<<<< HEAD
 	line-height:   72px;
 	font-size:     48px; 
   padding-top:    8px;
   padding-left:  32px;
   margin-bottom: 16px; 
+=======
+	// font-family: 'Sacramento', cursive;
+  font-size: 48px; 
+  line-height: 72px;
+  padding-top: 8px;
+  padding-left: 32px;
+ 
+>>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
 }
 
 h2 {
@@ -80,11 +89,15 @@ p, a {
 }
 
 
+<<<<<<< HEAD
 
 /*-------------------------------------------------------------------------*/
 /*---------------------------------Layout----------------------------------*/
 /*-------------------------------------------------------------------------*/
 .container {
+=======
+.big-container {
+>>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
 	border-radius: .5em;
 	background: $container;
 	margin: 0 auto;
@@ -99,8 +112,16 @@ p, a {
 	margin: 0 auto;
 	margin-top: 24px;
 	margin-bottom: 16px;
+<<<<<<< HEAD
 	max-width: 900px;
 	padding: 24px 0 24px 0;
+=======
+	max-width: 940px;
+	padding: 16px 0 24px 0;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;  
+>>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
 }
   
 nav {
@@ -148,6 +169,17 @@ nav {
 	}
 }
 
+<<<<<<< HEAD
+=======
+/*------------------------------Site Navigation---------------------------*/
+nav {
+	border-radius: .5em;
+	background: $container;
+		border: 1px solid black;
+	width: 480px;
+		margin: 0 auto;
+	text-align: center;
+>>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
 
 
 /*-------------------------------------------------------------------------*/
@@ -218,10 +250,13 @@ table.gridtable {
 	}
 }
 
+<<<<<<< HEAD
 .add_comic {
 	width: 6em;
 	border: 1px solid black;
 }
+=======
+>>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
 
 .index_head a {
 	text-decoration: none;
@@ -232,8 +267,15 @@ table.gridtable {
 	text-align: center;
 }
 
+<<<<<<< HEAD
 .form {
 	font-family: 'Tenor Sans', sans-serif;
+=======
+.button {
+	padding: 5px;
+	margin: 0 auto;
+	width: 5.5em;
+>>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
 	text-align: center;
 	ul{
 		display: inline-block;
@@ -252,7 +294,18 @@ table.gridtable {
 	}
 }
 
+<<<<<<< HEAD
 .field_with_errors {
   padding: 5px;
   background-color: $red;
 }
+=======
+tr.index-row {
+	border-bottom: 1px solid black;
+}
+
+img.portrait {
+	max-width: 200px;
+	float: left;
+}
+>>>>>>> e18a52b09099ffe801c4d6995e7fcc47f0e2585d
