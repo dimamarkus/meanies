@@ -1,14 +1,11 @@
+ 
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>March Of the Meanies</title>
 	<style type="text/css">
-	#image {
-	display: block;
 
-  /*border: 1px solid black;*/
-	margin: 20px;
-	margin-top: 90px;
 
 }
 
@@ -19,15 +16,19 @@
 	margin: 0 auto;
 }
 
+#head h1 {
+	color: white;
+}
 h1 {
 		text-align: center;
     line-height: 200px;
     margin: auto;
     margin-top: 40px;
+    margin-bottom: 24px;
     position: relative;
     top: 50%;
     width: 100%;
-    font-size: 8em;
+    font-size: 6em;
     font-family: Helvetica,Arial,sans-serif; 
     font-style: normal;
     letter-spacing:-7px;
@@ -35,20 +36,28 @@ h1 {
     line-height: 85%;
 }
 
+.image {
+	margin: 0 auto;
+	background: white;
+	padding: 8px 0 8px 0;
+
+}
+
 img {
 	clear: both;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-height: 60%;
+	max-width: 50%;
 }</style>
 </head>
 <body>
 	<div id="head">
 		<h1>Coming Soon</h1>
+		<div class="image">
+			<img src="assets/mike.png">
+		</div>
 	</div>
-	<div id="image">
-		<img src="assets/mike.png">
-	</div>
+
 </body>
 </html>

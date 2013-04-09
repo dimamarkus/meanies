@@ -1,8 +1,14 @@
-<div class="archive-gallery">
-	<% @comics.each do |comic| %>
-	   <div class="galleryItem">
-	     <%= link_to (image_tag comic.image_url(:thumb)), page_url(comic.number) %>
-	   </div>
-	<% end %>
-</div>
 
+
+<div id="scrollbar1">
+    <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+    <div class="viewport">
+        <div class="overview">
+						<% @comics.each do |comic| %>
+						   <div class="galleryItem">
+						     <%= link_to (image_tag comic.image_url(:thumb)), page_url(comic.number) %>
+						   </div>
+						<% end %>
+        </div>
+    </div>
+</div>

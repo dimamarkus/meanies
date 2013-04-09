@@ -7,8 +7,14 @@
 	  <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Sacramento|Special+Elite', media: "all" %>
 	  <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700|Radley|Carme|Tenor+Sans|Tinos:400,700|Playfair+Display:400,700,900|Cinzel:400,900,700' rel='stylesheet' type='text/css'>
 	  <%= javascript_include_tag "application" %>
-	  <%= csrf_meta_tags %>
-
+		<%= javascript_include_tag "jquery.tinyscrollbar.min" %>
+ 	 	<%= csrf_meta_tags %>
+  	<script type="text/javascript">
+    	$(window).load(function(){
+      	$('#scrollbar1').tinyscrollbar();
+    	});
+		</script>
+		
 	</head>
 
 	<body>
@@ -30,8 +36,7 @@
 			</nav>
 		</div>
 		
-	<!-- jQuery -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+
 			<!-- http://bohemianalps.com/tools/grid/ -->
 		<%= stylesheet_link_tag    "hugrid", media: "all" %>
 	  <%= javascript_include_tag "hugrid" %>
