@@ -12,11 +12,38 @@
 
 <div class="comicnav">
 	<ul>
-		<li><%= link_to '', page_url(Comic.first.number),  class: 'icon-fast-backward' %></li>
-		<li><%= link_to '', page_url(Comic.last.number-1), class: 'icon-left-dir' %></li>
-		<li><%= link_to '', page_url(random), class: 'icon-shuffle' %></li>
-		<li><%= link_to '', '#', class: 'icon-right-dir hidden' %></li>
-		<li><%= link_to '', '#', class: 'icon-fast-forward hidden' %></li>
+		<li><%= link_to '', page_url(Comic.first.number),  class: 'icon icon-fast-backward' %></li>
+		<li><%= link_to '', page_url(Comic.last.number-1), class: 'icon icon-left-dir' %></li>
+		<li><%= link_to '', page_url(random), class: 'icon icon-shuffle' %></li>
+		<li><%= link_to '', '#', class: 'icon icon-right-dir hidden' %></li>
+		<li><%= link_to '', '#', class: 'icon icon-fast-forward hidden' %></li>
+		<li>
+				<div class="social icon icon-share">
+					<ul>
+	          <a class="smedia icon icon-facebook-circled" 
+	          	 target="_blank" 
+	          	 href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= Comic.last.number %>&p[summary]=My new favorite web comic." 
+	          	 title="Share this webpage on Facebook" =>
+	          </a>
+	          <a class="smedia icon icon-twitter-circled" 
+		           target="_blank" 
+		           href="http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/<%= Comic.last.number %>" 
+		           title="Share this webpage on Twitter">
+	        	</a>
+	          <a class="smedia icon icon-gplus-circled" 
+	          	 target="_blank"
+	             href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= Comic.last.number %>">
+	          </a>
+	          <a class="smedia icon icon-tumblr-circled"
+	         		 target="_blank"  
+	         		 href="http://www.tumblr.com/share?v=3&u=marchofthemeanies.com/<%= Comic.last.number %>&t=%20My%20new%20favorite%20web%20comic">
+	          </a>
+	          <a class="smedia icon icon-mail" 
+	          	 href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= Comic.last.number %>">
+					  </a>
+					</ul>
+				</div>	
+			</li>
 	</ul>
 </div>
 
