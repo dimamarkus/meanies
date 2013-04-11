@@ -40,11 +40,11 @@ $error-txt:          #000000;  /******Black******/
 /*-------------------------------------------------------------------------*/
 
 #scrollbar1 {   /* Thumbnail gallery and scrollbar */
-  width: 860px;
+  max-width: 860px;
   clear: both;
   margin: 20px 0 10px 30px;
   .viewport {
-    width: 840px;
+    max-width: 840px;
     height: 576px;
     overflow: hidden; 
     position: relative;
@@ -101,7 +101,7 @@ $error-txt:          #000000;  /******Black******/
   color: #797478;
   font: 9px/1.45 Verdana, Helvetica, sans-serif;
   float: left;
-  height: 220px;
+  max-height: 217px;
   max-width: 160px;
   margin: 0px 10px 0 10px;
   a {
