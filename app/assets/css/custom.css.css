@@ -149,12 +149,44 @@ nav {
   max-width: 480px;
   margin: 0 auto;
   margin-top: 8px; }
+  .comicnav ul {
+    display: inline-block; }
   .comicnav ul li {
     display: inline-block; }
-    .comicnav ul li a {
-      background: black;
-      color: #403d3d;
-      text-decoration: none;
-      font-size: 36px; }
-      .comicnav ul li a:hover {
-        color: #7f797b; }
+
+.icon {
+  background: black;
+  color: #403d3d;
+  text-decoration: none;
+  font-size: 36px; }
+  .icon:hover {
+    color: #7f797b; }
+
+.social {
+  position: relative; }
+  .social a {
+    position: absolute;
+    display: inline-block;
+    -webkit-transition: left 0.75s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 0.5s linear;
+    -moz-transition: left 0.75s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 0.5s linear;
+    -o-transition: left 0.75s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 0.5s linear;
+    opacity: 0;
+    background: no-repeat;
+    top: 0; }
+
+.social:hover .smedia {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -o-transform: translate(0px, 0);
+  transform: translate(0px, 0); }
+  .social:hover .smedia.icon-facebook-circled {
+    left: 50px; }
+  .social:hover .smedia.icon-twitter-circled {
+    left: 95px; }
+  .social:hover .smedia.icon-gplus-circled {
+    left: 140px; }
+  .social:hover .smedia.icon-tumblr-circled {
+    left: 185px; }
+  .social:hover .smedia.icon-mail {
+    left: 230px; }

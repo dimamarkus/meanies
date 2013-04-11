@@ -185,18 +185,60 @@ nav {
   max-width: 480px;
   margin: 0 auto;
   margin-top: 8px;
+  ul {
+  	display: inline-block;
+  }
 	ul li {
 		 display: inline-block;
-    a {
-      background: $com-nav-bg;
-      color: $com-nav-txt;
-      text-decoration: none;
-      font-size: 36px;
-      &:hover {
-        color: $com-nav-hov;
-      }
-    }
 	}
 }
+
+.icon {
+  background: $com-nav-bg;
+  color: $com-nav-txt;
+  text-decoration: none;
+  font-size: 36px;
+  &:hover {
+    color: $com-nav-hov;
+  }
+}
+
+.social {
+	position: relative;
+		a {
+		  position: absolute;
+		  display: inline-block;
+			-webkit-transition: left 0.75s cubic-bezier(0.1,0.8,0.9,1), opacity .5s linear;
+				 -moz-transition: left 0.75s cubic-bezier(0.1,0.8,0.9,1), opacity .5s linear;
+					 -o-transition: left 0.75s cubic-bezier(0.1,0.8,0.9,1), opacity .5s linear;
+		  opacity: 0;
+			background: no-repeat;
+		  top: 0;
+	}
+}
+
+.social:hover .smedia {
+  opacity: 1;
+  -webkit-transform: translate(0px,0);
+     -moz-transform: translate(0px,0);
+       -o-transform: translate(0px,0); 
+          transform: translate(0px,0);
+  &.icon-facebook-circled {
+  	left: 50px;
+  }
+  &.icon-twitter-circled {
+  	left: 95px;
+  }
+  &.icon-gplus-circled {
+  	left: 140px;
+  }
+  &.icon-tumblr-circled {
+  	left: 185px;
+  }
+  &.icon-mail {
+  	left: 230px;
+  }
+}
+
 
 

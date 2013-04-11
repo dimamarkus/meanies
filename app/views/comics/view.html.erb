@@ -9,20 +9,31 @@
 <div class="comicnav">
 	<ul>
 		<% if @comic == Comic.first %>
-			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward hidden' %></li>
-			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir hidden' %></li>
+			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon hidden' %></li>
+			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon hidden' %></li>
 		<% else %>
-			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward' %></li>
-			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir' %></li>
+			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon' %></li>
+			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon' %></li>
 		<% end %>
-			<li><%= link_to '', page_url(random), method: 'get', class: 'icon-shuffle' %></li>
+			<li><%= link_to '', page_url(random), method: 'get', class: 'icon-shuffle icon' %></li>
 		<% if @comic == Comic.last %>
-			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir hidden' %></li>
-			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward hidden' %></li>
+			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir hidden icon' %></li>
+			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward hidden icon' %></li>
 		<% else %>
-			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir' %></li>
-			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward' %></li>
+			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir icon' %></li>
+			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward icon' %></li>
 		<% end %>
+			<li>
+				<div class="social icon icon-share">
+					<ul>
+	          <a class="smedia icon icon-facebook-circled" href="http://www.facebook.com" ></a>
+	          <a class="smedia icon icon-twitter-circled "></a>
+	          <a class="smedia icon icon-gplus-circled "></a>
+	          <a class="smedia icon icon-tumblr-circled "></a>
+	          <a class="smedia icon icon-mail "></a>
+					</ul>
+				</div>	
+			</li>
 	</ul>
 </div>
 
