@@ -12,11 +12,11 @@
 
 <div class="comicnav">
 	<ul>
-		<li><%= link_to '', page_url(Comic.first.number),  class: 'icon-to-start' %></li>
-		<li><%= link_to '', page_url(Comic.last.number-1), class: 'icon-triangle-left' %></li>
+		<li><%= link_to '', page_url(Comic.first.number),  class: 'icon-fast-backward' %></li>
+		<li><%= link_to '', page_url(Comic.last.number-1), class: 'icon-left-dir' %></li>
 		<li><%= link_to '', page_url(random), class: 'icon-shuffle' %></li>
-		<li><%= link_to '', '#', class: 'icon-triangle-right hidden' %></li>
-		<li><%= link_to '', '#', class: 'icon-to-end hidden' %></li>
+		<li><%= link_to '', '#', class: 'icon-right-dir hidden' %></li>
+		<li><%= link_to '', '#', class: 'icon-fast-forward hidden' %></li>
 	</ul>
 </div>
 
