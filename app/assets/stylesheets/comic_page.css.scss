@@ -1,0 +1,94 @@
+@import 'variables';
+
+/************************************************************************/
+/* 1. COMIC TITLE */
+/************************************************************************/
+
+.title {
+  color: $title-text-color;
+  margin-bottom: $baseline/2;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+/************************************************************************/
+/* 2. THE COMIC */
+/************************************************************************/
+
+.comic {
+	max-width:  480px;
+	max-height: 480px;
+	img {
+		width: 100%;
+	}
+}
+
+
+
+
+
+/************************************************************************/
+/* 3. COMIC NAVIGATION */
+/************************************************************************/
+
+.comicnav {
+  max-width:  480px;
+  text-align: center;
+	ul li {
+	  display: inline-block;
+	}
+}
+
+.icon {
+  background:  transparent;
+  color:       $com-nav-icon-color;
+  font-size:   $com-nav-icon-size;
+  line-height: $com-nav-icon-leading;
+  text-decoration: none;
+  @include transition(color);
+  &:hover {
+    color: $com-nav-hov-color;
+  }
+}
+
+.social {
+	position: relative;
+		a {
+      background: transparent;
+      display:    inline-block;
+		  position:   absolute;
+      opacity:    0;
+      top:        0;
+			-webkit-transition: left 0.75s cubic-bezier(0.1,0.8,0.9,1), opacity .5s linear;
+				 -moz-transition: left 0.75s cubic-bezier(0.1,0.8,0.9,1), opacity .5s linear;
+			 		 -o-transition: left 0.75s cubic-bezier(0.1,0.8,0.9,1), opacity .5s linear;
+	}
+}
+
+.social:hover .smedia {
+  opacity: 1;
+  -webkit-transform: translate(0px,0);
+     -moz-transform: translate(0px,0);
+       -o-transform: translate(0px,0); 
+          transform: translate(0px,0);
+  &.icon-facebook-circled {
+  	left: 50px;
+  }
+  &.icon-twitter-circled {
+  	left: 95px;
+  }
+  &.icon-gplus-circled {
+  	left: 140px;
+  }
+  &.icon-tumblr-circled {
+  	left: 185px;
+  }
+  &.icon-mail {
+  	left: 230px;
+  }
+}
+
+

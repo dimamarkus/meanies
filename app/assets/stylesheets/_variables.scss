@@ -1,0 +1,72 @@
+/************************************************************************/
+/* 1. TYPOGRAPHY */
+/************************************************************************/
+
+$banner-text-font:  "!PaulMaulRegular";
+$title-text-font:   "Tenor Sans";
+$body-text-font:    "NewCicleFina";
+$base-font-size:    16px; 
+$baseline:          ($base-font-size * 1.5);
+
+$h1-size:           ($baseline * 3);
+$h1-leading:        ($h1-size  * 1.5);
+$h2-size:           ($baseline * 2) ;
+$h2-leading:        ($h2-size  * 1.5);
+
+$com-nav-icon-size:    ($baseline * 1.5);
+$com-nav-icon-leading: ($com-nav-icon-size * 1.5);
+
+$default-spacing:   ($baseline * 2);
+
+
+/************************************************************************/
+/* 2. COLORS */
+/************************************************************************/
+
+/* #000000;  /******Black******/
+/* #FFFFFF;  /******White******/
+/* #FFBF2A;  /*****Yellow******/
+/* #403D3D;  /****Dark Grey****/
+/* #7F797B;  /****Light Grey***/
+
+
+$background-color:         #000000;  /******Black******/
+  $container-color:        #000000;  /******Black******/
+    $banner-text-color:    #FFFFFF;  /******White******/
+    $content-box-color:    #000000;  /******Black******/
+      $title-text-color:   #FFFFFF;  /******White******/
+      $body-text-color:    #FFFFFF;  /******White******/
+
+      $com-nav-bg-color:   #000000;  /******Black******/
+      $com-nav-icon-color: #403D3D;  /****Dark Grey****/
+      $com-nav-hov-color:  #7F797B;  /****Light Grey***/
+    
+    $navigation-color:     #000000;  /******Black******/
+      $nav-btn-bg-color:   #000000;  /******Black******/
+      $nav-btn-txt-color:  #FFBF2A;  /*****Yellow******/
+      $nav-btn-hov-color:  #403D3D;  /****Dark Grey****/
+
+
+$button-bg-color:          #FFFFFF;  /******White******/
+$button-txt-color:         #000000;  /******Black******/
+$button-hov-color:            blue;
+
+$error-bg-color:               red;
+$error-txt-color:          #000000;  /******Black******/
+
+
+
+
+/************************************************************************/
+/* 3. MIX-INs */
+/************************************************************************/
+
+@mixin transition($property: color, $duration: .2s, $ease: ease-in-out) {
+  -webkit-transition: $property $duration $ease;
+     -moz-transition: $property $duration $ease;
+       -o-transition: $property $duration $ease;
+          transition: $property $duration $ease;
+}
+
+
+

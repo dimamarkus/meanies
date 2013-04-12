@@ -1,0 +1,180 @@
+@import "variables";
+
+@charset "UTF-8";
+
+/************************************************************************/
+/* 1. CSS RESET */
+/************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+
+
+
+
+/************************************************************************/
+/* 2. TYPOGRAPHY AND GENERAL STYLING */
+/************************************************************************/
+
+html {
+  background: $background-color;
+}
+
+body {
+  color: $body-text-color;
+  font: 300 #{$base-font-size}/#{$baseline} $body-text-font;}
+
+p {
+  line-height: $baseline;
+  font-size:   $base-font-size;  
+  color:       $body-text-color;
+  font-family: $body-text-font;
+}
+
+
+h1 { 
+  color: $banner-text-color;
+  font: #{$h1-size}/#{$h1-leading} $banner-text-font;
+  padding-left:  32px;
+  a {
+    color: $banner-text-color;  
+    text-decoration: none;
+  } 
+}
+
+h2 {
+	font: #{$h2-size}/#{$h2-leading} $title-text-font;
+}
+
+.button { /*-------------------------------------------------TO WORK ON */
+  background-color: $button-bg-color;
+  border-radius: 5px;
+  color: $button-txt-color;
+  margin: 0 auto;
+	padding: 5px;
+  text-align: center;
+	width: 5em;
+	a{
+    color: $button-txt-color;
+		text-decoration: none;
+		text-align: center;
+    &:hover {
+      background-color: $button-hov-color;
+    }
+	}
+	&.admin{
+		margin-left: 8px;
+	}
+}
+
+.button-first {
+    padding-left: 16px;
+    height: 45px;
+    width: 45px;
+}
+
+
+
+
+
+/************************************************************************/
+/* 3. LAYOUT */
+/************************************************************************/
+
+.container {
+	background: $container-color;
+	max-width: 940px;
+}
+
+.content {
+	max-width: 900px;
+  background-color: $content-box-color;
+  min-height: 600px;
+}
+
+.container, .content, .comic, .comicnav, .nav {
+  margin: 0 auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+/************************************************************************/
+/* 4. MAIN NAVIGATION */
+/************************************************************************/
+
+nav {
+  background: transparent;
+  margin-top: $baseline;
+  ul li {
+    display: inline-block;
+    padding: 0 6px 0 6px;
+    a {
+      color:           $nav-btn-txt-color;
+      font:            bolder #{$base-font-size}/#{$baseline} 'AaarghNormal';
+      text-decoration: none;
+      letter-spacing: .5px;
+      @include transition(color);
+      &:hover {
+        color: $nav-btn-hov-color;
+      } 
+    } 
+  } 
+} 
+
+
+
