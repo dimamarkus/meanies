@@ -5,19 +5,21 @@
 /************************************************************************/
 
 #scrollbar1 {   /* Thumbnail gallery and scrollbar */
-  max-width: 860px;
+  max-width: 880px;
   clear: both;
   margin: 20px 0 10px 30px;
   .viewport {
-    max-width: 840px;
+    max-width: 879px;
     height: 576px;
     overflow: hidden; 
     position: relative;
+    left: 26px;
   }
   .overview { 
+    max-width: 860px;
+    padding: 0px;
     list-style: none;
     position: absolute; 
-    left: 60px; 
     top: 0; 
   }
   .thumb {
@@ -38,7 +40,7 @@
   .scrollbar {
     position: relative;
     float: right;
-    width: 15px; 
+    width: 16px; 
     margin-right: 3px; 
   }
   .track { 
@@ -73,19 +75,22 @@
   color: #797478;
   font: 9px/1.45 Verdana, Helvetica, sans-serif;
   float: left;
-  max-height: 217px;
-  max-width: 160px;
   margin: 0px 10px 0 10px;
+  min-height: 170px;
+  max-width: 170px;
   a {
     line-height: 0;
     img { 
+      text-align: left;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px;
+      max-height: 170px;
+      max-width: 160px;
       &:hover {    
-      -webkit-transform: scale(1.50) rotate(0.1deg);
-      -ms-transform: scale(1.50) rotate(0.1deg);
-      transform: scale(1.50) rotate(0.1deg);
+      -webkit-transform: scale(1.75) rotate(0.1deg);
+      -ms-transform: scale(1.75) rotate(0.1deg);
+      transform: scale(1.75) rotate(0.1deg);
       -webkit-transition: -webkit-transform ease .75s;
       -ms-transition:         transform ease .75s;
       transition:         transform ease .75s;

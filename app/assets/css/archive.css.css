@@ -1,0 +1,119 @@
+/************************************************************************/
+/* 1. TYPOGRAPHY */
+/************************************************************************/
+/************************************************************************/
+/* 2. COLORS */
+/************************************************************************/
+/* #000000;  /******Black******/
+/* #FFFFFF;  /******White******/
+/* #FFBF2A;  /*****Yellow******/
+/* #403D3D;  /****Dark Grey****/
+/* #7F797B;  /****Light Grey***/
+/******Black******/
+/******Black******/
+/******White******/
+/******Black******/
+/******White******/
+/******White******/
+/******Black******/
+/****Dark Grey****/
+/****Light Grey***/
+/******Black******/
+/******Black******/
+/*****Yellow******/
+/****Dark Grey****/
+/*****Yellow******/
+/******Black******/
+/******Black******/
+/************************************************************************/
+/* 3. MIX-INs */
+/************************************************************************/
+/************************************************************************/
+/* 1. THUMBNAIL GALLERY  */
+/************************************************************************/
+#scrollbar1 {
+  /* Thumbnail gallery and scrollbar */
+  max-width: 880px;
+  clear: both;
+  margin: 20px 0 10px 30px; }
+  #scrollbar1 .viewport {
+    max-width: 879px;
+    height: 576px;
+    overflow: hidden;
+    position: relative;
+    left: 26px; }
+  #scrollbar1 .overview {
+    max-width: 860px;
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    top: 0; }
+  #scrollbar1 .thumb {
+    background-color: #403D3D;
+    border-radius: 5px;
+    height: 20px;
+    width: 13px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0; }
+    #scrollbar1 .thumb .end {
+      overflow: hidden;
+      height: 5px;
+      width: 13px; }
+  #scrollbar1 .scrollbar {
+    position: relative;
+    float: right;
+    width: 16px;
+    margin-right: 3px; }
+  #scrollbar1 .track {
+    background-color: #000000;
+    height: 100%;
+    width: 13px;
+    position: relative;
+    padding: 0 1px; }
+  #scrollbar1 .disable {
+    display: none; }
+
+.noSelect {
+  /* Prevents elements from being selected when scrollbar is grabbed and dragged. */
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+/************************************************************************/
+/* 2. THUMBNAILS  */
+/************************************************************************/
+.galleryItem {
+  /* Each individual comic thumbnail */
+  color: #797478;
+  font: 9px/1.45 Verdana, Helvetica, sans-serif;
+  float: left;
+  margin: 0px 10px 0 10px;
+  min-height: 170px;
+  max-width: 170px; }
+  .galleryItem a {
+    line-height: 0; }
+    .galleryItem a img {
+      text-align: left;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      max-height: 170px;
+      max-width: 160px; }
+      .galleryItem a img:hover {
+        -webkit-transform: scale(1.75) rotate(0.1deg);
+        -ms-transform: scale(1.75) rotate(0.1deg);
+        transform: scale(1.75) rotate(0.1deg);
+        -webkit-transition: -webkit-transform ease 0.75s;
+        -ms-transition: transform ease 0.75s;
+        transition: transform ease 0.75s; }
+  .galleryItem h3 {
+    text-transform: uppercase;
+    color: #7F797B;
+    /****Light Grey***/ }
+  .galleryItem h4 {
+    color: #403D3D;
+    /****Dark Grey****/ }

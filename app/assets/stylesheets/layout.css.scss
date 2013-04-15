@@ -83,6 +83,9 @@ p {
   font-family: $body-text-font;
 }
 
+a {
+  text-decoration: none;
+}
 
 h1 { 
   color: $banner-text-color;
@@ -98,31 +101,12 @@ h2 {
 	font: #{$h2-size}/#{$h2-leading} $title-text-font;
 }
 
-.button { /*-------------------------------------------------TO WORK ON */
-  background-color: $button-bg-color;
-  border-radius: 5px;
-  color: $button-txt-color;
-  margin: 0 auto;
-	padding: 5px;
-  text-align: center;
-	width: 5em;
-	a{
-    color: $button-txt-color;
-		text-decoration: none;
-		text-align: center;
-    &:hover {
-      background-color: $button-hov-color;
-    }
-	}
-	&.admin{
-		margin-left: 8px;
-	}
+h3 {
+  font-size: $base-font-size/1.5;
 }
 
-.button-first {
-    padding-left: 16px;
-    height: 45px;
-    width: 45px;
+h4 {
+  font-size: $base-font-size/1.25;
 }
 
 

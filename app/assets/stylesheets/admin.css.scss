@@ -1,3 +1,5 @@
+@import 'variables';
+
 /*-------------------------------------------------------------------------*/
 /*----------------------------------Colors---------------------------------*/
 /*-------------------------------------------------------------------------*/
@@ -37,28 +39,66 @@ $error-txt:          #000000;  /******Black******/
 /*-------------------------------------------------------------------------*/
 /*--------------------------------Admin Page-------------------------------*/
 /*-------------------------------------------------------------------------*/
-table.gridtable {
+table {
+	margin: 0 auto;
+	table-layout: auto;
+	max-width: 840px;
 	font-family: 'Tenor Sans', sans-serif;
-  text-align: center;
-	width: 100%;
-	th {
-		&:first-child{
-			max-width: 160px;
-			padding: 0;
+	td {
+		text-align: center;
+		padding: 0 16px;
+		&.col2 {
+			width: 60%;
+			padding-left: 16px;
 		}
 	}
 	a {
-	color: $body-text;
-	text-decoration: none;
-	border-bottom: 1px solid black;
+		color: $body-text;
+		text-decoration: none;
+		border-bottom: 1px solid black;
 	}
 }
 
 
-.add_comic {
-	width: 6em;
-	border: 1px solid black;
+
+
+td.title {
+	a img {
+		height: 0;
+		max-width: 200px;
+	}
+	p {
+		text-align: left;
+		max-width: 200px;
+		margin: 0 auto; 
+	}
+	p:hover a {
+		img {
+			height: auto;
+		}
+	}
 }
+
+
+
+.add_comic {
+	padding-top: 4px;
+	border-radius: 5px;
+	width: $baseline * 4;
+	background-color: $button-bg-color;
+	color: $button-txt-color;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	@include transition(background-color);
+	&:hover {
+		background-color: $button-txt-color;
+		color: $button-bg-color;
+	}
+}
+
+
 
 
 .index_head a {

@@ -37,12 +37,9 @@ class ComicUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
    version :thumb do
-     process :resize_to_limit => [160, 160]
+     process :resize_to_limit => [480, 480]
    end
 
-   version :med_thumb do
-     process :resize_to_limit => [300, 300]
-   end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:

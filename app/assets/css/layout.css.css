@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/************************************************************************/
+/* 1. TYPOGRAPHY */
+/************************************************************************/
+/************************************************************************/
+/* 2. COLORS */
+/************************************************************************/
+/* #000000;  /******Black******/
+/* #FFFFFF;  /******White******/
+/* #FFBF2A;  /*****Yellow******/
+/* #403D3D;  /****Dark Grey****/
+/* #7F797B;  /****Light Grey***/
+/******Black******/
+/******Black******/
+/******White******/
+/******Black******/
+/******White******/
+/******White******/
+/******Black******/
+/****Dark Grey****/
+/****Light Grey***/
+/******Black******/
+/******Black******/
+/*****Yellow******/
+/****Dark Grey****/
+/*****Yellow******/
+/******Black******/
+/******Black******/
+/************************************************************************/
+/* 3. MIX-INs */
+/************************************************************************/
+/************************************************************************/
+/* 1. CSS RESET */
+/************************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+/************************************************************************/
+/* 2. TYPOGRAPHY AND GENERAL STYLING */
+/************************************************************************/
+html {
+  background: black; }
+
+body {
+  color: white;
+  font: 300 16px/24px "NewCicleFina"; }
+
+p {
+  line-height: 24px;
+  font-size: 16px;
+  color: white;
+  font-family: "NewCicleFina"; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  color: white;
+  font: 72px/108px "!PaulMaulRegular";
+  padding-left: 32px; }
+  h1 a {
+    color: white;
+    text-decoration: none; }
+
+h2 {
+  font: 48px/72px "Tenor Sans"; }
+
+h3 {
+  font-size: 10.66667px; }
+
+h4 {
+  font-size: 12.8px; }
+
+/************************************************************************/
+/* 3. LAYOUT */
+/************************************************************************/
+.container {
+  background: black;
+  max-width: 940px; }
+
+.content {
+  max-width: 900px;
+  background-color: black;
+  min-height: 600px; }
+
+.container, .content, .comic, .comicnav, .nav {
+  margin: 0 auto; }
+
+.hidden {
+  visibility: hidden; }
+
+/************************************************************************/
+/* 4. MAIN NAVIGATION */
+/************************************************************************/
+nav {
+  background: transparent;
+  margin-top: 24px; }
+  nav ul li {
+    display: inline-block;
+    padding: 0 6px 0 6px; }
+    nav ul li a {
+      color: #ffbf2a;
+      font: bolder 16px/24px "AaarghNormal";
+      text-decoration: none;
+      letter-spacing: .5px;
+      -webkit-transition: color 0.2s ease-in-out;
+      -moz-transition: color 0.2s ease-in-out;
+      -o-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out; }
+      nav ul li a:hover {
+        color: #403d3d; }

@@ -1,0 +1,128 @@
+/************************************************************************/
+/* 1. TYPOGRAPHY */
+/************************************************************************/
+/************************************************************************/
+/* 2. COLORS */
+/************************************************************************/
+/* #000000;  /******Black******/
+/* #FFFFFF;  /******White******/
+/* #FFBF2A;  /*****Yellow******/
+/* #403D3D;  /****Dark Grey****/
+/* #7F797B;  /****Light Grey***/
+/******Black******/
+/******Black******/
+/******White******/
+/******Black******/
+/******White******/
+/******White******/
+/******Black******/
+/****Dark Grey****/
+/****Light Grey***/
+/******Black******/
+/******Black******/
+/*****Yellow******/
+/****Dark Grey****/
+/*****Yellow******/
+/******Black******/
+/******Black******/
+/************************************************************************/
+/* 3. MIX-INs */
+/************************************************************************/
+/*-------------------------------------------------------------------------*/
+/*----------------------------------Colors---------------------------------*/
+/*-------------------------------------------------------------------------*/
+/* #000000;  /******Black******/
+/* #FFFFFF;  /******White******/
+/* #FFBF2A;  /*****Yellow******/
+/* #403D3D;  /****Dark Grey****/
+/* #7F797B;  /****Light Grey***/
+/******Black******/
+/******Black******/
+/******White******/
+/******Black******/
+/******White******/
+/******White******/
+/******Black******/
+/****Dark Grey****/
+/****Light Grey***/
+/******Black******/
+/******Black******/
+/*****Yellow******/
+/****Dark Grey****/
+/******White******/
+/******Black******/
+/******Black******/
+/*-------------------------------------------------------------------------*/
+/*--------------------------------Admin Page-------------------------------*/
+/*-------------------------------------------------------------------------*/
+table {
+  margin: 0 auto;
+  table-layout: auto;
+  max-width: 840px;
+  font-family: "Tenor Sans", sans-serif; }
+  table td {
+    text-align: center;
+    padding: 0 16px; }
+    table td.col2 {
+      width: 60%;
+      padding-left: 16px; }
+  table a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid black; }
+
+td.title a img {
+  height: 0;
+  max-width: 200px; }
+td.title p {
+  text-align: left;
+  max-width: 200px;
+  margin: 0 auto; }
+td.title p:hover a img {
+  height: auto; }
+
+.add_comic {
+  padding-top: 4px;
+  border-radius: 5px;
+  width: 96px;
+  background-color: #ffbf2a;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out; }
+  .add_comic:hover {
+    background-color: black;
+    color: #ffbf2a; }
+
+.index_head a {
+  text-decoration: none;
+  color: white; }
+
+.edit-preview {
+  text-align: center; }
+
+.form {
+  font-family: "Tenor Sans", sans-serif;
+  text-align: center; }
+  .form ul {
+    display: inline-block;
+    padding: 8px;
+    list-style: none; }
+
+#error_explanation {
+  background: red;
+  margin: 0 auto;
+  max-width: 580px;
+  font-family: "Tenor Sans", sans-serif; }
+  #error_explanation ul {
+    color: black;
+    list-style: none; }
+
+.field_with_errors {
+  padding: 5px;
+  background-color: red; }
