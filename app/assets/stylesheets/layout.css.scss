@@ -90,7 +90,8 @@ a {
 h1 { 
   color: $banner-text-color;
   font: #{$h1-size}/#{$h1-leading} $banner-text-font;
-  padding-left:  32px;
+  margin-left:  $base-font-size * 2;
+  margin-top: $baseline;
   a {
     color: $banner-text-color;  
     text-decoration: none;
@@ -98,18 +99,24 @@ h1 {
 }
 
 h2 {
-	font: #{$h2-size}/#{$h2-leading} $title-text-font;
+	font: #{$h3-size}/#{$h3-leading} $title-text-font;
+  font-weight: bolder;
 }
 
-h3 {
-  font-size: $base-font-size/1.5;
+h3 {  
+  font: #{$h3-size}/#{$h3-leading} $title-text-font;
+  color: $thumb-title-color;
+  margin-left: 3px;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 h4 {
-  font-size: $base-font-size/1.25;
+  font: #{$h4-size}/#{$h4-leading} $title-text-font;
+  color: $thumb-date-color;
+  font-weight: 1600;
+  text-align: left;
 }
-
-
 
 
 
@@ -122,18 +129,25 @@ h4 {
 	max-width: 940px;
 }
 
-.content {
-	max-width: 900px;
-  background-color: $content-box-color;
-  min-height: 600px;
-}
-
 .container, .content, .comic, .comicnav, .nav {
   margin: 0 auto;
 }
 
+.content {
+	max-width: 900px;
+  background-color: $content-box-color;
+  min-height: 600px;
+  margin: $baseline;
+}
+
+
+
 .hidden {
   visibility: hidden;
+}
+
+.disable {
+  display: none;
 }
 
 
@@ -143,13 +157,12 @@ h4 {
 
 nav {
   background: transparent;
-  margin-top: $baseline;
   ul li {
     display: inline-block;
     padding: 0 6px 0 6px;
     a {
       color:           $nav-btn-txt-color;
-      font:            bolder #{$base-font-size}/#{$baseline} 'AaarghNormal';
+      font:            $nav-font;
       text-decoration: none;
       letter-spacing: .5px;
       @include transition(color);

@@ -14,14 +14,17 @@
 /******Black******/
 /******White******/
 /******Black******/
-/******White******/
+/****Light Grey***/
 /******White******/
 /******Black******/
 /****Dark Grey****/
 /****Light Grey***/
+/****Light Grey***/
+/****Dark Grey****/
 /******Black******/
 /******Black******/
 /*****Yellow******/
+/****Dark Grey****/
 /****Dark Grey****/
 /*****Yellow******/
 /******Black******/
@@ -91,33 +94,42 @@ html {
 
 body {
   color: white;
-  font: 300 16px/24px "NewCicleFina"; }
+  font: 300 16px/24px "AaarghNormal"; }
 
 p {
   line-height: 24px;
   font-size: 16px;
   color: white;
-  font-family: "NewCicleFina"; }
+  font-family: "AaarghNormal"; }
 
 a {
   text-decoration: none; }
 
 h1 {
   color: white;
-  font: 72px/108px "!PaulMaulRegular";
-  padding-left: 32px; }
+  font: 36px/54px "BloklettersViltstift";
+  margin-left: 32px;
+  margin-top: 24px; }
   h1 a {
     color: white;
     text-decoration: none; }
 
 h2 {
-  font: 48px/72px "Tenor Sans"; }
+  font: 16px/24px "AaarghNormal";
+  font-weight: bolder; }
 
 h3 {
-  font-size: 10.66667px; }
+  font: 16px/24px "AaarghNormal";
+  color: #7f797b;
+  margin-left: 3px;
+  text-transform: uppercase;
+  text-align: left; }
 
 h4 {
-  font-size: 12.8px; }
+  font: 16px/24px "AaarghNormal";
+  color: #403d3d;
+  font-weight: 1600;
+  text-align: left; }
 
 /************************************************************************/
 /* 3. LAYOUT */
@@ -126,29 +138,32 @@ h4 {
   background: black;
   max-width: 940px; }
 
-.content {
-  max-width: 900px;
-  background-color: black;
-  min-height: 600px; }
-
 .container, .content, .comic, .comicnav, .nav {
   margin: 0 auto; }
 
+.content {
+  max-width: 900px;
+  background-color: black;
+  min-height: 600px;
+  margin: 24px; }
+
 .hidden {
   visibility: hidden; }
+
+.disable {
+  display: none; }
 
 /************************************************************************/
 /* 4. MAIN NAVIGATION */
 /************************************************************************/
 nav {
-  background: transparent;
-  margin-top: 24px; }
+  background: transparent; }
   nav ul li {
     display: inline-block;
     padding: 0 6px 0 6px; }
     nav ul li a {
       color: #ffbf2a;
-      font: bolder 16px/24px "AaarghNormal";
+      font: 24px;
       text-decoration: none;
       letter-spacing: .5px;
       -webkit-transition: color 0.2s ease-in-out;

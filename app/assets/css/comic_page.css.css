@@ -13,14 +13,17 @@
 /******Black******/
 /******White******/
 /******Black******/
-/******White******/
+/****Light Grey***/
 /******White******/
 /******Black******/
 /****Dark Grey****/
 /****Light Grey***/
+/****Light Grey***/
+/****Dark Grey****/
 /******Black******/
 /******Black******/
 /*****Yellow******/
+/****Dark Grey****/
 /****Dark Grey****/
 /*****Yellow******/
 /******Black******/
@@ -32,9 +35,11 @@
 /* 1. COMIC TITLE */
 /************************************************************************/
 .title {
-  color: white;
-  margin-bottom: 12px;
+  font-family: "AaarghNormal";
+  color: #7f797b;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   width: 100%; }
 
 /************************************************************************/

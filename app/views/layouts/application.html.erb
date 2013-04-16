@@ -2,16 +2,17 @@
 <html>
 	<head>
 	  <title><%= full_title(yield(:title)) %></title>
-	  <%= stylesheet_link_tag    "application", media: "all" %>
-	  <%= stylesheet_link_tag    "custom",      media: "all" %>
+
+	  <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Istok+Web:400,700|Radley|Carme|Tenor+Sans|Tinos:400,700|Playfair+Display:400,700,900|Cinzel:400,900,700', media: "all" %>
 	  <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Sacramento|Special+Elite', media: "all" %>
-	  <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700|Radley|Carme|Tenor+Sans|Tinos:400,700|Playfair+Display:400,700,900|Cinzel:400,900,700' rel='stylesheet' type='text/css'>
+	 
+	  <%= stylesheet_link_tag    "application", media: "all" %>
 	  <%= javascript_include_tag "application" %>
-		<%= javascript_include_tag "jquery.tinyscrollbar.min" %>
  	 	<%= csrf_meta_tags %>
+ 	 	
   	<script type="text/javascript">
     	$(window).load(function(){
-      	$('#scrollbar1').tinyscrollbar();
+      	$('#gallery').tinyscrollbar();
     	});
 		</script>
 		
