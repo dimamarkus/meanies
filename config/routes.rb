@@ -1,6 +1,8 @@
 Meanies::Application.routes.draw do
 
   resources :comics
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy ]
 
   root to: 'static_pages#coming_soon'
 
@@ -10,6 +12,9 @@ Meanies::Application.routes.draw do
   match '/admin',   to: 'comics#index'
   match '/archive', to: 'comics#archive'
   
+  match '/signin',   to: 'sessions#new'
+  match '/signout',  to: 'sessions#destroy', via: :delete
+
   match '/feed',    to: 'comics#feed', :as => :feed, :defaults => { :format => 'atom' }
   match '/:number', to: 'comics#view', as: :page
  

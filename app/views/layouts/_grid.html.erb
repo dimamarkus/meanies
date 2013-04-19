@@ -1,0 +1,18 @@
+<!-- http://bohemianalps.com/tools/grid/ -->
+<%= stylesheet_link_tag    "hugrid", media: "all" %>
+<%= javascript_include_tag "hugrid" %>
+<script type="text/javascript">
+  $(document).ready(function() {
+      pageUnits = 'px';
+      colUnits = 'px';
+      pagewidth = 940;
+      columns = 16;
+      columnwidth = 40;
+      gutterwidth = 20;
+      pagetopmargin = 24;
+      rowheight = 24;
+      gridonload = 'off';
+      makehugrid();
+      setgridonload();
+  });
+</script>

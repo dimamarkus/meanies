@@ -1,5 +1,7 @@
 class ComicsController < ApplicationController
 
+  before_filter :signed_in_user, only: [:new, :index, :edit, :update] 
+
   def index
     @comics = Comic.all
   end
@@ -72,7 +74,14 @@ class ComicsController < ApplicationController
 	  end
   end
 
-  
+  private
+ 
+    def signed_in_user
+      unless signed_in?
+        store_location
+        redirect_to signin_path, notice: "Please sign in."
+      end
+    end
 
 
 end
