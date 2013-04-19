@@ -44,6 +44,8 @@
 	}
 }
 
+
+
 .icon {
   background:  transparent;
   color:       $com-nav-icon-color;
@@ -54,6 +56,18 @@
   &:hover {
     color: $com-nav-hov-color;
   }
+}
+
+#rss:hover {
+		color: $nav-btn-txt-color; 
+}
+
+#arrow {
+	color: $nav-btn-txt-color;
+	font-size:   $com-nav-icon-size ;
+	&:hover {
+		color: $nav-btn-hov-color;
+	} 
 }
 
 .social {
@@ -92,5 +106,6 @@
   	left: 230px;
   }
 }
+
 
 

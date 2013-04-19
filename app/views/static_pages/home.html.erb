@@ -10,40 +10,44 @@
 	<%= link_to image_tag(Comic.last.image_url), page_url(Comic.last.number-1) %>
 </div>
 
+
 <div class="comicnav">
 	<ul>
-		<li><%= link_to '', page_url(Comic.first.number),  class: 'icon icon-fast-backward' %></li>
-		<li><%= link_to '', page_url(Comic.last.number-1), class: 'icon icon-left-dir' %></li>
-		<li><%= link_to '', page_url(random), class: 'icon icon-shuffle' %></li>
-		<li><%= link_to '', '#', class: 'icon icon-right-dir hidden' %></li>
-		<li><%= link_to '', '#', class: 'icon icon-fast-forward hidden' %></li>
-		<li>
+			<li><%= link_to '', feed_path, class: 'icon-rss icon', id: 'rss', title: "Subscribe!" %></li>
+			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon', title: "Go to first" %></li>
+			<li><%= link_to '', page_url(Comic.last.number-1),     method: 'get', class: 'icon-left-dir icon', id: "arrow", title: "Previous comic" %></li>
+			<li><%= link_to '', page_url(random), method: 'get', class: 'icon-shuffle icon', title: "Random comic" %></li>
+			<li><%= link_to '', '#', class: 'icon icon-right-dir hidden' %></li>
+			<li><%= link_to '', '#', class: 'icon icon-fast-forward hidden' %></li>
+			<li>
 				<div class="social icon icon-share">
 					<ul>
 	          <a class="smedia icon icon-facebook-circled" 
 	          	 target="_blank" 
 	          	 href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= Comic.last.number %>&p[summary]=My new favorite web comic." 
-	          	 title="Share this webpage on Facebook" =>
+	          	 title="Share this comic on Facebook" =>
 	          </a>
 	          <a class="smedia icon icon-twitter-circled" 
 		           target="_blank" 
 		           href="http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/<%= Comic.last.number %>" 
-		           title="Share this webpage on Twitter">
+		           title="Share this comic on Twitter">
 	        	</a>
 	          <a class="smedia icon icon-gplus-circled" 
 	          	 target="_blank"
-	             href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= Comic.last.number %>">
+	             href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= Comic.last.number %>"
+	             title="Share this comic on Google Plus">
 	          </a>
 	          <a class="smedia icon icon-tumblr-circled"
 	         		 target="_blank"  
-	         		 href="http://www.tumblr.com/share?v=3&u=marchofthemeanies.com/<%= Comic.last.number %>&t=%20My%20new%20favorite%20web%20comic">
+	         		 href="http://www.tumblr.com/share?v=3&u=marchofthemeanies.com/<%= Comic.last.number %>&t=%20My%20new%20favorite%20web%20comic"
+	         		 title="Share this comic on Tumblr">
 	          </a>
 	          <a class="smedia icon icon-mail" 
-	          	 href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= Comic.last.number %>">
+	          	 href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= Comic.last.number %>"
+	          	 title="Email this comic to a friend">
 					  </a>
 					</ul>
 				</div>	
 			</li>
 	</ul>
 </div>
-
