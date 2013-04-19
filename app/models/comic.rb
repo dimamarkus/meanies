@@ -2,7 +2,7 @@ class Comic < ActiveRecord::Base
 
 	include NumberMover
 
-  attr_accessible :image, :title, :permalink
+  attr_accessible :image, :title
 
   scope :sorted, order('comics.number ASC')
 

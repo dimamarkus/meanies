@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406231755) do
+ActiveRecord::Schema.define(:version => 20130418214658) do
 
   create_table "comics", :force => true do |t|
     t.string   "image"
@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(:version => 20130406231755) do
     t.datetime "updated_at", :null => false
     t.string   "title"
     t.integer  "number"
-    t.string   "permalink"
   end
 
 end

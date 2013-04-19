@@ -9,9 +9,10 @@ Meanies::Application.routes.draw do
   # match '/archive', to: 'comics#index'
   match '/admin',   to: 'comics#index'
   match '/archive', to: 'comics#archive'
+  
+  match '/feed',    to: 'comics#feed', :as => :feed, :defaults => { :format => 'atom' }
   match '/:number', to: 'comics#view', as: :page
  
-
 
 
   # The priority is based upon order of creation:
