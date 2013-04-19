@@ -72,15 +72,17 @@
 
 .social {
 	position: relative;
-		a {
+  		a {
       background: transparent;
-      display:    inline-block;
+      display:    inline;
 		  position:   absolute;
       opacity:    0;
       top:        0;
-			-webkit-transition: left 0.75s cubic-bezier(0.1,0.8,0.9,1), opacity .5s linear;
-				 -moz-transition: left 0.75s cubic-bezier(0.1,0.8,0.9,1), opacity .5s linear;
-			 		 -o-transition: left 0.75s cubic-bezier(0.1,0.8,0.9,1), opacity .5s linear;
+      left:3px;
+      -webkit-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1), opacity 1s linear;
+      -moz-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1),opacity 1s linear;
+      -o-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1), opacity 1s linear;
+
 	}
 }
 
@@ -106,6 +108,3 @@
   	left: 230px;
   }
 }
-
-
-
