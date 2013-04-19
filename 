@@ -1,0 +1,60 @@
+* e7b74ff (HEAD, origin/master, origin/HEAD, master, create-login-capability) add login functionality
+* d8b832a fix the social button animation
+* a667d89 add 'subscribe' button and alt text on links
+* 474e78d delete garbage
+* cf5ad72 add Atom feed capability
+* 95b73d4 clean up files
+* 599a96b refactor code and update fonts
+* 09b4632 clean garbage
+* d4a1092 (implement-jquery-slideshow) fix up admin section styles
+* 471ec97 delete compiled css
+* 187b1b4 refactor and split stylesheets
+*   b9e5ef3 Merge branch 'add-sharing-button'
+|\  
+| * c1c827d merge branches
+* | 82598ec merge add-sharing-buttn branch
+* |   87b7a95 Merge branch 'refs/heads/add-sharing-button'
+|\ \  
+| |/  
+| * 4824b44 delete archive.css file
+| * 41a32c3 add social links and page titles
+| * ee20687 added social media buttons
+* | 11d4d16 create archive.css.scss
+|/  
+* fa26f5b delete entypo garabage
+* 90ed6cf switched from entypo to fontello
+* c2d27cc add dates to archive thumbnails
+* 65fc986 added titles to archive and split CSS into different stylesheets
+* 5bc20ab add scroll bar to archive
+* 92f395f set content area height
+* c818f89 fix up colors in stylesheet
+* cf996f0 fix comic navigation positions and fix css bug
+* 877279d add shuffle function
+* 70213fe add icons to comic nav and fix styling
+*   4eca389 Merge branch 'master' of github.com:dmi3000/meanies
+|\  
+| * e18a52b a little cleaning
+* | 15a6647 refactor css
+|/  
+* a6e4dfc set blank stiling with whites/blacks
+* e9a20a8 update to blank styles
+* 4fe5c7c garbage deletion
+*   e496440 fix bugs again
+|\  
+| * 6d8dfe8 fix bugs
+* | 901d2db fix bugs from home
+|/  
+* ed4441f create clean uri and comic nav
+* f3b0136 add automatic comic numbering
+* 9b6be02 Add the ability to upload to manage comics
+* f45531e fix layout links and routes for home/about pages
+* cd7f057 Update about page and add prototype styles
+* b0897c3 Link H1 to font family and put in lorem data into About page
+* 311c1fb Bring in my template and heads-up grid
+* 9b91dc9 Create Title helper and switch to new hash syntax
+* 99c408b Finish static pages
+* 0678b99 Speed up RSpec
+* 6938b56 Add a StaticPages controller
+* bba4af5 Improve the README
+* 9794bd6 Install RSpec
+* 7487980 Initial commit
