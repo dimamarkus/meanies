@@ -64,14 +64,14 @@
        
 .galleryItem {  /* Each individual comic thumbnail */
   float: left;
-  margin: 0px 10px $baseline 10px;
+  margin: 0px 10px ($baseline*2) 10px;
   max-width: 168px;
+  max-height: 216px;
   text-align: center;
   a img { 
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px;
-      max-height: 160px;
       max-width: 160px;
       &:hover {    
       -webkit-transform: scale(1.75) rotate(0.1deg);

@@ -42,44 +42,53 @@ $error-txt:          #000000;  /******Black******/
 table {
 	margin: 0 auto;
 	table-layout: auto;
-	max-width: 840px;
+	width: 100%;
 	font-family: 'Tenor Sans', sans-serif;
 	td {
+		vertical-align:middle;
+		a.icon {
+			color: $nav-btn-bg-color;
+			&:hover {
+				color: $nav-btn-txt-color;
+			}
+		}
 		text-align: center;
 		padding: 0 16px;
 		&.col2 {
 			width: 60%;
 			padding-left: 16px;
+			a img{
+				height: 0;
+				max-width: 200px;
+			}
+			p {
+				text-align: left;
+				max-width: 340px;
+				margin: 0 auto; 		
+				&:hover a img{
+					margin: 0 auto; 
+					height: auto;
+				}		
+			}
 		}
-	}
-	a {
-		color: $body-text;
-		text-decoration: none;
-		border-bottom: 1px solid black;
-	}
-}
-
-
-
-
-td.title {
-	a img {
-		height: 0;
-		max-width: 200px;
-	}
-	p {
-		text-align: left;
-		max-width: 200px;
-		margin: 0 auto; 
-	}
-	p:hover a {
-		img {
-			height: auto;
+		&.col4 {
+			width: 100%;
 		}
 	}
 }
 
 
+
+#comic-index {
+	background-color: #403D3D;  /****Dark Grey****/
+	overflow: auto;
+	height: 90%;
+	margin-bottom: $baseline;
+}
+
+
+.odd { background: darken(#7F797B, 15%);  /****Light Grey***/}
+.even { background: none; }
 
 .add_comic {
 	padding-top: 4px;
@@ -101,10 +110,7 @@ td.title {
 
 
 
-.index_head a {
-	text-decoration: none;
-	color: $title-text;
-}
+
 
 .edit-preview {
 	text-align: center;
@@ -114,7 +120,7 @@ td.title {
 	font-family: 'Tenor Sans', sans-serif;
 	text-align: center;
 	ul {
-		display: inline-block;
+		// display: inline-block;
 		padding: 8px;
 		list-style: none;
 	}

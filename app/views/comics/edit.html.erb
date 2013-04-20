@@ -1,4 +1,6 @@
-<h1>Editing comic</h1>
+<% provide(:title, 'Edit a Comic') %>
+
+<h2>Editing comic</h2>
 
 <div class="edit-preview"><%= image_tag @comic.image_url(:thumb) %></div>
 <%= render 'form' %>

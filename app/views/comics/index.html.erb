@@ -1,23 +1,28 @@
+<% provide(:title, 'Comic Index') %>
 
+<h2>Comic Index</h2>
 
-<h2>Listing comics</h2>
+<div id="comic-index">
+  <table>
+    <% @comics.each do |comic| %>
+    <tr class="<%= cycle('odd', 'even') %>">
+      <td class="col1">
+           <%= comic.number %>
+      </td>
+      <td class="col2 title">
+        <p><%= comic.title %><%= link_to  (image_tag comic.image_url(:thumb)), page_url(comic.number.to_s) %></p>
+      </td>
+      <td class="col3">
+           <%= comic.created_at.strftime('%m/%d/%Y')   %>
+      </td>
+      <td class="col4">
+           <%= link_to '', edit_comic_path(comic),   method: 'get', class: 'icon-pencil icon' %>
+           <%= link_to '', comic, method: :delete, data: { confirm: 'Are you sure?'}, class: 'icon-cancel icon ' %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>
 
-<table>
-  <tr class="index_head">
-  </tr>
+<%= link_to raw('<div class="button add_comic">Add Comic</div>'), new_comic_path %>
 
-  <tr class="index-row">
-      <% @comics.each do |comic| %>
-    <td class="col1"><%= comic.number %></td>
-    <td class="title col2"><p><%= comic.title %><%= link_to  (image_tag comic.image_url(:thumb)), page_url(comic.number.to_s), class: "titthumb" %></p></td>
-    <td class="col3"><%= comic.created_at.strftime('%m/%d/%Y')   %></td>
-    <td class="col4"><%= link_to '', edit_comic_path(comic),   method: 'get', class: 'icon-pencil icon' %></td>
-    <td class="col5"><%= link_to '', comic, method: :delete, data: { confirm: 'Are you sure?'}, class: 'icon-cancel icon' %></td>
-  </tr>
-  <% end %>
-</table>
-  <br />
-
-  <%= link_to raw('<div class="button add_comic">Add Comic</div>'), new_comic_path %>
-
-<li></li>
