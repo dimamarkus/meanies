@@ -1,6 +1,16 @@
 <% provide(:title, 'Comic Index') %>
 
-<h2>Comic Index</h2>
+
+
+<div id="index-heading">
+  <table>
+    <tr>
+      <td><h2>Comic Index</h2></td>
+      <td class="right"><%= link_to raw('<div class="button add_comic">Add Comic</div>'), new_comic_path %></td>
+    </tr>
+  </table>
+</div>
+
 
 <div id="comic-index">
   <table>
@@ -24,5 +34,5 @@
   </table>
 </div>
 
-<%= link_to raw('<div class="button add_comic">Add Comic</div>'), new_comic_path %>
+
 

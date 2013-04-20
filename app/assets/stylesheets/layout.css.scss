@@ -175,3 +175,26 @@ nav {
 
 
 
+/*------- Change color of the nav link of the current page -------*/
+
+body {
+  &.home_controller nav a#home-link {
+    color: $title-text-color;
+  }
+
+  &.archive_controller nav a#archive-link {
+    color: $title-text-color;
+  }
+
+  &.about_controller nav a#about-link {
+    color: $title-text-color;
+  }
+
+  &.index_controller nav a#index-link {
+    color: $title-text-color;
+  }
+ 
+}
+
+
+
