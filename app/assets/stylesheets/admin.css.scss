@@ -57,31 +57,21 @@ table {
 	overflow: auto;
 	height: 90%;
 	margin-bottom: $baseline;
+	clear: both;
 }
 
 
-#index-heading {
-	margin-bottom: $baseline;
-	h2 {
-		text-align: left;
-	}
-
-}
 
 .odd { background: darken(#7F797B, 15%);  /****Light Grey***/}
 .even { background: none; }
 
 .add_comic {
 	width: $baseline * 8;
-	margin: 0 0 0 65%;
 	text-transform: uppercase;
-}
-
-.edit-preview {
+	float: right;
+	margin-bottom: $baseline;
 	text-align: center;
 }
-
-
 
 
 

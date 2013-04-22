@@ -72,12 +72,8 @@ table {
   /****Dark Grey****/
   overflow: auto;
   height: 90%;
-  margin-bottom: 24px; }
-
-#index-heading {
-  margin-bottom: 24px; }
-  #index-heading h2 {
-    text-align: left; }
+  margin-bottom: 24px;
+  clear: both; }
 
 .odd {
   background: #585455;
@@ -88,8 +84,7 @@ table {
 
 .add_comic {
   width: 192px;
-  margin: 0 0 0 65%;
-  text-transform: uppercase; }
-
-.edit-preview {
+  text-transform: uppercase;
+  float: right;
+  margin-bottom: 24px;
   text-align: center; }

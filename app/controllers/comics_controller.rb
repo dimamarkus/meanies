@@ -7,7 +7,7 @@ class ComicsController < ApplicationController
   end
 
   def archive
-    @comics = Comic.all
+    @comics = Comic.order("number DESC")
   end
 
   def view
@@ -53,7 +53,7 @@ class ComicsController < ApplicationController
     @comic.move_to_number(nil)
     @comic.destroy
 
-    redirect_to comics_path
+    redirect_to comics_path, notice: 'Comic was successfully destroyed.'
   end
 
   def feed
