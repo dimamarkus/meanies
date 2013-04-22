@@ -13,7 +13,7 @@
 
 <div class="comicnav">
 	<ul>
-			<li><%= link_to '', feed_path, class: 'icon-rss icon', id: 'rss', title: "Subscribe!" %></li>
+			<li><%= link_to '', feed_path, class: 'icon-rss icon', id: 'feed-icon', title: "Subscribe!" %></li>
 			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon', title: "Go to first" %></li>
 			<li><%= link_to '', page_url(Comic.last.number-1),     method: 'get', class: 'icon-left-dir icon', id: "arrow", title: "Previous comic" %></li>
 			<li><%= link_to '', page_url(random), method: 'get', class: 'icon-shuffle icon', title: "Random comic" %></li>

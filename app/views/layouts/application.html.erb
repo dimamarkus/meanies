@@ -11,11 +11,7 @@
 		<%= auto_discovery_link_tag :rss, "/feed.rss" %>
 
 
-		  	<script type="text/javascript">
-    	$(window).load(function(){
-      	$('#gallery').tinyscrollbar();
-    	});
-
+		<script type="text/javascript">
 		  function getFile(){
 		  	document.getElementById("comic_image").click();
 		  }
@@ -26,7 +22,7 @@
 	<body class="<%= params[:action] %>_controller">
 		<div class='container'>
 
-			<h1><%= link_to 'march of the meanies', root_path %></h2>
+			<h1><%= link_to 'march of the meanies', root_path %></h1>
 
 			<div class="content">
 
@@ -40,7 +36,8 @@
 			<%= render 'layouts/navigation' %>
 		</div>
 		
-			<%= render 'layouts/grid' %>
 
+
+			<%= render 'layouts/grid' %>
 	</body>
 </html>

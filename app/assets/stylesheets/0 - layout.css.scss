@@ -1,9 +1,7 @@
 @import "variables";
 
-@charset "UTF-8";
-
 /************************************************************************/
-/* 1. CSS RESET */
+/* 0-1   CSS RESET                                                      */
 /************************************************************************/
 
 html, body, div, span, applet, object, iframe,
@@ -19,26 +17,26 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  border:    0;
+  margin:    0;
+  font:      inherit;
   font-size: 100%;
-  font: inherit;
+  padding:   0;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-  display: block;
+  display:     block;
 }
 body {
   line-height: 1;
 }
 ol, ul {
-  list-style: none;
+  list-style:  none;
 }
 blockquote, q {
-  quotes: none;
+  quotes:      none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -51,11 +49,11 @@ table {
 }
 
 * {
+  border:  none;
+  outline: none;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  border: none;
-  outline: none;
 }
 
 ul, ol, li {
@@ -67,8 +65,10 @@ ul, ol, li {
 
 
 /************************************************************************/
-/* 2. TYPOGRAPHY AND GENERAL STYLING */
+/* 0-2   TYPOGRAPHY AND GENERAL STYLING                                 */
 /************************************************************************/
+
+@charset "UTF-8";
 
 html {
   background: $background-color;
@@ -76,13 +76,14 @@ html {
 
 body {
   color: $body-text-color;
-  font: 300 #{$base-font-size}/#{$baseline} $body-text-font;}
+  font: 300 #{$base-font-size}/#{$baseline} $body-text-font;
+}
 
 p {
-  line-height: $baseline;
-  font-size:   $base-font-size;  
   color:       $body-text-color;
   font-family: $body-text-font;
+  font-size:   $base-font-size;  
+  line-height: $baseline;
 }
 
 a {
@@ -93,7 +94,7 @@ h1 {
   color: $banner-text-color;
   font: #{$h1-size}/#{$h1-leading} $banner-text-font;
   margin-left:  $base-font-size * 2;
-  margin-top: $baseline;
+  margin-top:   $baseline;
   a {
     color: $banner-text-color;  
     text-decoration: none;
@@ -106,67 +107,70 @@ h2 {
 }
 
 h3 {  
-  font: #{$h3-size}/#{$h3-leading} $title-text-font;
   color: $thumb-title-color;
-  margin-left: 3px;
+  font: #{$h3-size}/#{$h3-leading} $title-text-font;
+  margin-left:    3px;
+  text-align:     left;
   text-transform: uppercase;
-  text-align: left;
 }
 
 h4 {
-  font: #{$h4-size}/#{$h4-leading} $title-text-font;
   color: $thumb-date-color;
+  font: #{$h4-size}/#{$h4-leading} $title-text-font;
   font-weight: 1600;
-  text-align: left;
+  text-align:  left;
 }
+
+
 
 
 
 /************************************************************************/
-/* 3. LAYOUT */
+/* 0-3   LAYOUT                                                         */
 /************************************************************************/
 
 .container {
 	background: $container-color;
-	max-width: 940px;
+	max-width:  940px;
 }
 
 .container, .content, .comic, .comicnav, .nav {
-  margin: 0 auto;
+  margin:     0 auto;
 }
 
 .content {
-	max-width: 900px;
   background-color: $content-box-color;
-  height: 600px;
-  margin: $baseline;
+  height:     600px;
+  margin:     $baseline;
+  max-width:  900px;
 }
-
-
 
 .hidden {
   visibility: hidden;
 }
 
 .disable {
-  display: none;
+  display:    none;
 }
 
 
+
+
+
 /************************************************************************/
-/* 4. MAIN NAVIGATION */
+/* 0-4   MAIN NAVIGATION                                                */
 /************************************************************************/
 
 nav {
   background: transparent;
   ul li {
-    display: inline-block;
-    padding: 0 6px 0 12px;
+    display:  inline-block;
+    padding:  0 6px 0 12px;
     a {
       color:           $nav-btn-txt-color;
       font:            $nav-font;
+      letter-spacing:  .5px;
       text-decoration: none;
-      letter-spacing: .5px;
       @include transition(color);
       &:hover {
         color: $nav-btn-hov-color;
@@ -174,7 +178,6 @@ nav {
     } 
   } 
 } 
-
 
 
 /*------- Change color of the nav link of the current page -------*/
@@ -195,13 +198,13 @@ body {
   &.index_controller nav a#index-link {
     color: $title-text-color;
   }
- 
 }
 
 
 
+
 /************************************************************************/
-/* 4. FLASH NOTICES */
+/* 0-5   FLASH NOTICES                                                  */
 /************************************************************************/
 
 .alert {
@@ -220,32 +223,33 @@ body {
 
 
 
+/************************************************************************/
+/* 0-6   BUTTONS                                                        */
+/************************************************************************/
 
 .button {
   background: -webkit-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
   background:    -moz-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
   background:     -ms-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
   background:      -o-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
-  border: 1px solid $title-text-color;
+  border:        1px solid $title-text-color;
   border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-family: 'Bree Serif', serif;
-  font-size: $h3-size*1.25;
-  font-weight: 300;
-  padding: 11px 25px;
-  text-shadow: 0px 1px 0 rgba(2,2,2,0.25);
+  color:         #fff;
+  cursor:        pointer;
+  font-family:   'Bree Serif', serif;
+  font-size:     $h3-size*1.25;
+  font-weight:   300;
+  padding:       11px 25px;
+  text-shadow:   0px 1px 0 rgba(2,2,2,0.25);
   -webkit-box-shadow:  0 1px 3px rgba(0,0,0,0.5);
      -moz-box-shadow:  0 1px 3px rgba(0,0,0,0.5);
           box-shadow:  0 1px 3px rgba(0,0,0,0.5);
 
   &:hover, &:focus  {
     background: darken($nav-btn-txt-color, 25%);
-    border: 1px solid $title-text-color;
+    border:     1px solid $title-text-color;
     -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
        -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
             box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
   }
 }
-
-

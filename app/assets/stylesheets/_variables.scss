@@ -1,33 +1,37 @@
 /************************************************************************/
-/* 1. TYPOGRAPHY */
+/* _1   TYPOGRAPHY                                                      */
 /************************************************************************/
 
 $banner-text-font:  "BloklettersViltstift";
 $title-text-font:   "AaarghNormal";
 $body-text-font:    "AaarghNormal";
 $base-font-size:    16px; 
-$baseline:          ($base-font-size * 1.5);
 
-$h1-size:           ($baseline * 1.5);
-$h1-leading:        ($h1-size  * 1.5);
-$h2-size:            $base-font-size/$baseline;
-$h2-leading:        ($h2-size  * 1.5);
-$h3-size:            $base-font-size;
-$h3-leading:        ($h3-size  * 1.5);
-$h4-size:            $base-font-size;
-$h4-leading:        ($h3-size  * 1.5);
+$baseline:              $base-font-size * 1.5;
+
+$h1-size:               $baseline * 1.5;
+$h1-leading:            $h1-size  * 1.5;
+
+$h2-size:               $base-font-size/$baseline;
+$h2-leading:            $h2-size  * 1.5;
+
+$h3-size:               $base-font-size;
+$h3-leading:            $h3-size  * 1.5;
+
+$h4-size:               $base-font-size;
+$h4-leading:            $h3-size  * 1.5;
 
 
-$nav-font:            ($base-font-size * 1.5  );
+$nav-font:              $base-font-size * 1.5;
 
-$com-nav-icon-size:    ($baseline * 1.5);
-$com-nav-icon-leading: ($com-nav-icon-size * 1.5);
+$com-nav-icon-size:     $baseline * 1.5;
+$com-nav-icon-leading:  $com-nav-icon-size * 1.5;
 
-$default-spacing:   ($baseline * 2);
+$default-spacing:       $baseline * 2;
 
 
 /************************************************************************/
-/* 2. COLORS */
+/* _2   COLORS                                                          */
 /************************************************************************/
 
 /* #000000;  /******Black******/
@@ -69,7 +73,7 @@ $error-txt-color:          #000000;  /******Black******/
 
 
 /************************************************************************/
-/* 3. MIX-INs */
+/* _3   MIX-INS                                                         */
 /************************************************************************/
 
 @mixin transition($property: color, $duration: .2s, $ease: ease-in-out) {
