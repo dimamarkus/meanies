@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import 'variables';
+
+/************************************************************************/
+/* 1. SIGN IN FORM CONTAINER */
+/************************************************************************/
+
+.signin-wrapper {
+	height: 100%;
+  left: 0;
+  margin-top: -150px;
+ 	position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.signin-form {
+	background: $title-text-color;
+	border-radius: 5px;
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+}
+
+
+
+/************************************************************************/
+/* 2. SIGN IN FORM CONTENT */
+/************************************************************************/
+
+.signin-content {
+	padding: 25px 30px 25px 30px;
+	.input {
+		background: #fff;
+		border: 1px solid #fff;
+		border-radius: 5px;
+		color: $title-text-color;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 400;
+		font-size: $base-font-size;
+		padding: 15px 25px;
+		text-shadow: 1px 1px 0 rgba(255,255,255,1.0);
+		width: 200px;
+		-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+			 -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+			  		box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+		&:hover {
+			background: #dfe9ec;
+			color: #414848;
+		}
+		&:focus {
+			background: #dfe9ec;
+			color: #414848;
+			-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+				 -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+				    	box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+		}
+	}
+	.password {
+		margin-top: 25px;
+	}
+}
+
+
+
+/************************************************************************/
+/* 3. SIGN IN FORM FOOTER */
+/************************************************************************/
+
+.signin-footer {
+	background: $com-nav-icon-color;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius:  5px;
+	border-top: 1px solid #fff;
+	padding: 25px 30px 25px 30px;
+	text-align: center;
+	-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+		 -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+	        box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+
+	.signin-button {
+		background: -webkit-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
+	  background:    -moz-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
+	  background:     -ms-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
+	  background:      -o-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
+		border: 1px solid $title-text-color;
+		border-radius: 5px;
+		color: #fff;
+		cursor: pointer;
+		font-family: 'Bree Serif', serif;
+		font-size: $h3-size*1.25;
+		font-weight: 300;
+		padding: 11px 25px;
+		text-shadow: 0px 1px 0 rgba(2,2,2,0.25);
+		-webkit-box-shadow:  0 1px 3px rgba(0,0,0,0.5);
+			 -moz-box-shadow:  0 1px 3px rgba(0,0,0,0.5);
+		 	      box-shadow:  0 1px 3px rgba(0,0,0,0.5);
+
+		&:hover, &:focus  {
+			background: darken($nav-btn-txt-color, 25%);
+			border: 1px solid $title-text-color;
+			-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+			   -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+							box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+		}
+	}
+}
+
+
+
+/************************************************************************/
+/* 4. ANIMATIONS */
+/************************************************************************/
+
+.input, .signin-button {
+	-webkit-transition: all 0.5s ease;
+		 -moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			 -o-transition: all 0.5s ease;
+					transition: all 0.5s ease;
+}

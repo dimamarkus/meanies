@@ -3,7 +3,7 @@ class ComicsController < ApplicationController
   before_filter :signed_in_user, only: [:new, :index, :edit, :update] 
 
   def index
-    @comics = Comic.all
+    @comics = Comic.order("number DESC")
   end
 
   def archive
@@ -31,7 +31,7 @@ class ComicsController < ApplicationController
     @comic = Comic.new(params[:comic])
     @comic.number = Comic.count+1
     if @comic.save
-      redirect_to comics_path, notice: 'Comic was successfully created.' 
+      redirect_to page_url(@comic.number), notice: 'Comic was successfully created.' 
     else 
       render 'new'
     end
@@ -41,7 +41,7 @@ class ComicsController < ApplicationController
   def update
     @comic = Comic.find(params[:id])
     if @comic.update_attributes(params[:comic])
-      redirect_to @comic , notice: 'Comic was successfully updated.' 
+      redirect_to page_url(@comic.number) , notice: 'Comic was successfully updated.' 
     else
       render 'edit'
     end

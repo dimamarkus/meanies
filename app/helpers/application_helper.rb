@@ -9,6 +9,7 @@ module ApplicationHelper
 		end
 	end
 
+
 	def random
 		rand(Comic.all.count)+1
 	end

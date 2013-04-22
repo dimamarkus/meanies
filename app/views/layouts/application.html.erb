@@ -14,6 +14,10 @@
     	$(window).load(function(){
       	$('#gallery').tinyscrollbar();
     	});
+
+		  function getFile(){
+		  	document.getElementById("comic_image").click();
+		  }
 		</script>
 		
 		<%= auto_discovery_link_tag :atom, "/feed" %>
@@ -27,6 +31,11 @@
 			<h1><%= link_to 'march of the meanies', root_path %></h2>
 
 			<div class="content">
+
+				<% flash.each do |key, value| %>
+					<%= content_tag(:div, value, class: "alert alert-#{key}") %>
+				<% end %>
+
 				<%= yield %>
 			</div>
 

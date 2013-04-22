@@ -1,27 +1,56 @@
-<%= form_for @comic, html:  { multipart: true } do |f| %>
-  <% if @comic.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@comic.errors.count, "error") %> prohibited this comic from being saved:</h2>
 
+
+<!--******************************************************************************** -->
+<!-- Form Errors ******************************************************************* -->
+<!--******************************************************************************** -->
+
+  <% if @comic.errors.any? %>
+    <div class="alert alert-error">
+      <h2><%= pluralize(@comic.errors.count, "error") %> prohibited this comic from being saved:</h2>
       <ul>
-      <% @comic.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
+        <% @comic.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
-  
-  <div class="form">
-    <ul>
-     <li><%= f.label       :image %></li>
-     <li><%= f.file_field  :image%></li>
-    </ul>
-    <ul>
-     <li><%= f.label       :title %></li>
-     <li><%= f.text_field  :title, placeholder: @comic.title  %></li>
-    </ul>
-  <%= f.submit %>
-  </div>
 
 
-<% end %>
+
+
+
+
+<!--******************************************************************************** -->
+<!-- Comic Upload/Edit Form ******************************************************** -->
+<!--******************************************************************************** -->
+
+<div class="form-wrapper">
+
+  <%= form_for @comic, html:  { multipart: true } do |f| %>
+    <div class="form">
+
+      <div class="form-header">
+        <%= yield(:title) %>
+      </div>
+
+      <div class="form-content">
+        <div class="comic-thumb">
+          <%= link_to (image_tag yield(:comic_thumb)), @comic %>
+        </div>
+        <div class="upload-button">
+          <div id="file-input"  onclick="getFile()">
+            <p>Choose image file</p>
+          </div>
+          <div id="file-input-tag">
+            <input id="comic_image" type="file" name="comic[image]" value="upload"/>
+          </div>
+        </div>  
+        <%= f.text_field :title, class: "input title-input", placeholder: "Title" %>
+      </div>
+
+      <div class="form-footer">
+        <%= f.submit "Submit", class: "button" %>
+      </div>
+    </div>
+  <% end %>
+</div>

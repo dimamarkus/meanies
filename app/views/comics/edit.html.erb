@@ -1,9 +1,5 @@
 <% provide(:title, 'Edit a Comic') %>
+<% provide(:comic_thumb, @comic.image_url(:thumb)) %>
 
-<h2>Editing comic</h2>
-
-<div class="edit-preview"><%= image_tag @comic.image_url(:thumb) %></div>
 <%= render 'form' %>
 
-<%= link_to 'Show', @comic %> |
-<%= link_to 'Back', comics_path %>
