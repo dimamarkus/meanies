@@ -114,13 +114,14 @@
   .social-slide {
     background:    silver;
     border-radius: 10px;
-    bottom:       -23em;
     position:      absolute;
-    -webkit-transition-duration: 0.75s;
-       -moz-transition-duration: 0.75s;
-         -o-transition-duration: 0.75s;
-            transition-duration: 0.75s;
+    bottom:       -23em;
+    -webkit-transition-duration: 0.5s;
+       -moz-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
     z-index: 2;
+
     .slide-handle {
       background:    silver;
       border-radius: 4px;
@@ -143,12 +144,21 @@
     .slide-body {
       height: 20em;
     }
-    &:hover {
-      bottom: -8em;
-    }
   }
 
+
+  .show-slide {
+    bottom: -8em;
+  }
+ 
+
 @media only screen and (min-width: 631px)  {
+  .social-slide {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 630px ) {
   .social-slide {
     display: none;
   }
