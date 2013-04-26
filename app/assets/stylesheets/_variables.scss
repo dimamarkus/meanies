@@ -30,6 +30,8 @@ $com-nav-icon-leading:  $com-nav-icon-size * 1.5;
 $default-spacing:       $baseline * 2;
 
 
+
+
 /************************************************************************/
 /* _2   COLORS                                                          */
 /************************************************************************/
@@ -58,7 +60,7 @@ $background-color:         #000000;  /******Black******/
     $navigation-color:     #000000;  /******Black******/
       $nav-btn-bg-color:   #000000;  /******Black******/
       $nav-btn-txt-color:  #FFBF2A;  /*****Yellow******/
-      $nav-btn-hov-color:  #403D3D;  /****Dark Grey****/
+      $nav-btn-hov-color:  #7F797B;  /****Light Grey***/
 
 $scrollbar-color:          #403D3D;  /****Dark Grey****/
 
@@ -72,8 +74,21 @@ $error-txt-color:          #000000;  /******Black******/
 
 
 
+
 /************************************************************************/
-/* _3   MIX-INS                                                         */
+/* _3   COLORS                                                          */
+/************************************************************************/
+$desktop:    516px;
+$tablet-min: 431px;
+$tablet-max: 515px;
+$phone:      430px;
+
+
+
+
+
+/************************************************************************/
+/* _4   MIX-INS                                                         */
 /************************************************************************/
 
 @mixin transition($property: color, $duration: .2s, $ease: ease-in-out) {

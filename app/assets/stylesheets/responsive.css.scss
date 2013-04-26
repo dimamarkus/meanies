@@ -5,22 +5,23 @@
 /*-----------------------------------------------------------------------------------*/
 
 // @media only screen and (min-width: 631px) and (max-width: 810px ) {
-@media only screen and (min-width: 631px)  {
+@media only screen and (min-width: 516px)  {
 	h1 a {
 		color: red !important;
 	}
 	
-	body {
-		width:     90%;
-		margin:    0 auto;
-		min-width: 1024px;
-		max-width: 1280px;
-	}
+	// body {
+	// 	width:     90%;
+	// 	margin:    0 auto;
+	// 	min-width: 1024px;
+	// 	max-width: 1280px;
+	// }
 
 
 	.mobile-comicnav {
 		display: none;
 	}
+
 
 
 }
@@ -38,10 +39,25 @@
 /*------------------------------------- Tablet --------------------------------------*/
 /*-----------------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 431px) and (max-width: 630px ) {
+@media only screen and (min-width: 431px) and (max-width: 515px ) {
 	h1 a {
 		color: green !important;
 	}
+
+
+	.icon {
+	  font-size:   $com-nav-icon-size*1.5;
+  }
+
+	.arrow {
+	  font-size:   $com-nav-icon-size*1.75;
+	}
+
+
+	.mobile-comicnav, .social, #rss {
+		display: none;
+	}
+
 }
 
 
