@@ -9,7 +9,8 @@
  	 	<%= csrf_meta_tags %>	
 		<%= auto_discovery_link_tag :atom, "/feed" %>
 		<%= auto_discovery_link_tag :rss, "/feed.rss" %>
-
+		
+		<meta name="viewport" content="width=device-width, initial-scale=0.75">
 
 		<script type="text/javascript">
 		  function getFile(){
@@ -21,21 +22,19 @@
 
 	<body class="<%= params[:action] %>_controller">
 		<div class='container'>
-
 			<h1><%= link_to 'march of the meanies', root_path %></h1>
 
 			<div class="content">
-
 				<% flash.each do |key, value| %>
 					<%= content_tag(:div, value, class: "alert alert-#{key}") %>
 				<% end %>
-
 				<%= yield %>
 			</div>
-
 			<%= render 'layouts/navigation' %>
 		</div>
 		
+
+
 
 
 			<%= render 'layouts/grid' %>

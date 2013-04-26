@@ -39,7 +39,7 @@
 
 
 /*------------------- 1-3-1   Comiv Nav Container                       */
-.comicnav {
+.comicnav, .mobile-comicnav{
   max-width:  480px;
   text-align: center;
 	ul li {
@@ -52,7 +52,6 @@
   background:  transparent;
   color:       $com-nav-icon-color;
   font-size:   $com-nav-icon-size;
-  line-height: $com-nav-icon-leading;
   text-decoration: none;
   @include transition(color);
   &:hover {
@@ -67,7 +66,7 @@
 
 
 /*------------------- 1-3-4   Comic Nav Icons - Prev/Next Icon          */
-#arrow {
+.arrow {
 	color: $nav-btn-txt-color;
 	font-size:   $com-nav-icon-size ;
 	&:hover {
@@ -106,3 +105,51 @@
 }
 
 
+
+
+
+/************************************************************************/
+/* 1-4   SOCIAL SLIDE (Only visible on phones)                          */
+/************************************************************************/
+  .social-slide {
+    background:    silver;
+    border-radius: 10px;
+    bottom:       -23em;
+    position:      absolute;
+    -webkit-transition-duration: 0.75s;
+       -moz-transition-duration: 0.75s;
+         -o-transition-duration: 0.75s;
+            transition-duration: 0.75s;
+    z-index: 2;
+    .slide-handle {
+      background:    silver;
+      border-radius: 4px;
+      height:        3em;
+      margin:        0 auto;
+      position:      relative;
+      top:          -35px;
+      width:         8em;
+      .slide-handle-inner {
+        background:    silver;
+        border:        1px solid black;
+        border-radius: 4px;
+        height:        2em;
+        margin:        0 auto;
+        position:      relative;
+        top:           8px;
+        width:         7em;
+      }
+    }
+    .slide-body {
+      height: 20em;
+    }
+    &:hover {
+      bottom: -8em;
+    }
+  }
+
+@media only screen and (min-width: 631px)  {
+  .social-slide {
+    display: none;
+  }
+}

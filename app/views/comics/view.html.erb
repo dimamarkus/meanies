@@ -32,14 +32,14 @@
 			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon hidden' %></li>
 		<% else %>
 			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon', title: "Go to first" %></li>
-			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon', id: "arrow", title: "Previous comic" %></li>
+			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon arrow', title: "Previous comic" %></li>
 		<% end %>
 			<li><%= link_to '', page_url(random), method: 'get', class: 'icon-shuffle icon', title: "Random comic" %></li>
 		<% if @comic == Comic.last %>
 			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir hidden icon'  %></li>
 			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward hidden icon' %></li>
 		<% else %>
-			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir icon', id: "arrow", title: "Next comic" %></li>
+			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir icon arrow', title: "Next comic" %></li>
 			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward icon', title: "Go to last" %></li>
 		<% end %>
 			<li>
@@ -47,4 +47,71 @@
 			</li>
 	</ul>
 </div>
+
+
+<div class="mobile-comicnav">
+	<ul class="top-row">
+		<% if @comic == Comic.first %>
+			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon hidden' %></li>
+		<% else %>
+			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon arrow', title: "Previous comic" %></li>
+		<% end %>
+		
+		<% if @comic == Comic.last %>
+			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir hidden icon'  %></li>
+		<% else %>	
+			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir icon arrow', title: "Next comic" %></li>
+		<% end %>
+	</ul>
+	<ul class="bottom-row">
+		<% if @comic == Comic.first %>
+			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon hidden' %></li>
+		<% else %>
+			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon', title: "Go to first" %></li>
+
+		<% end %>
+			<li><%= link_to '', page_url(random), method: 'get', class: 'icon-shuffle icon', title: "Random comic" %></li>
+		<% if @comic == Comic.last %>
+			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward hidden icon' %></li>
+		<% else %>
+			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward icon', title: "Go to last" %></li>
+		<% end %>
+	</ul>
+</div>
+
+<div class="social-slide">
+	<div class="slide-handle">
+		<div class="slide-handle-inner">
+			
+		</div>
+	</div>
+	<div class="slide-body">
+    <a class="smedia icon icon-facebook-circled" 
+    	 target="_blank" 
+    	 href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= @comic.number %>&p[summary]=My new favorite web comic." 
+    	 title="Share this comic on Facebook" =>
+    </a>
+    <a class="smedia icon icon-twitter-circled" 
+       target="_blank" 
+       href="http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/<%= @comic.number %>" 
+       title="Share this comic on Twitter">
+  	</a>
+    <a class="smedia icon icon-gplus-circled" 
+    	 target="_blank"
+       href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= @comic.number %>"
+       title="Share this comic on Google Plus">
+    </a>
+    <a class="smedia icon icon-tumblr-circled"
+   		 target="_blank"  
+   		 href="http://www.tumblr.com/share?v=3&u=marchofthemeanies.com/<%= @comic.number %>&t=%20My%20new%20favorite%20web%20comic"
+   		 title="Share this comic on Tumblr">
+    </a>
+    <a class="smedia icon icon-mail" 
+    	 href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= @comic.number %>"
+    	 title="Email this comic to a friend">
+	  </a>
+	</div>
+</div>
+
+
 
