@@ -25,7 +25,7 @@
 	max-height: 480px;
   max-width:  480px;
 	img {
-		width: 100%;
+		width:    100%;
 	}
 }
 
@@ -49,40 +49,40 @@
 
 .mobile-comicnav {
   position: relative;
-  bottom: 20px;
+  bottom:   20px;
 }
 
 /*------------------- 1-3-2   Comic Nav Icons - General Styles          */
 .icon {
-  background:  transparent;
-  color:       $com-nav-icon-color;
-  font-size:   $com-nav-icon-size;
+  background:      transparent;
+  color:           $com-nav-icon-color;
+  font-size:       $com-nav-icon-size;
   text-decoration: none;
   @include transition(color);
   &:hover {
-    color: $com-nav-hov-color;
+    color:         $com-nav-hov-color;
   }
 }
 
 /*------------------- 1-3-3   Comic Nav Icons - Feed Icon               */
-#feed-icon:hover {
+.icon-rss:hover {
 	color: $nav-btn-txt-color; 
 }
 
 
 /*------------------- 1-3-4   Comic Nav Icons - Prev/Next Icon          */
 .arrow {
-	color: $nav-btn-txt-color;
-	font-size:   $com-nav-icon-size ;
+	color:     $nav-btn-txt-color;
+	font-size: $com-nav-icon-size;
 	&:hover {
-		color: $nav-btn-hov-color;
+		color:   $nav-btn-hov-color;
 	} 
 }
 
 
 /*------------------- 1-3-5   Comic Nav Icons - Share Icon              */
 .social {
-	position: relative;
+	position:     relative;
 		a {
     background: transparent;
     display:    inline;
@@ -110,6 +110,22 @@
 }
 
 
+/*------------------- 1-3-6   Comic Over - For swipe navigation         */
+#swipey {
+  background: transparent;
+  height:     425px;
+  margin:     0 auto;
+  position:   absolute;
+  top:        90px;
+  width:      425px;
+}
+
+@media only screen and (min-width: $desktop) {
+  #swipey {
+    display: none;
+  }
+}
+
 
 
 
@@ -117,7 +133,7 @@
 /* 1-4   SOCIAL SLIDE (Only visible on mobile)                          */
 /************************************************************************/
 .social-slide {
-  border-top-left-radius: 1em;
+  border-top-left-radius:  1em;
   border-top-right-radius: 1em;
   position:      absolute;
   bottom:        -11.5em;
@@ -184,16 +200,9 @@ body {
 .show-slide {
   bottom: 0em;
 }
- 
 
-@media only screen and (min-width: $desktop)  {
+@media only screen and (min-width: $phone+1)  {
   .social-slide {
     display: none;
   }
 }
-
-
-
-
-
-

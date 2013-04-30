@@ -1,12 +1,17 @@
 <% provide(:title, @comic.title) %>
 
 <!--*********************************************************************** -->
-<!-- VIEW COMIC *********************************************************** -->
+<!--1-1 COMIC TITLE ******************************************************* -->
 <!--*********************************************************************** -->
 
-<div class="title">
-	<h2><%= @comic.title %></h2>
-</div>
+<h2 class="title"><%= @comic.title %></h2>
+
+
+
+
+<!--*********************************************************************** -->
+<!--1-2 THE COMIC ********************************************************* -->
+<!--*********************************************************************** -->
 
 <div class="comic">
 	<% if @comic.number == 1 %>
@@ -21,63 +26,92 @@
 
 
 <!--*********************************************************************** -->
-<!-- COMIC NAVIGATION ***************************************************** -->
+<!--1-3 COMIC NAVIGATION ************************************************** -->
 <!--*********************************************************************** -->
 
+
+<!-- Standard navigation menu (Not visible on mobile) -->
+<!--**************************************************-->
 <div class="comicnav">
-	<ul>
-			<li id="rss"><%= link_to '', feed_path, class: 'icon-rss icon', id: 'feed-icon', title: "Subscribe!" %></li>
+	<ul> 
+			<li><%= link_to '', feed_path,                    class: 'icon-rss icon',						  title: "Subscribe!"    		 					   %></li>
 		<% if @comic == Comic.first %>
-			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon hidden' %></li>
-			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon hidden' %></li>
+			<li><%= link_to '', '#', 													class: 'icon-fast-backward   icon hidden'															     %></li>
+			<li><%= link_to '', '#', 												  class: 'icon-left-dir        icon hidden' 														     %></li>
 		<% else %>
-			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon', title: "Go to first" %></li>
-			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon arrow', title: "Previous comic" %></li>
+			<li><%= link_to '', page_url(Comic.first.number), class: 'icon-fast-backward   icon', title: "Go to first",    method: 'get' %></li>
+			<li><%= link_to '', page_url(@comic.number-1), 		class: 'icon-left-dir arrow  icon', title: "Previous comic", method: 'get' %></li>
 		<% end %>
-			<li><%= link_to '', page_url(random), method: 'get', class: 'icon-shuffle icon', title: "Random comic" %></li>
+			<li><%= link_to '', page_url(random), 						class: 'icon-shuffle         icon', title: "Random comic",   method: 'get' %></li>
 		<% if @comic == Comic.last %>
-			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir hidden icon'  %></li>
-			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward hidden icon' %></li>
+			<li><%= link_to '', '#', 													class: 'icon-right-dir       icon hidden' 			  					 							 %></li>
+			<li><%= link_to '', '#',													class: 'icon-fast-forward    icon hidden'  			 											     %></li>
 		<% else %>
-			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir icon arrow', title: "Next comic" %></li>
-			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward icon', title: "Go to last" %></li>
-		<% end %>
-			<li>
-		<%= render 'social' %>			
-			</li>
+			<li><%= link_to '', page_url(@comic.number+1), 	  class: 'icon-right-dir arrow icon', title: "Next comic",     method: 'get' %></li>
+			<li><%= link_to '', page_url(Comic.last.number),  class: 'icon-fast-forward    icon', title: "Go to last",  	 method: 'get' %></li>
+		<% end %> 
+			<li><%= render 'social' %></li>
 	</ul>
 </div>
 
 
+<!-- Mobile navigation menu (Not visible on desktop)-->
+<!--**************************************************-->
 <div class="mobile-comicnav">
 	<ul class="top-row">
 		<% if @comic == Comic.first %>
-			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon hidden' %></li>
+			<li><%= link_to '', '#', 												  class: 'icon-left-dir        icon hidden' 														     %></li>
 		<% else %>
-			<li><%= link_to '', page_url(@comic.number-1),     method: 'get', class: 'icon-left-dir icon arrow', title: "Previous comic" %></li>
+			<li><%= link_to '', page_url(@comic.number-1), 		class: 'icon-left-dir arrow  icon', title: "Previous comic", method: 'get' %></li>
 		<% end %>
-		
 		<% if @comic == Comic.last %>
-			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir hidden icon'  %></li>
+			<li><%= link_to '', '#', 													class: 'icon-right-dir       icon hidden' 			  					 							 %></li>
 		<% else %>	
-			<li><%= link_to '', page_url(@comic.number+1), 	   method: 'get', class: 'icon-right-dir icon arrow', title: "Next comic" %></li>
+			<li><%= link_to '', page_url(@comic.number+1), 	  class: 'icon-right-dir arrow icon', title: "Next comic",     method: 'get' %></li>
 		<% end %>
 	</ul>
 	<ul class="bottom-row">
 		<% if @comic == Comic.first %>
-			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon hidden' %></li>
+			<li><%= link_to '', '#', 													class: 'icon-fast-backward   icon hidden'															     %></li>
 		<% else %>
-			<li><%= link_to '', page_url(Comic.first.number),  method: 'get', class: 'icon-fast-backward icon', title: "Go to first" %></li>
-
+			<li><%= link_to '', page_url(Comic.first.number), class: 'icon-fast-backward   icon', title: "Go to first",    method: 'get' %></li>
 		<% end %>
-			<li><%= link_to '', page_url(random), method: 'get', class: 'icon-shuffle icon', title: "Random comic" %></li>
+			<li><%= link_to '', page_url(random), 						class: 'icon-shuffle         icon', title: "Random comic",   method: 'get' %></li>
 		<% if @comic == Comic.last %>
-			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward hidden icon' %></li>
+			<li><%= link_to '', '#',													class: 'icon-fast-forward    icon hidden'  			 											     %></li>
 		<% else %>
-			<li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward icon', title: "Go to last" %></li>
+			<li><%= link_to '', page_url(Comic.last.number),  class: 'icon-fast-forward    icon', title: "Go to last", 	   method: 'get' %></li>
 		<% end %>
 	</ul>
 </div>
+
+
+<!-- Mobile swipe navigation                          -->
+<!--**************************************************-->
+<div id="swipey"></div>
+
+<script>
+	$("#swipey").on('swiperight', function() {
+		if (<%= @comic.number %> != <%= Comic.first.number %>) {
+			location.href = 'http://marchofthemeanies.com/'+ <%= @comic.number-1 %>;
+		}
+	});
+
+	$("#swipey").on('swipeleft', function() {
+		if (<%= @comic.number %> != <%= Comic.last.number %>) {
+			location.href = 'http://marchofthemeanies.com/'+ <%= @comic.number+1 %>;
+		}
+	});
+</script>
+
+
+
+
+
+<!--*********************************************************************** -->
+<!--1-4 SOCIAL SLIDE ****************************************************** -->
+<!--*********************************************************************** -->
+
 
 <div class="social-slide">
 	<a href="#">...</a>
@@ -107,8 +141,10 @@
   	 href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= @comic.number %>"
   	 title="Email this comic to a friend">
   </a>
-  <%= link_to '', feed_path, class: 'icon-rss icon', id: 'feed-icon', title: "Subscribe!" %>
+  <%= link_to '', feed_path, class: 'icon-rss icon', title: "Subscribe!" %>
 </div>
+
+
 
 
 
