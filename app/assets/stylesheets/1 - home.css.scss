@@ -116,99 +116,74 @@
 /************************************************************************/
 /* 1-4   SOCIAL SLIDE (Only visible on mobile)                          */
 /************************************************************************/
-  .social-slide {
-    border-radius: 10px;
-    position:      absolute;
-    bottom:       -20.5em;
-    -webkit-transition-duration: 0.5s;
-       -moz-transition-duration: 0.5s;
-         -o-transition-duration: 0.5s;
-            transition-duration: 0.5s;
-    z-index: 10;
+.social-slide {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  position:      absolute;
+  bottom:        -11.5em;
+  width:   100%;
+  z-index: 10;
+  -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 
- width: 100%;
-
- &:before {
-      z-index: 1;
-    }
-
-    background-color: hsl(0,0%,90%);
-    box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
-                inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
-                inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
-                inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+      background-color: hsl(0,0%,90%);
+      box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+                  inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+                  inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+                  inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
                 
-                hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
-                hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
-  
-   
-    .slide-handle {
-
-      border-radius: 4px;
-      height:        3.3em;
-      margin:        0 auto;
-      position:      relative;
-      top:          -46px;
-      width:         8em;
-      z-index: 2;
-
-      border-top:    3px solid black;
-      border-left:   3px solid black;
-      border-right:  3px solid black;
-      border-bottom: 6px solid hsl(0,0%,90%);
-
-    background-color: hsl(0,0%,90%);
-    box-shadow: 
-  
-    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
-    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
-  
-    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
-    hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
-
- 
-
-
-
-
-
-
-
-
-      // .slide-handle-inner {
-      //   -webkit-box-shadow: inset 1px 1px 5px 6px grey;
-      //      -moz-box-shadow: inset 1px 1px 5px 6px grey;
-      //           box-shadow: inset 1px 1px 5px 6px grey;
-      //   background:    silver;
-      //   border:        1px solid black;
-      //   border-radius: 4px;
-      //   height:        1.5em;
-      //   margin:        0 auto;
-      //   position:      relative;
-      //   top:           6px;
-      //   width:         7em;
-      //   z-index: 2;
-      // }
-
-
-
-    }
-    .slide-body {
-      height: 18em;
-      z-index: 11;
+                  hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+                  hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+  a {
+    &:first-child {
       position: relative;
-      bottom: 15px;
-      ul li {
-        display: inline-block;
-        margin: 0 0 10px 0;
-      }
+      left: .10em;
+      font-size: $baseline*2;
+      letter-spacing: .25em;
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
+    }
+    &:nth-child(2) {
+      display: block;
+      width: 100%;
+      height: $baseline;
+    }
+    display: inline-block;
+    margin: 0 0 10px 0;
+   }
+
+  &:before {
+    z-index: 1;
+  }
+}
+
+body {
+  &.archive_controller {
+    .social-slide {
+      display: none;
     }
   }
 
-
-  .show-slide {
-    bottom: -8em;
+  &.about_controller {
+    .social-slide {
+      display: none;
+    }
   }
+
+  &.index_controller {
+    .social-slide {
+      display: none;
+    }
+  }
+}
+
+
+.show-slide {
+  bottom: 0em;
+}
  
 
 @media only screen and (min-width: $desktop)  {

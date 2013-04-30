@@ -66,40 +66,32 @@
 </div>
 
 <div class="social-slide">
-	<div class="slide-handle">
-		<div class="slide-handle-inner">
-			
-		</div>
-	</div>
-	<div class="slide-body">
-			<ul>
-				<li><a class="smedia icon icon-facebook-circled" 
-		    	 target="_blank" 
-		    	 href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= Comic.last.number %>&p[summary]=My new favorite web comic." 
-		    	 title="Share this comic on Facebook" =>
-		    </a></li>
-		    <li><a class="smedia icon icon-twitter-circled" 
-		       target="_blank" 
-		       href="http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/<%= Comic.last.number %>" 
-		       title="Share this comic on Twitter">
-		  	</a></li>
-		    <li><a class="smedia icon icon-gplus-circled" 
-		    	 target="_blank"
-		       href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= Comic.last.number %>"
-		       title="Share this comic on Google Plus">
-		    </a></li>
-		   <li> <a class="smedia icon icon-tumblr-circled"
-		   		 target="_blank"  
-		   		 href="http://www.tumblr.com/share?v=3&u=marchofthemeanies.com/<%= Comic.last.number %>&t=%20My%20new%20favorite%20web%20comic"
-		   		 title="Share this comic on Tumblr">
-		    </a></li>
-		    <li><%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward hidden icon' %></li>
-		    <li><a class="smedia icon icon-mail" 
-		    	 href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= Comic.last.number %>"
-		    	 title="Email this comic to a friend">
-			  </a></li>
-			  <li><%= link_to '', feed_path, class: 'icon-rss icon', id: 'feed-icon', title: "Subscribe!" %></li>
-			</ul>
-	  </a>
-	</div>
+	<a href="#">...</a>
+	<a href="#"></a>
+	<a class="smedia icon icon-facebook-circled" 
+  	 target="_blank" 
+  	 href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= Comic.last.number %>&p[summary]=My new favorite web comic." 
+  	 title="Share this comic on Facebook" =>
+  </a>
+  <a class="smedia icon icon-twitter-circled" 
+     target="_blank" 
+     href="http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/<%= Comic.last.number %>" 
+     title="Share this comic on Twitter">
+	</a>
+  <a class="smedia icon icon-gplus-circled" 
+  	 target="_blank"
+     href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= Comic.last.number %>"
+     title="Share this comic on Google Plus">
+  </a>
+  <a class="smedia icon icon-tumblr-circled"
+ 		 target="_blank"  
+ 		 href="http://www.tumblr.com/share?v=3&u=marchofthemeanies.com/<%= Comic.last.number %>&t=%20My%20new%20favorite%20web%20comic"
+ 		 title="Share this comic on Tumblr">
+  </a>
+  <%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward hidden icon' %>
+  <a class="smedia icon icon-mail" 
+  	 href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= Comic.last.number %>"
+  	 title="Email this comic to a friend">
+  </a>
+  <%= link_to '', feed_path, class: 'icon-rss icon', id: 'feed-icon', title: "Subscribe!" %>
 </div>

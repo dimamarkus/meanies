@@ -113,8 +113,11 @@ h1 {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ h1 ~ Phone ~*/
 @media screen and (max-width: $phone) {
     h1 {
-    font: #{$h1-size/2}/#{$h1-leading/2} $banner-text-font;
-    margin: 0.5em 0 0.5em 0.5em;
+    color: black;
+    font-size: $baseline;
+    line-height: $baseline*1.5;
+    font-family: $title-text-font;
+    margin: 0;
   }
 }
 
@@ -163,9 +166,9 @@ body, .container, .content, .comic, .comicnav, .nav {
   .container {
         margin: 0 auto;
         overflow: hidden;
-        min-height: 770px;
+        min-height: 740px;
         position: absolute;
-        min-width: 420px;
+        min-width: 430px;
   }
 }
 
@@ -181,8 +184,8 @@ body, .container, .content, .comic, .comicnav, .nav {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ .Content ~ Phone + Tablet ~*/
 @media screen and (max-width: $tablet-max) {
   .content {
-    margin: 0.2em 0.2em 0em 0.2em;
-    min-height: 640px;
+    margin: 4em 0.2em 0em 0.2em;
+    max-width: 490px;
   }
 }
 
@@ -201,46 +204,83 @@ body, .container, .content, .comic, .comicnav, .nav {
 /************************************************************************/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Nav ~ Desktop ~*/
+.mobile-nav {
+  display: none;
+}
+
 nav {
   background: transparent;
-
-  ul li {
+  a {
     display:  inline-block;
     padding:  0 6px 0 12px;
-
-    a {
-      color:           $nav-btn-txt-color;
-      font:            $nav-font;
-      letter-spacing:  .5px;
-      text-decoration: none;
-      @include transition(color);
-      &:hover {
-        color: $nav-btn-hov-color;
-      } 
+    color:           $nav-btn-txt-color;
+    font:            $nav-font;
+    letter-spacing:  .5px;
+    text-decoration: none;
+    @include transition(color);
+    &:hover {
+      color: $nav-btn-hov-color;
     } 
   } 
-} 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Nav ~ Tablet + Phone ~*/
-@media screen and (max-width: $tablet-max) {
-  nav {
-    margin: 0 auto;
-    text-align: center;
-    font-size:  $base-font-size*2;
-    position: relative;
-    bottom: 0;
+}
 
-    z-index: 1;
-    ul li {
-      padding: 0;
-          position: relative;
-  bottom: 15px;
-    }
-    ul li:nth-child(2) {
-      padding:  0 $base-font-size;
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Nav ~ Tablet + iPhone ~*/
+@media screen and (max-width: $tablet-max) {
+  .desktop-nav { 
+    display: none;
+  }
+
+  .nav-slide {
+    display:  block;
+    padding:  1em auto;
+    position: fixed;
+    top:     -21.5em;
+    width:    100%;
+    -webkit-transition-duration: 0.5s;
+       -moz-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+
+    nav {
+      margin: 0;
+      padding: 1em 0 0 0;
+      background-color: hsl(0,0%,90%);
+      box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+                  inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+                  inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+                  inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+                
+                  hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+                  hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+                  border-bottom-left-radius: 1em;
+                  border-bottom-right-radius: 1em;
+      a {
+        color:           black;
+        display:         block;
+        font-size:       $baseline*2;
+        line-height:     $baseline*2.5;
+        margin:          0 auto;
+        padding:         .5em;
+        text-align:      center;
+        text-decoration: none;
+        width:           75%;
+        &:last-child {
+          width: 98%;
+          &:hover {
+            background:  transparent;
+          }
+        }
+        &:hover {
+          background: grey;
+        }
+      }
     }
   }
 }
 
+.show-nav {
+  top: 0em;
+}
 
 
 /*------- Change color of the nav link of the current page -------*/

@@ -1,15 +1,25 @@
-<!--*********************************************************************** -->
-<!-- MAIN NAVIGATION ****************************************************** -->
-<!--*********************************************************************** -->
+<!--****************************************************************** -->
+<!-- MAIN NAVIGATION ************************************************* -->
+<!--****************************************************************** -->
 
-<nav>
-	<ul>
-		<li><%= link_to 'Home',        home_path,    id: "home-link" %></li>
-		<li><%= link_to 'Archive',     archive_path, id: "archive-link" %></li>
-		<li><%= link_to 'About',       about_path,   id: "about-link" %></li>
-	<% if signed_in? %>
-		<li><%= link_to "Comic Index", comics_path,  id: "index-link" %></li>
-		<li><%= link_to "Sign out",    signout_path, method: "delete" %></li>
-	<% end %>
-	</ul>
-</nav>
+<div class="desktop-nav">
+	<nav>
+		<%= link_to 'Home',        home_path,    id: "home-link"    %>
+		<%= link_to 'Archive',     archive_path, id: "archive-link" %>
+		<%= link_to 'About',       about_path,   id: "about-link"   %>
+		<% if signed_in? %>
+		<%= link_to "Comic Index", comics_path,  id: "index-link"   %>
+		<%= link_to "Sign out",    signout_path, method: "delete"   %>
+		<% end %>
+	</nav>
+</div>
+
+
+<div class="nav-slide">
+	<nav>
+		<%= link_to 'Home',        home_path,    id: "home-link" %>
+		<%= link_to 'Archive',     archive_path, id: "archive-link" %>
+		<%= link_to 'About',       about_path,   id: "about-link" %>
+		<a href="#"><h1>march of the meanies</h1></a>
+	</nav>
+</div>
