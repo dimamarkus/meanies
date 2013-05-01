@@ -56,7 +56,7 @@
 .icon {
   background:      transparent;
   color:           $com-nav-icon-color;
-  font-size:       $com-nav-icon-size;
+  font-size:       $com-nav-icon-size*1.75;
   text-decoration: none;
   @include transition(color);
   &:hover {
@@ -101,11 +101,11 @@
        -moz-transform: translate(0px,0);
          -o-transform: translate(0px,0); 
             transform: translate(0px,0);
-    &.icon-facebook-circled { left: 50px;  }
-    &.icon-twitter-circled  { left: 95px;  }
-    &.icon-gplus-circled    { left: 140px; }
-    &.icon-tumblr-circled   { left: 185px; }
-    &.icon-mail             { left: 230px; }
+    &.icon-facebook-circled { left: 1em;  }
+    &.icon-twitter-circled  { left: 2.1em;  }
+    &.icon-gplus-circled    { left: 3.2em; }
+    &.icon-tumblr-circled   { left: 4.3em; }
+    &.icon-mail             { left: 5.4em; }
   }
 }
 
@@ -135,6 +135,7 @@
 .social-slide {
   border-top-left-radius:  1em;
   border-top-right-radius: 1em;
+  padding-bottom: 1em;
   position:      absolute;
   bottom:        -11.5em;
   width:   100%;
@@ -165,7 +166,7 @@
     &:nth-child(2) {
       display: block;
       width: 100%;
-      height: $baseline;
+      height: $baseline/2;
     }
     display: inline-block;
     margin: 0 0 10px 0;
@@ -198,7 +199,7 @@ body {
 
 
 .show-slide {
-  bottom: 0em;
+  bottom: -.5em;
 }
 
 @media only screen and (min-width: $phone+1)  {

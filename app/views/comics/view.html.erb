@@ -34,7 +34,6 @@
 <!--**************************************************-->
 <div class="comicnav">
 	<ul> 
-			<li><%= link_to '', feed_path,                    class: 'icon-rss icon',						  title: "Subscribe!"    		 					   %></li>
 		<% if @comic == Comic.first %>
 			<li><%= link_to '', '#', 													class: 'icon-fast-backward   icon hidden'															     %></li>
 			<li><%= link_to '', '#', 												  class: 'icon-left-dir        icon hidden' 														     %></li>
@@ -50,6 +49,7 @@
 			<li><%= link_to '', page_url(@comic.number+1), 	  class: 'icon-right-dir arrow icon', title: "Next comic",     method: 'get' %></li>
 			<li><%= link_to '', page_url(Comic.last.number),  class: 'icon-fast-forward    icon', title: "Go to last",  	 method: 'get' %></li>
 		<% end %> 
+			<li><%= link_to '', feed_path,                    class: 'icon-rss icon',						  title: "Subscribe!"    		 					   %></li>
 			<li><%= render 'social' %></li>
 	</ul>
 </div>

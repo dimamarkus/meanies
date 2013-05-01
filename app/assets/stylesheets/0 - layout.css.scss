@@ -234,7 +234,7 @@ nav {
     display:  block;
     padding:  1em auto;
     position: fixed;
-    top:     -21.5em;
+    top:     -22em;
     width:    100%;
     -webkit-transition-duration: 0.5s;
        -moz-transition-duration: 0.5s;
@@ -252,7 +252,7 @@ nav {
                 
                   hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
                   hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
-                  border-bottom-left-radius: 1em;
+                  border-bottom-left-radius:  1em;
                   border-bottom-right-radius: 1em;
       a {
         color:           black;
@@ -264,8 +264,25 @@ nav {
         text-align:      center;
         text-decoration: none;
         width:           75%;
-        &:last-child {
+        &:nth-child(3) {
+          border-bottom: 1px solid black;
+        }
+        &:nth-child(4) {
           width: 98%;
+          &:hover {
+            background:  transparent;
+          }
+        }
+        &:nth-child(5) {
+          position: relative;
+          left: .10em;
+          bottom: 28px;
+          font-size: $baseline*2;
+          line-height: 12px;
+          padding: 0;
+          letter-spacing: .25em;
+          text-decoration: none;
+          width: 100%;
           &:hover {
             background:  transparent;
           }
@@ -279,7 +296,7 @@ nav {
 }
 
 .show-nav {
-  top: 0em;
+  top: -.8em;
 }
 
 

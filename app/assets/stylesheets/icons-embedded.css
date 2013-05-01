@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'icons';
-  src: url("../font/icons.eot");
-  src: url("../font/icons.eot") format('embedded-opentype'), url("../font/icons.svg") format('svg');
+  src: url("../fonts/icons.eot?79340834");
+  src: url("../fonts/icons.eot?79340834#iefix") format('embedded-opentype'), url("../font/icons.svg?79340834#icons") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -44,7 +44,7 @@
 /* you can be more comfortable with increased icons size */
 /* font-size: 120%; */
 /* Uncomment for 3D effect */
- text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); 
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
 .icon-keyboard:before { content: '\2328'; } /* '⌨' */

@@ -83,17 +83,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/public\/uploads\/tmp\/20130406-2037-3036-5356\/March_Of_The_Meanies-1.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2037-3036-5356\/March_Of_The_Meanies-1.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2037-3036-5356\/March_Of_The_Meanies-1.jpg",
-      "initialSize" : 301684,
-      "fileType" : 4096
-    },
     "\/public\/uploads\/tmp\/20130406-2217-9581-2485\/March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -127,14 +116,16 @@
       "initialSize" : 101227,
       "fileType" : 4096
     },
-    "\/app\/assets\/css\/0 - layout.css.css" : {
+    "\/public\/uploads\/tmp\/20130406-2037-3036-5356\/March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/css\/0 - layout.css.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2037-3036-5356\/March_Of_The_Meanies-1.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2037-3036-5356\/March_Of_The_Meanies-1.jpg",
+      "initialSize" : 301684,
+      "fileType" : 4096
     },
     "\/public\/assets\/comics\/comic\/image\/82\/n16409555_30868029_1281.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -169,17 +160,6 @@
       "initialSize" : 110281,
       "fileType" : 4096
     },
-    "\/public\/uploads\/tmp\/20130421-2013-18674-2020\/thumb_n16409555_30868024_6964.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2013-18674-2020\/thumb_n16409555_30868024_6964.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2013-18674-2020\/thumb_n16409555_30868024_6964.jpg",
-      "initialSize" : 76917,
-      "fileType" : 4096
-    },
     "\/public\/uploads\/tmp\/20130406-2034-3036-8041\/thumb_March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -189,6 +169,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2034-3036-8041\/thumb_March_Of_The_Meanies-1.jpg",
       "initialSize" : 35104,
+      "fileType" : 4096
+    },
+    "\/public\/uploads\/tmp\/20130421-2013-18674-2020\/thumb_n16409555_30868024_6964.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2013-18674-2020\/thumb_n16409555_30868024_6964.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2013-18674-2020\/thumb_n16409555_30868024_6964.jpg",
+      "initialSize" : 76917,
       "fileType" : 4096
     },
     "\/public\/uploads\/tmp\/20130421-2013-18674-2020\/n16409555_30868024_6964.jpg" : {
@@ -308,15 +299,6 @@
       "initialSize" : 301684,
       "fileType" : 4096
     },
-    "\/app\/views\/layouts\/_social-slide.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/layouts\/_social-slide.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/app\/assets\/stylesheets\/fonts.css.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -371,17 +353,6 @@
       "initialSize" : 64419,
       "fileType" : 4096
     },
-    "\/public\/uploads\/tmp\/20130421-2109-18674-6502\/n16409555_30868021_7615.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2109-18674-6502\/n16409555_30868021_7615.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2109-18674-6502\/n16409555_30868021_7615.jpg",
-      "initialSize" : 101227,
-      "fileType" : 4096
-    },
     "\/public\/assets\/comics\/comic\/image\/112\/thumb_n16409555_30868022_7944.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -391,6 +362,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/112\/thumb_n16409555_30868022_7944.jpg",
       "initialSize" : 84939,
+      "fileType" : 4096
+    },
+    "\/public\/uploads\/tmp\/20130421-2109-18674-6502\/n16409555_30868021_7615.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2109-18674-6502\/n16409555_30868021_7615.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2109-18674-6502\/n16409555_30868021_7615.jpg",
+      "initialSize" : 101227,
       "fileType" : 4096
     },
     "\/public\/assets\/application.js" : {
@@ -404,17 +386,6 @@
       "outputAbbreviatedPath" : "\/public\/assets\/application-ck.js",
       "fileType" : 64
     },
-    "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/n16409555_30868022_7944.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/n16409555_30868022_7944.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/n16409555_30868022_7944.jpg",
-      "initialSize" : 110281,
-      "fileType" : 4096
-    },
     "\/public\/assets\/images\/fallback\/default.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -426,6 +397,17 @@
       "initialSize" : 26791,
       "fileType" : 8192
     },
+    "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/n16409555_30868022_7944.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/n16409555_30868022_7944.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/n16409555_30868022_7944.jpg",
+      "initialSize" : 110281,
+      "fileType" : 4096
+    },
     "\/public\/assets\/comics\/comic\/image\/75\/thumb_n16409555_30868020_7293.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -436,15 +418,6 @@
       "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/75\/thumb_n16409555_30868020_7293.jpg",
       "initialSize" : 53230,
       "fileType" : 4096
-    },
-    "\/public\/assets\/application.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/assets\/application.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/app\/assets\/stylesheets\/1 - home.css.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -520,6 +493,15 @@
       "initialSize" : 80122,
       "fileType" : 4096
     },
+    "\/app\/views\/comics\/archive.html.erb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/views\/comics\/archive.html.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/public\/assets\/comics\/comic\/image\/79\/n16409555_30868027_7975.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -530,15 +512,6 @@
       "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/79\/n16409555_30868027_7975.jpg",
       "initialSize" : 75120,
       "fileType" : 4096
-    },
-    "\/app\/views\/comics\/archive.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/comics\/archive.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/public\/assets\/comics\/comic\/image\/1\/default.png" : {
       "ignoreWasSetByUser" : 0,
@@ -627,6 +600,15 @@
       "initialSize" : 98830,
       "fileType" : 4096
     },
+    "\/app\/views\/comics\/new.html.erb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/views\/comics\/new.html.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/public\/assets\/comics\/comic\/image\/81\/thumb_n16409555_30868026_7646.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -649,24 +631,6 @@
       "initialSize" : 45700,
       "fileType" : 4096
     },
-    "\/app\/views\/comics\/new.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/comics\/new.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/public\/assets\/application-798947c2f33f56beb6ba42a9d97580dc.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/assets\/application-798947c2f33f56beb6ba42a9d97580dc.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/app\/assets\/images\/mike.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -676,6 +640,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/app\/assets\/images\/mike.png",
       "initialSize" : 22381,
+      "fileType" : 8192
+    },
+    "\/public\/assets\/comics\/comic\/image\/1\/thumb_002.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/1\/thumb_002.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/1\/thumb_002.png",
+      "initialSize" : 26791,
       "fileType" : 8192
     },
     "\/app\/views\/comics\/edit.html.erb" : {
@@ -697,17 +672,6 @@
       "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/82\/thumb_n16409555_30868029_1281.jpg",
       "initialSize" : 77603,
       "fileType" : 4096
-    },
-    "\/public\/assets\/comics\/comic\/image\/1\/thumb_002.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/1\/thumb_002.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/1\/thumb_002.png",
-      "initialSize" : 26791,
-      "fileType" : 8192
     },
     "\/public\/uploads\/tmp\/20130406-2030-3036-4159\/thumb_March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -821,17 +785,6 @@
       "initialSize" : 60877,
       "fileType" : 4096
     },
-    "\/app\/assets\/images\/default.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/images\/default.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/images\/default.png",
-      "initialSize" : 26791,
-      "fileType" : 8192
-    },
     "\/public\/uploads\/tmp\/20130406-2036-3036-0928\/March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -854,6 +807,18 @@
       "outputAbbreviatedPath" : "\/public\/assets\/application-09322b4f43ad345dd2dfbb15c00c5433-ck.js",
       "fileType" : 64
     },
+    "\/app\/assets\/stylesheets\/0 - layout.css.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/0 - layout.css.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/css\/0 - layout.css.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/public\/422.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -874,17 +839,25 @@
       "initialSize" : 26791,
       "fileType" : 8192
     },
-    "\/app\/assets\/stylesheets\/0 - layout.css.scss" : {
+    "\/app\/assets\/images\/default.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/0 - layout.css.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/css\/0 - layout.css.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/app\/assets\/images\/default.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/images\/default.png",
+      "initialSize" : 26791,
+      "fileType" : 8192
+    },
+    "\/app\/views\/comics\/_social.html.erb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/views\/comics\/_social.html.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/app\/views\/layouts\/_grid.html.erb" : {
       "ignoreWasSetByUser" : 0,
@@ -906,15 +879,6 @@
       "initialSize" : 89728,
       "fileType" : 4096
     },
-    "\/app\/views\/comics\/_social.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/comics\/_social.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/public\/assets\/fallback\/default.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -925,18 +889,6 @@
       "outputAbbreviatedPath" : "\/public\/assets\/fallback\/default.png",
       "initialSize" : 26791,
       "fileType" : 8192
-    },
-    "\/app\/assets\/stylesheets\/4 - comic_index.css.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/4 - comic_index.css.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/css\/4 - comic_index.css.css",
-      "fileType" : 4,
-      "debugStyle" : 0
     },
     "\/public\/assets\/comics\/comic\/image\/77\/thumb_n16409555_30868024_6964.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -971,6 +923,18 @@
       "initialSize" : 74134,
       "fileType" : 4096
     },
+    "\/app\/assets\/stylesheets\/4 - comic_index.css.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/4 - comic_index.css.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/css\/4 - comic_index.css.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/app\/assets\/stylesheets\/s1 - form.css.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -983,17 +947,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/public\/uploads\/tmp\/20130407-0132-5601-6864\/March_Of_The_Meanies-1.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130407-0132-5601-6864\/March_Of_The_Meanies-1.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130407-0132-5601-6864\/March_Of_The_Meanies-1.jpg",
-      "initialSize" : 301684,
-      "fileType" : 4096
-    },
     "\/public\/assets\/comics\/comic\/image\/80\/thumb_n16409555_30868021_7615.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1005,12 +958,32 @@
       "initialSize" : 77948,
       "fileType" : 4096
     },
+    "\/public\/uploads\/tmp\/20130407-0132-5601-6864\/March_Of_The_Meanies-1.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130407-0132-5601-6864\/March_Of_The_Meanies-1.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130407-0132-5601-6864\/March_Of_The_Meanies-1.jpg",
+      "initialSize" : 301684,
+      "fileType" : 4096
+    },
     "\/app\/views\/sessions\/new.html.erb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/app\/views\/sessions\/new.html.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/app\/views\/comics\/_form.html.erb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/views\/comics\/_form.html.erb",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -1025,26 +998,6 @@
       "initialSize" : 35104,
       "fileType" : 4096
     },
-    "\/public\/assets\/comics\/comic\/image\/80\/n16409555_30868021_7615.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/80\/n16409555_30868021_7615.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/80\/n16409555_30868021_7615.jpg",
-      "initialSize" : 101227,
-      "fileType" : 4096
-    },
-    "\/public\/500.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/500.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/public\/uploads\/tmp\/20130406-2054-3036-8200\/March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1055,6 +1008,15 @@
       "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2054-3036-8200\/March_Of_The_Meanies-1.jpg",
       "initialSize" : 301684,
       "fileType" : 4096
+    },
+    "\/public\/500.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/500.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/public\/uploads\/tmp\/20130406-2033-3036-0457\/thumb_March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -1067,25 +1029,27 @@
       "initialSize" : 35104,
       "fileType" : 4096
     },
-    "\/app\/views\/comics\/_form.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/comics\/_form.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/public\/uploads\/tmp\/20130421-2032-18674-5552\/thumb_n16409555_30868021_7615.jpg" : {
+    "\/public\/assets\/comics\/comic\/image\/80\/n16409555_30868021_7615.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2032-18674-5552\/thumb_n16409555_30868021_7615.jpg",
+      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/80\/n16409555_30868021_7615.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2032-18674-5552\/thumb_n16409555_30868021_7615.jpg",
-      "initialSize" : 77948,
+      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/80\/n16409555_30868021_7615.jpg",
+      "initialSize" : 101227,
       "fileType" : 4096
+    },
+    "\/public\/assets\/comics\/comic\/image\/2\/003.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/2\/003.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/2\/003.png",
+      "initialSize" : 56579,
+      "fileType" : 8192
     },
     "\/public\/assets\/comics\/comic\/image\/81\/n16409555_30868026_7646.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -1098,15 +1062,15 @@
       "initialSize" : 93327,
       "fileType" : 4096
     },
-    "\/public\/uploads\/tmp\/20130406-2036-3036-5115\/March_Of_The_Meanies-1.jpg" : {
+    "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/thumb_n16409555_30868022_7944.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2036-3036-5115\/March_Of_The_Meanies-1.jpg",
+      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/thumb_n16409555_30868022_7944.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2036-3036-5115\/March_Of_The_Meanies-1.jpg",
-      "initialSize" : 301684,
+      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/thumb_n16409555_30868022_7944.jpg",
+      "initialSize" : 84939,
       "fileType" : 4096
     },
     "\/public\/uploads\/tmp\/20130406-2036-3036-0928\/thumb_March_Of_The_Meanies-1.jpg" : {
@@ -1131,27 +1095,27 @@
       "initialSize" : 60877,
       "fileType" : 4096
     },
-    "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/thumb_n16409555_30868022_7944.jpg" : {
+    "\/public\/uploads\/tmp\/20130406-2036-3036-5115\/March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/thumb_n16409555_30868022_7944.jpg",
+      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2036-3036-5115\/March_Of_The_Meanies-1.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2015-18674-6145\/thumb_n16409555_30868022_7944.jpg",
-      "initialSize" : 84939,
+      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2036-3036-5115\/March_Of_The_Meanies-1.jpg",
+      "initialSize" : 301684,
       "fileType" : 4096
     },
-    "\/public\/assets\/comics\/comic\/image\/2\/003.png" : {
+    "\/public\/uploads\/tmp\/20130421-2032-18674-5552\/thumb_n16409555_30868021_7615.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/2\/003.png",
+      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2032-18674-5552\/thumb_n16409555_30868021_7615.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/2\/003.png",
-      "initialSize" : 56579,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130421-2032-18674-5552\/thumb_n16409555_30868021_7615.jpg",
+      "initialSize" : 77948,
+      "fileType" : 4096
     },
     "\/public\/assets\/comics\/comic\/image\/111\/n16409555_30868020_7293.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -1208,6 +1172,17 @@
       "initialSize" : 35105,
       "fileType" : 4096
     },
+    "\/public\/assets\/comics\/comic\/image\/78\/thumb_n16409555_30868022_7944.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/78\/thumb_n16409555_30868022_7944.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/78\/thumb_n16409555_30868022_7944.jpg",
+      "initialSize" : 84939,
+      "fileType" : 4096
+    },
     "\/app\/assets\/stylesheets\/responsive.css.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1219,17 +1194,6 @@
       "outputAbbreviatedPath" : "\/app\/assets\/css\/responsive.css.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/public\/assets\/comics\/comic\/image\/78\/thumb_n16409555_30868022_7944.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/78\/thumb_n16409555_30868022_7944.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/78\/thumb_n16409555_30868022_7944.jpg",
-      "initialSize" : 84939,
-      "fileType" : 4096
     },
     "\/public\/404.html" : {
       "ignoreWasSetByUser" : 0,
