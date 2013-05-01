@@ -2,8 +2,7 @@
 <!--0-4 MAIN NAVIGATION ******************************************* -->
 <!--*************************************************************** -->
 
-<div class="desktop-nav">
-	<nav>
+	<nav class="desktop-nav">
 		<%= link_to 'Home',        home_path,    id: "home-link"    %>
 		<%= link_to 'Archive',     archive_path, id: "archive-link" %>
 		<%= link_to 'About',       about_path,   id: "about-link"   %>
@@ -12,15 +11,14 @@
 		<%= link_to "Sign out",    signout_path, method: "delete"   %>
 		<% end %>
 	</nav>
-</div>
 
 
-<div class="nav-slide">
-	<nav>
+
+
+	<nav class="nav-slide">
 		<%= link_to 'Home',        home_path,    id: "home-link" %>
 		<%= link_to 'Archive',     archive_path, id: "archive-link" %>
 		<%= link_to 'About',       about_path,   id: "about-link" %>
 		<a href="#"><h1>march of the meanies</h1></a>
 		<a href="#">...</a>
 	</nav>
-</div>

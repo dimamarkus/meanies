@@ -1,0 +1,187 @@
+/************************************************************************/
+/* _1   TYPOGRAPHY                                                      */
+/************************************************************************/
+/************************************************************************/
+/* _2   COLORS                                                          */
+/************************************************************************/
+/* #000000;  /******Black******/
+/* #FFFFFF;  /******White******/
+/* #FFBF2A;  /*****Yellow******/
+/* #403D3D;  /****Dark Grey****/
+/* #7F797B;  /****Light Grey***/
+/******Black******/
+/******Black******/
+/******White******/
+/******Black******/
+/****Light Grey***/
+/******White******/
+/******Black******/
+/****Dark Grey****/
+/****Light Grey***/
+/****Light Grey***/
+/****Dark Grey****/
+/******Black******/
+/******Black******/
+/*****Yellow******/
+/****Light Grey***/
+/****Dark Grey****/
+/*****Yellow******/
+/******Black******/
+/******Black******/
+/************************************************************************/
+/* _3   COLORS                                                          */
+/************************************************************************/
+/************************************************************************/
+/* _4   MIX-INS                                                         */
+/************************************************************************/
+/************************************************************************/
+/* 1-1   COMIC TITLE                                                    */
+/************************************************************************/
+.title {
+  color: #7f797b;
+  font-family: "AaarghNormal";
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%; }
+
+/************************************************************************/
+/* 1-2   THE COMIC                                                      */
+/************************************************************************/
+.comic {
+  max-height: 480px;
+  max-width: 480px; }
+  .comic img {
+    width: 100%; }
+
+/************************************************************************/
+/* 1-3   COMIC NAVIGATION                                               */
+/************************************************************************/
+/*------------------- 1-3-1   Comiv Nav Container                       */
+.comicnav, .mobile-comicnav {
+  max-width: 480px;
+  text-align: center; }
+  .comicnav ul li, .mobile-comicnav ul li {
+    display: inline-block; }
+
+.mobile-comicnav {
+  position: relative;
+  bottom: 20px; }
+
+/*------------------- 1-3-2   Comic Nav Icons - General Styles          */
+.icon {
+  background: transparent;
+  color: #403d3d;
+  font-size: 63px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out; }
+  .icon:hover {
+    color: #7f797b; }
+
+/*------------------- 1-3-3   Comic Nav Icons - Feed Icon               */
+.icon-rss:hover {
+  color: #ffbf2a; }
+
+/*------------------- 1-3-4   Comic Nav Icons - Prev/Next Icon          */
+.arrow {
+  color: #ffbf2a;
+  font-size: 36px; }
+  .arrow:hover {
+    color: #7f797b; }
+
+/*------------------- 1-3-5   Comic Nav Icons - Share Icon              */
+.social {
+  position: relative; }
+  .social a {
+    background: transparent;
+    display: inline;
+    left: 3px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    -webkit-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 0.5s linear;
+    -moz-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 0.5s linear;
+    -o-transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 0.5s linear;
+    transition: left 0.5s cubic-bezier(0.1, 0.8, 0.9, 1), opacity 0.5s linear; }
+  .social:hover .smedia {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0);
+    -moz-transform: translate(0px, 0);
+    -o-transform: translate(0px, 0);
+    transform: translate(0px, 0); }
+    .social:hover .smedia.icon-facebook-circled {
+      left: 1em; }
+    .social:hover .smedia.icon-twitter-circled {
+      left: 2.1em; }
+    .social:hover .smedia.icon-gplus-circled {
+      left: 3.2em; }
+    .social:hover .smedia.icon-tumblr-circled {
+      left: 4.3em; }
+    .social:hover .smedia.icon-mail {
+      left: 5.4em; }
+
+/*------------------- 1-3-6   Comic Over - For swipe navigation         */
+#swipey {
+  background: transparent;
+  height: 425px;
+  margin: 0 auto;
+  position: absolute;
+  top: 90px;
+  width: 425px; }
+
+@media only screen and (min-width: 516px) {
+  #swipey {
+    display: none; } }
+/************************************************************************/
+/* 1-4   SOCIAL SLIDE (Only visible on mobile)                          */
+/************************************************************************/
+.social-slide {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  bottom: -11.5em;
+  left: -.03em;
+  padding-bottom: 1em;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background-color: #e6e6e6;
+  box-shadow: inset #262626 0 0px 0px 4px, inset rgba(38, 38, 38, 0.8) 0 -1px 5px 4px, inset rgba(0, 0, 0, 0.25) 0 -1px 0px 7px, inset rgba(255, 255, 255, 0.7) 0 2px 1px 7px, rgba(0, 0, 0, 0.15) 0 -5px 6px 4px, rgba(255, 255, 255, 0.5) 0 5px 6px 4px;
+  /* outer HL */ }
+  .social-slide a {
+    display: inline-block;
+    margin: 0 0 10px 0; }
+    .social-slide a:first-child {
+      position: relative;
+      left: .10em;
+      font-size: 48px;
+      letter-spacing: .25em;
+      text-decoration: none;
+      text-align: center;
+      width: 100%; }
+    .social-slide a:nth-child(2) {
+      display: block;
+      width: 100%;
+      height: 12px; }
+  .social-slide:before {
+    z-index: 1; }
+
+body.archive_controller .social-slide {
+  display: none; }
+body.about_controller .social-slide {
+  display: none; }
+body.index_controller .social-slide {
+  display: none; }
+
+.show-slide {
+  bottom: -.5em; }
+
+@media only screen and (min-width: 431px) {
+  .social-slide {
+    display: none; } }
