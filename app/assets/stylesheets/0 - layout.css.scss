@@ -155,9 +155,6 @@ body, .container, .content, .comic, .comicnav, .nav {
   margin:  0 auto;
 }
 
-body {
-  overflow: hidden;
-}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ .Container ~ Desktop ~*/
 .container {
@@ -169,19 +166,17 @@ body {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ .Container ~ Phone  ~*/
 @media screen and (max-width: $phone ) {
   .container {
-        margin: 0 auto;
-        overflow: hidden;
-        height: 780px;
-        position: absolute;
-        width: 430px;
-        padding: 0 .5% 0 .5%;
+    height: 780px;
+    padding: 0 .5% 0 .5%;
+    position: relative;
+    overflow: hidden;
   }
 }
 
 
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ .Content ~ Desktop ~*/
 .content {
+  overflow: hidden;
   background-color: $content-box-color;
   min-height:     600px;
   margin: 0 $baseline 0 5em;
@@ -189,9 +184,9 @@ body {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ .Content ~ Phone  ~*/
 @media screen and (max-width: $phone) {
   .content {
-    float: right;
+    overflow: hidden;
     margin: 4em 0.2em 0em 0.2em;
-    max-width: 490px;
+    min-width: 430px;
   }
 }
 
@@ -211,12 +206,12 @@ body {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Nav ~ Desktop ~*/
 .nav-slide {
+  overflow: hidden;
   display: none;
 }
 
 nav {
-
-
+  overflow: hidden;
   margin-top: $h2-size*2;
   float: left;
   width: 5em;
@@ -238,10 +233,12 @@ nav {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Nav ~ Phone ~*/
 @media screen and (max-width: $phone) {
   .desktop-nav { 
+    overflow: hidden;
     display: none;
   }
 
   .nav-slide {
+    overflow: hidden;
     display:  block;
     padding:  1em auto;
     position: fixed;

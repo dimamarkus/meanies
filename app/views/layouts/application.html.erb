@@ -24,21 +24,21 @@
 	</head>
 
 	<body class="<%= params[:action] %>_controller">
-		<h1><%= link_to 'march of the meanies', home_path %></h1>
-			
-		<div class='container'>
+			<h1><%= link_to 'march of the meanies', home_path %></h1>
+				
+			<div class='container'>
 
-			<%= render 'layouts/navigation' %>
+				<%= render 'layouts/navigation' %>
 
-			<div class="content">
-				<% flash.each do |key, value| %>
-					<%= content_tag(:div, value, class: "alert alert-#{key}") %>
-				<% end %>
-				<%= yield %>
+				<div class="content">
+					<% flash.each do |key, value| %>
+						<%= content_tag(:div, value, class: "alert alert-#{key}") %>
+					<% end %>
+					<%= yield %>
+				</div>
 			</div>
 
-		</div>
-		
+
 		<script type="text/javascript">
 			$('.social-slide').on('click', function () {
 			    $(this).toggleClass('show-slide');
@@ -50,6 +50,8 @@
 
 			$.mobile.ajaxEnabled=false;
 			$.mobile.loadingMessage = false;
+
+
 		</script>
 
 	</body>
