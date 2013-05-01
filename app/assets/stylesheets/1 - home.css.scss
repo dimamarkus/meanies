@@ -81,7 +81,7 @@
 /*------------------- 1-3-4   Comic Nav Icons - Prev/Next Icon          */
 .arrow {
 	color:     $nav-btn-txt-color;
-	font-size: $com-nav-icon-size;
+	font-size: $com-nav-icon-size*1.85;
 	&:hover {
 		color:   $nav-btn-hov-color;
 	} 
