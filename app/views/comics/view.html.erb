@@ -116,6 +116,9 @@
 <div class="social-slide">
 	<a href="#">...</a>
 	<a href="#"></a>
+
+	<a class="icon icon-facebook-circled hidden spacer1"></a>
+
 	<a class="smedia icon icon-facebook-circled" 
   	 target="_blank" 
   	 href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= @comic.number %>&p[summary]=My new favorite web comic." 
@@ -131,12 +134,19 @@
      href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= @comic.number %>"
      title="Share this comic on Google Plus">
   </a>
+
+		
+	<a class="icon icon-facebook-circled hidden spacer2"></a>
+	
+
   <a class="smedia icon icon-tumblr-circled"
  		 target="_blank"  
  		 href="http://www.tumblr.com/share?v=3&u=marchofthemeanies.com/<%= @comic.number %>&t=%20My%20new%20favorite%20web%20comic"
  		 title="Share this comic on Tumblr">
   </a>
-  <%= link_to '', page_url(Comic.last.number),	 method: 'get', class: 'icon-fast-forward hidden icon' %>
+  
+	<a class="icon icon-facebook-circled hidden spacer3"></a>
+
   <a class="smedia icon icon-mail" 
   	 href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= @comic.number %>"
   	 title="Email this comic to a friend">

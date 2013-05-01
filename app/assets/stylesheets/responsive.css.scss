@@ -77,6 +77,14 @@
 	.arrow {
 	  font-size:   $com-nav-icon-size*3;
 	}
+
+	a.spacer1 {
+ 		display: none;
+	 }
+
+	a.spacer2 {
+ 		display: none;
+	 }
 }
 
 
@@ -85,6 +93,44 @@
 
 
 
+@media screen and (max-width: 425px) {
+	h1 {
+		color: black;
+		font-size: $base-font-size;
+		line-height: $base-font-size*1.5;
+		font-family: $title-text-font;
+		margin: 0;
+	}
+
+	.icon {
+	  font-size: $com-nav-icon-size*1.5;
+	}
+
+	.container {
+		height: 100%;
+	}
+
+	.social-slide { 
+		bottom: -10em;
+		text-align: center;
+	}
+
+	a.spacer3 {
+		display: none;
+	}
+
+	.arrow {
+		font-size:   $com-nav-icon-size*2;
+	}
+
+	.content {
+		min-height: 100%;
+	}
+
+	.mobile-comicnav { 
+		margin-bottom: 20%;
+	}
+} /* max-width: 425px */
 
 
 

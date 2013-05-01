@@ -178,7 +178,7 @@ body, .container, .content, .comic, .comicnav, .nav {
 .content {
   overflow: hidden;
   background-color: $content-box-color;
-  min-height:     600px;
+  min-height: 720px;
   margin: 0 $baseline 0 5em;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ .Content ~ Phone  ~*/
@@ -186,9 +186,11 @@ body, .container, .content, .comic, .comicnav, .nav {
   .content {
     overflow: hidden;
     margin: 4em 0.2em 0em 0.2em;
-    min-width: 430px;
+    width: 100%;
   }
 }
+
+
 
 
 

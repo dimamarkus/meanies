@@ -147,7 +147,7 @@
   left: -.03em;
   padding-bottom: 1em;
   position:      absolute;
-  width:   430px;
+  width:   100%;
   z-index: 50;
   -webkit-transition-duration: 0.5s;
      -moz-transition-duration: 0.5s;
@@ -208,7 +208,7 @@ body {
 
 
 .show-slide {
-  bottom: -.5em;
+  bottom: -.5em !important;
 }
 
 @media only screen and (min-width: $phone+1)  {
