@@ -137,14 +137,14 @@ body, .container, .content, .comic, .comicnav, .nav {
 
 .container {
 	background: $container-color;
-  padding: 0 8% 0 8%;
+  padding:    0 8% 0 8%;
 }
 
 .content {
-  overflow: hidden;
-  background-color: $content-box-color;
+  overflow:   hidden;
+  background: $content-box-color;
   min-height: 720px;
-  margin: 0 $baseline 0 5em;
+  margin:     0 $baseline 0 5em;
 }
 
 
@@ -156,73 +156,23 @@ body, .container, .content, .comic, .comicnav, .nav {
 /************************************************************************/
 
 nav {
-  overflow: hidden;
+  overflow:   hidden;
   margin-top: $h2-size*2;
-  float: left;
-  width: 5em;
+  float:      left;
+  width:      5em;
   a {
-    display:  block;
-    padding:  0 0 1em 0;
+    display:         block;
+    padding:         0 0 1em 0;
     color:           $nav-btn-txt-color;
     font:            $nav-font;
     letter-spacing:  1px;
     text-decoration: none;
-    width: 100%;
+    width:           100%;
     @include transition(color);
     &:hover {
       color: $nav-btn-hov-color;
     } 
   } 
-}
-
-
-.nav-slide {
-  border-bottom-left-radius:  1em;
-  border-bottom-right-radius: 1em;
-  margin:   0;
-  position: fixed;
-  top:     -21em;
-  a {
-    color:           black;
-    display:         block;
-    font-size:       $baseline*2;
-    line-height:     $baseline*2.5;
-    margin:          0 auto;
-    padding:         .5em;
-    text-align:      center;
-    text-decoration: none;
-    width:           75%;
-    &:nth-child(3) {
-      border-bottom: 1px solid black;
-    }
-    &:nth-child(4) {
-      width: 98%;
-      &:hover {
-        background:  transparent;
-      }
-    }
-    &:nth-child(5) {
-      position: relative;
-      left: .10em;
-      bottom: 28px;
-      font-size: $baseline*2;
-      line-height: 12px;
-      padding: 0;
-      letter-spacing: .25em;
-      text-decoration: none;
-      width: 100%;
-      &:hover {
-        background:  transparent;
-      }
-    }
-    &:hover {
-      background: grey;
-    }
-  }
-}
-
-.show-nav {
-  top: -.8em;
 }
 
 
@@ -250,7 +200,86 @@ body {
 
 
 /************************************************************************/
-/* 0-5   FLASH NOTICES                                                  */
+/* 0-5   NAVIGATION SLIDE (Only visible on mobile)                      */
+/************************************************************************/
+
+.nav-slide {
+  border-bottom-left-radius:  1em;
+  border-bottom-right-radius: 1em;
+  margin:                     0;
+  position:                   fixed;
+  top:                       -21em;
+  a {
+    color:           black;
+    display:         block;
+    font-size:       $baseline*2;
+    line-height:     $baseline*2.5;
+    margin:          0 auto;
+    padding:         .5em;
+    text-align:      center;
+    text-decoration: none;
+    width:           75%;
+    &:nth-child(3) {
+      border-bottom: 1px solid black;
+    }
+    &:nth-child(4) {
+      width: 98%;
+      &:hover {
+        background:  transparent;
+      }
+    }
+    &:nth-child(5) {
+      position:        relative;
+      left:            .10em;
+      bottom:          28px;
+      font-size:       $baseline*2;
+      line-height:     12px;
+      padding:         0;
+      letter-spacing:  .25em;
+      text-decoration: none;
+      width: 100%;
+      &:hover {
+        background:  transparent;
+      }
+    }
+    &:hover {
+      background: grey;
+    }
+  }
+}
+
+/*------------------- ToggleClass with JS to reveal slide               */
+.show-nav {
+  top: -.8em; 
+}
+
+
+
+/************************************************************************/
+/* 0-6   SLIDES BACKGROUND/TEXTURE                                      */
+/************************************************************************/
+  .silver-box { 
+    background-color: hsl(0,0%,90%);
+
+    box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+                inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+                inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+                inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+                      hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+                      hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+
+    -webkit-transition-duration: 0.5s;
+       -moz-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+
+    width:   99%;
+    z-index: 50;
+  }
+
+
+/************************************************************************/
+/* 0-7   FLASH NOTICES                                                  */
 /************************************************************************/
 
 .alert {
@@ -270,7 +299,7 @@ body {
 
 
 /************************************************************************/
-/* 0-6   BUTTONS                                                        */
+/* 0-8   BUTTONS                                                        */
 /************************************************************************/
 
 .button {
@@ -292,8 +321,8 @@ body {
           box-shadow:  0 1px 3px rgba(0,0,0,0.5);
 
   &:hover, &:focus  {
-    background: darken($nav-btn-txt-color, 25%);
-    border:     1px solid $title-text-color;
+    background:         darken($nav-btn-txt-color, 25%);
+    border:             1px solid $title-text-color;
     -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
        -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
             box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
