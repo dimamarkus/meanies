@@ -6,30 +6,32 @@
 
 #gallery {   /* Thumbnail gallery and scrollbar */
   clear: both;
-
+  max-width:   90%; 
+  position: relative;
+  top: -2em;
   .viewport {
-    height:      600px;
-    margin:      0 auto;
-    max-width:   880px; 
-    overflow:    hidden; 
-    position:    relative;
+    height:        600px;
+    margin:        0 auto;
+    overflow:      hidden; 
+    position:      relative;
+    padding:       0 4em 0 4em;
 
     .overview { 
-      max-width: 860px;
-      position:  absolute; 
-      top:       0; 
+      padding-top: 4em;
+      position:    absolute; 
+      top:         0; 
     }
   }
 
   .scrollbar {
-    float:       right;
-    position:    relative;
-    width:       16px; 
-
+    float:         right;
+    position:      relative;
+    width:         16px; 
+    top:           3.5em;
     .track { 
-      height:    100%;
-      position:  relative;
-      width:     16px;
+      height:      100%;
+      position:    relative;
+      width:       16px;
 
        .thumb {
         background:    $scrollbar-color;

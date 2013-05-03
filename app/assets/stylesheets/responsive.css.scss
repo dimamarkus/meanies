@@ -1,5 +1,29 @@
 @import 'variables';
 
+@media screen and (max-width: 818px ) {
+  .icon {
+    font-size:  $com-nav-icon-size*1.65;
+  }
+  .social:hover .smedia {
+     font-size: $com-nav-icon-size*1.50;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px ) {
+  .icon {
+    font-size:  $com-nav-icon-size*1.55;
+  }
+  .social:hover .smedia {
+     font-size: $com-nav-icon-size*1.40;
+  }
+}
+
+
 
 
 

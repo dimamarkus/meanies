@@ -36,22 +36,26 @@
 <div class="comicnav">
 	<ul> 
 		<% if @comic == Comic.first %>
-			<li><%= link_to '', '#', 													class: 'icon-fast-backward   icon hidden'															     %></li>
-			<li><%= link_to '', '#', 												  class: 'icon-left-dir        icon hidden' 														     %></li>
+			<li><%= link_to '', '#', 													class: 'icon-shuffle       	 icon hidden'															     %></li>
+			<li><%= link_to '', '#', 												  class: 'icon-shuffle       	 icon hidden' 														     %></li>
 		<% else %>
 			<li><%= link_to '', page_url(Comic.first.number), class: 'icon-fast-backward   icon', title: "Go to first",    method: 'get' %></li>
 			<li><%= link_to '', page_url(@comic.number-1), 		class: 'icon-left-dir       arrow', title: "Previous comic", method: 'get' %></li>
 		<% end %>
 			<li><%= link_to '', page_url(random), 						class: 'icon-shuffle         icon', title: "Random comic",   method: 'get' %></li>
 		<% if @comic == Comic.last %>
-			<li><%= link_to '', '#', 													class: 'icon-right-dir       icon hidden' 			  					 							 %></li>
-			<li><%= link_to '', '#',													class: 'icon-fast-forward    icon hidden'  			 											     %></li>
+			<li><%= link_to '', '#', 													class: 'icon-shuffle       	 icon hidden' 			  					 							 %></li>
+			<li><%= link_to '', '#',													class: 'icon-shuffle       	 icon hidden'  			 											     %></li>
 		<% else %>
 			<li><%= link_to '', page_url(@comic.number+1), 	  class: 'icon-right-dir      arrow', title: "Next comic",     method: 'get' %></li>
 			<li><%= link_to '', page_url(Comic.last.number),  class: 'icon-fast-forward    icon', title: "Go to last",  	 method: 'get' %></li>
 		<% end %> 
-			<li><%= link_to '', feed_path,                    class: 'icon-rss             icon',	title: "Subscribe!"    		 					   %></li>
 			<li><%= render 'social' %></li>
+			<li><%= link_to '', '#', 													class: 'icon-shuffle       	 icon hidden' 			  					 						 	 %></li>
+			<li><%= link_to '', '#', 													class: 'icon-shuffle       	 icon hidden' 			  					 						 	 %></li>
+			<li><%= link_to '', '#', 													class: 'icon-shuffle       	 icon hidden' 			  					 						 	 %></li>
+			<li><%= link_to '', feed_path,                    class: 'icon-rss             icon',	title: "Subscribe!"    		 					 	 %></li>
+
 	</ul>
 </div>
 

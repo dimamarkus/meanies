@@ -93,16 +93,16 @@ a {
 
 
 
-h1 { 
-  color: $banner-text-color;
-  font: #{$h1-size}/#{$h1-leading} $banner-text-font;
-  margin-left:  $base-font-size * 2;
-  margin-top:   $baseline;
-  a {
-    color: $banner-text-color;  
-    text-decoration: none;
-  } 
-}
+// h1 { 
+//   color: $banner-text-color;
+//   font: #{$h1-size}/#{$h1-leading} $banner-text-font;
+//   margin-left:  $base-font-size * 2;
+//   margin-top:   $baseline;
+//   a {
+//     color: $banner-text-color;  
+//     text-decoration: none;
+//   } 
+// }
 
 h2 {
 	font: #{$h2-size}/#{$h2-leading} $title-text-font;
@@ -131,12 +131,13 @@ h4 {
 /************************************************************************/
 /* 0-3   LAYOUT                                                         */
 /************************************************************************/
-body, .container, .content, .comic, .comicnav, .nav {
+body, .container, .comic, .comicnav, .nav {
   margin:  0 auto;
 }
 
 .container {
 	background: $container-color;
+  margin-top: 5%;
   padding:    0 8% 0 8%;
 }
 
@@ -144,7 +145,7 @@ body, .container, .content, .comic, .comicnav, .nav {
   overflow:   hidden;
   background: $content-box-color;
   min-height: 720px;
-  margin:     0 $baseline 0 5em;
+  max-width:  90%;
 }
 
 
@@ -155,24 +156,52 @@ body, .container, .content, .comic, .comicnav, .nav {
 /* 0-4   MAIN NAVIGATION                                                */
 /************************************************************************/
 
-nav {
-  overflow:   hidden;
-  margin-top: $h2-size*2;
-  float:      left;
-  width:      5em;
-  a {
+.desktop-nav { 
+  background:     hsl(0,0%,90%);
+  border-radius:  .5em;
+  float:          left;
+  margin-right:   4em;
+  margin-top:     1.5em;
+  padding-bottom: 1em;
+  text-align:     center;
+  width:          9em;
+
+  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+              inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+              inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+              inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+                    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+                    hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+
+  -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+    a {
+    color:           black;
     display:         block;
-    padding:         0 0 1em 0;
-    color:           $nav-btn-txt-color;
+    padding:         1em;
     font:            $nav-font;
     letter-spacing:  1px;
     text-decoration: none;
     width:           100%;
     @include transition(color);
+    &:first-child {
+      padding-bottom: .5em;
+      border-bottom: 1px solid black;
+      &:hover {
+        background: transparent;
+        color: $nav-btn-hov-color;
+      } 
+    }
+    &:nth-child(2) {
+      margin-top: .5em;
+    }
     &:hover {
+      background: #403D3D;  /****Dark Grey****/
       color: $nav-btn-hov-color;
     } 
-  } 
+  }
 }
 
 
