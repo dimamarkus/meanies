@@ -13,14 +13,14 @@
 <!--1-2 THE COMIC ********************************************************* -->
 <!--*********************************************************************** -->
 
-<div class="comic">
+<figure class="comic">
 	<div id="swipey"></div>
 	<% if @comic.number == 1 %>
 	<%= link_to image_tag(@comic.image_url), '#' %> 
 	<% else %>
 	<%= link_to image_tag(@comic.image_url), page_url(@comic.number-1), title: @comic.title %> 
 	<% end %>
-</div>
+</figure>
 
 
 

@@ -2,16 +2,16 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8283",
   "files" : {
-    "\/public\/assets\/comics\/comic\/image\/79\/n16409555_30868027_7975.jpg" : {
+    "\/app\/assets\/javascripts\/application.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/79\/n16409555_30868027_7975.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/79\/n16409555_30868027_7975.jpg",
-      "initialSize" : 75120,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/app\/assets\/javascripts\/application.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/app\/assets\/javascripts\/application-ck.js",
+      "fileType" : 64
     },
     "\/public\/assets\/comics\/comic\/image\/78\/thumb_n16409555_30868022_7944.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -834,6 +834,15 @@
       "initialSize" : 101227,
       "fileType" : 4096
     },
+    "\/app\/views\/comics\/index.html.erb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/views\/comics\/index.html.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/app\/assets\/stylesheets\/1 - home.css.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -845,15 +854,6 @@
       "outputAbbreviatedPath" : "\/app\/assets\/css\/1 - home.css.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/app\/views\/comics\/index.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/comics\/index.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/public\/assets\/comics\/comic\/image\/78\/n16409555_30868022_7944.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -1137,17 +1137,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/public\/assets\/comics\/comic\/image\/112\/thumb_n16409555_30868022_7944.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/112\/thumb_n16409555_30868022_7944.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/112\/thumb_n16409555_30868022_7944.jpg",
-      "initialSize" : 84939,
-      "fileType" : 4096
-    },
     "\/public\/assets\/comics\/comic\/image\/81\/n16409555_30868026_7646.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1157,6 +1146,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/81\/n16409555_30868026_7646.jpg",
       "initialSize" : 93327,
+      "fileType" : 4096
+    },
+    "\/public\/assets\/comics\/comic\/image\/112\/thumb_n16409555_30868022_7944.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/112\/thumb_n16409555_30868022_7944.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/112\/thumb_n16409555_30868022_7944.jpg",
+      "initialSize" : 84939,
       "fileType" : 4096
     },
     "\/public\/uploads\/tmp\/20130421-2016-18674-7505\/thumb_n16409555_30868022_7944.jpg" : {
@@ -1224,17 +1224,16 @@
       "initialSize" : 77603,
       "fileType" : 4096
     },
-    "\/app\/assets\/stylesheets\/0 - layout.css.scss" : {
+    "\/public\/assets\/comics\/comic\/image\/79\/n16409555_30868027_7975.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/0 - layout.css.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/css\/0 - layout.css.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/79\/n16409555_30868027_7975.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/79\/n16409555_30868027_7975.jpg",
+      "initialSize" : 75120,
+      "fileType" : 4096
     },
     "\/app\/assets\/images\/mike.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1269,21 +1268,24 @@
       "initialSize" : 53230,
       "fileType" : 4096
     },
+    "\/app\/assets\/stylesheets\/0 - layout.css.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/0 - layout.css.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/css\/0 - layout.css.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/app\/views\/sessions\/new.html.erb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/app\/views\/sessions\/new.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/public\/500.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/500.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -1296,16 +1298,14 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/app\/assets\/javascripts\/application.js" : {
+    "\/public\/500.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/javascripts\/application.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/javascripts\/application-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/public\/500.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     }
   },
   "manualImportLinks" : [
