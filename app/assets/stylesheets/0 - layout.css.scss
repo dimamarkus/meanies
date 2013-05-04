@@ -71,7 +71,8 @@ ul, ol, li {
 @charset "UTF-8";
 
 html {
-  background: $background-color;
+  // background: $background-color;
+  background: white;
 }
 
 body {
@@ -131,21 +132,31 @@ h4 {
 /************************************************************************/
 /* 0-3   LAYOUT                                                         */
 /************************************************************************/
-body, .container, .comic, .comicnav, .nav {
-  margin:  0 auto;
+// body, .container, .comic, .comicnav, .nav {
+//   margin:  0 auto;
+// }
+
+body {
+  // background: black;
 }
 
 .container {
-	background: $container-color;
+	// background: $container-color;
+  margin: 0 auto;
+  // background: blue;
   margin-top: 5%;
-  padding:    0 8% 0 8%;
+  // padding:    0 8% 0 8%;
+  // width: 58.8em;
+  width: 44em;
 }
 
 .content {
   overflow:   hidden;
-  background: $content-box-color;
+  // background: $content-box-color;
+  // background: pink;
   min-height: 720px;
-  max-width:  90%;
+  // max-width:  90%;
+  width: 29em;
 }
 
 
@@ -157,21 +168,23 @@ body, .container, .comic, .comicnav, .nav {
 /************************************************************************/
 
 .desktop-nav { 
-  background:     hsl(0,0%,90%);
-  border-radius:  .5em;
+  // background:     hsl(0,0%,90%);
+  // background: green;
+  // border-radius:  .5em;
   float:          left;
-  margin-right:   4em;
-  margin-top:     1.5em;
+  // margin-left: 2em;
+  margin-right:   5em;
+  margin-top:     3em;
   padding-bottom: 1em;
   text-align:     center;
-  width:          9em;
+  width:          10em;
 
-  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
-              inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
-              inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
-              inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
-                    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
-                    hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+  // box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+  //             inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+  //             inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+  //             inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+  //                   hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+  //                   hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
 
   -webkit-transition-duration: 0.5s;
      -moz-transition-duration: 0.5s;
@@ -198,7 +211,7 @@ body, .container, .comic, .comicnav, .nav {
       margin-top: .5em;
     }
     &:hover {
-      background: #403D3D;  /****Dark Grey****/
+      // background: #403D3D;  /****Dark Grey****/
       color: $nav-btn-hov-color;
     } 
   }
@@ -288,14 +301,16 @@ body {
 /* 0-6   SLIDES BACKGROUND/TEXTURE                                      */
 /************************************************************************/
   .silver-box { 
-    background-color: hsl(0,0%,90%);
+    // background-color: hsl(0,0%,90%);
+    background: white;
+    border-radius: 1em;
 
     box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
                 inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
                 inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
-                inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
-                      hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
-                      hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+                inset hsla(0,0%,100%,.7) 0  2px 1px 7px; /* top HL */
+                      // hsla(0,0%, 0%,.15) 0 -5px 6px 4px; /* outer SD */
+                      // hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
 
     -webkit-transition-duration: 0.5s;
        -moz-transition-duration: 0.5s;
