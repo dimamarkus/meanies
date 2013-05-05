@@ -34,11 +34,10 @@
 <!-- Standard navigation menu (Not visible on mobile) -->
 <!--**************************************************-->
 <div class="comicnav">
-	<ul> 
+	<ul class="nav-toprow"> 
 		<% if @comic == Comic.first %>
-			<li><%= link_to '', '#', 													class: 'icon-shuffle       	 icon hidden'															     %></li>
-			<li><%= link_to '', '#', 												  class: 'icon-shuffle       	 icon hidden' 														     %></li>
-		<% else %>
+			<li><%= link_to '', page_url(random), 						class: 'livicon hidden', data: {name: "shuffle"}, title: "Random comic",   method: 'get' %></li>
+			<li><%= link_to '', page_url(random), 						class: 'livicon hidden', data: {name: "shuffle"}, title: "Random comic",   method: 'get' %></li>		<% else %>
 			<li><%= link_to '', page_url(Comic.first.number), class: 'livicon', data: {name: "angle-double-left"}, title: "Go to first",    method: 'get' %></li>
 			<li><%= link_to '', page_url(@comic.number-1), 		class: 'livicon', data: {name: "angle-left"}, title: "Previous comic", method: 'get' %></li>
 		<% end %>
@@ -48,9 +47,8 @@
 			<li><%= link_to '', page_url(@comic.number+1), 	  class: 'livicon', data: {name: "angle-right"}, title: "Next comic",     method: 'get' %></li>
 			<li><%= link_to '', page_url(Comic.last.number),  class: 'livicon', data: {name: "angle-double-right"}, title: "Go to last",  	 method: 'get' %></li>
 		<% end %> 
-			<li><%= render 'social' %></li>
-			<li><%= link_to '', feed_path,                   class: 'livicon', data: {name: "rss"},	title: "Subscribe!"    		 					 	 %></li>
 	</ul>
+
 </div>
 
 
@@ -59,27 +57,24 @@
 <div class="mobile-comicnav">
 	<ul class="top-row">
 		<% if @comic == Comic.first %>
-			<li><%= link_to '', '#', 												  class: 'icon-left-dir        icon hidden' 														     %></li>
-		<% else %>
-			<li><%= link_to '', page_url(@comic.number-1), 		class: 'icon-left-dir 			 arrow', title: "Previous comic", method: 'get' %></li>
+<li><%= link_to '', page_url(random), 						class: 'livicon hidden', data: {name: "shuffle"}, title: "Random comic",   method: 'get' %></li>		<% else %>
+			<li><%= link_to '', page_url(@comic.number-1), 		class: 'livicon', data: {name: "angle-left"}, title: "Previous comic", method: 'get' %></li>
 		<% end %>
 		<% if @comic == Comic.last %>
-			<li><%= link_to '', '#', 													class: 'icon-right-dir       icon hidden' 			  					 							 %></li>
-		<% else %>	
-			<li><%= link_to '', page_url(@comic.number+1), 	  class: 'icon-right-dir			 arrow', title: "Next comic",     method: 'get' %></li>
+<li><%= link_to '', page_url(random), 						class: 'livicon hidden', data: {name: "shuffle"}, title: "Random comic",   method: 'get' %></li>		<% else %>	
+			<li><%= link_to '', page_url(@comic.number+1), 	  class: 'livicon', data: {name: "angle-right"}, title: "Next comic",     method: 'get' %></li>
 		<% end %>
 	</ul>
 	<ul class="bottom-row">
 		<% if @comic == Comic.first %>
-			<li><%= link_to '', '#', 													class: 'icon-fast-backward   icon hidden'															     %></li>
-		<% else %>
-			<li><%= link_to '', page_url(Comic.first.number), class: 'icon-fast-backward   icon', title: "Go to first",    method: 'get' %></li>
+<li><%= link_to '', page_url(random), 						class: 'livicon hidden', data: {name: "shuffle"}, title: "Random comic",   method: 'get' %></li>		<% else %>
+			<li><%= link_to '', page_url(Comic.first.number), class: 'livicon', data: {name: "angle-double-left"}, title: "Go to first",    method: 'get' %>
 		<% end %>
-			<li><%= link_to '', page_url(random), 						class: 'icon-shuffle         icon', title: "Random comic",   method: 'get' %></li>
+			<li><%= link_to '', page_url(random), 						class: 'livicon', data: {name: "shuffle"}, title: "Random comic",   method: 'get' %></li>
 		<% if @comic == Comic.last %>
-			<li><%= link_to '', '#',													class: 'icon-fast-forward    icon hidden'  			 											     %></li>
+			<li><%= link_to '', page_url(random), 						class: 'livicon hidden', data: {name: "shuffle"}, title: "Random comic",   method: 'get' %></li>
 		<% else %>
-			<li><%= link_to '', page_url(Comic.last.number),  class: 'icon-fast-forward    icon', title: "Go to last", 	   method: 'get' %></li>
+		<li><%= link_to '', page_url(Comic.last.number),  class: 'livicon', data: {name: "angle-double-right"}, title: "Go to last",  	 method: 'get' %></li>		
 		<% end %>
 	</ul>
 </div>

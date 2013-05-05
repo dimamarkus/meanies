@@ -1,29 +1,26 @@
-<div class="livicon social" data-name="share">
-    <a class="smedia livicon icon-facebook" 
-       data-name="facebook"
-       data-size="24"
-    	 target="_blank" 
-    	 href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= @comic.number %>&p[summary]=My new favorite web comic." 
-    	 title="Share this comic on Facebook" =>
+<div class="social icon icon-share">
+    <a class="smedia icon icon-facebook-circled" 
+       target="_blank" 
+       href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= @comic.number %>&p[summary]=My new favorite web comic." 
+       title="Share this comic on Facebook" =>
     </a>
-    <a class="smedia livicon icon-twitter" 
-       data-name="twitter"
-       data-size="24"
+    <a class="smedia icon icon-twitter-circled" 
        target="_blank" 
        href="http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/<%= @comic.number %>" 
        title="Share this comic on Twitter">
-  	</a>
-    <a class="smedia livicon icon-gplus" 
-       data-name="google-plus"
-       data-size="24"
-    	 target="_blank"
+    </a>
+    <a class="smedia icon icon-gplus-circled" 
+       target="_blank"
        href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= @comic.number %>"
        title="Share this comic on Google Plus">
     </a>
-    <a class="smedia livicon icon-mail" 
-       data-name="email"
-       data-size="24"
-    	 href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= @comic.number %>"
-    	 title="Email this comic to a friend">
-	  </a>
-</div>	
+    <a class="smedia icon icon-tumblr-circled"
+       target="_blank"  
+       href="http://www.tumblr.com/share?v=3&u=marchofthemeanies.com/<%= @comic.number %>&t=%20My%20new%20favorite%20web%20comic"
+       title="Share this comic on Tumblr">
+    </a>
+    <a class="smedia icon icon-mail" 
+       href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= @comic.number %>"
+       title="Email this comic to a friend">
+    </a>
+</div>

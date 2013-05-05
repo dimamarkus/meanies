@@ -7,11 +7,36 @@
 		<%= link_to 'Home',        home_path,    id: "home-link"    %>
 		<%= link_to 'Archive',     archive_path, id: "archive-link" %>
 		<%= link_to 'About',       about_path,   id: "about-link"   %>
+
 		<% if signed_in? %>
 		<%= link_to "Comic Index", comics_path,  id: "index-link"   %>
 		<%= link_to "Sign out",    signout_path, method: "delete"   %>
 		<% end %>
 	</nav>
+			<div class="nav-bottom">
+			<%= link_to '', feed_path,                   class: 'livicon', data: {name: "rss"},	title: "Subscribe!"     %>
+			<div class="social livicon" data-name="share" data-s="34">
+    <a class="smedia icon icon-facebook-circled" 
+       target="_blank" 
+       href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= @comic.number %>&p[summary]=My new favorite web comic." 
+       title="Share this comic on Facebook" =>
+    </a>
+    <a class="smedia icon icon-twitter-circled" 
+       target="_blank" 
+       href="http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/<%= @comic.number %>" 
+       title="Share this comic on Twitter">
+    </a>
+    <a class="smedia icon icon-gplus-circled" 
+       target="_blank"
+       href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= @comic.number %>"
+       title="Share this comic on Google Plus">
+    </a>
+    <a class="smedia icon icon-mail" 
+       href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= @comic.number %>"
+       title="Email this comic to a friend">
+    </a>
+</div>
+		</div>
 
 
 
