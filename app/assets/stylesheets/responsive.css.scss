@@ -26,8 +26,25 @@
 
 
 
+@media screen and (min-width: 426px) {
+  .nav-slide {
+   overflow: hidden;
+   display: none;
+  }
+  .social-slide {
+    display: none;
+  }
+  #swipey {
+    display: none;
+  }
+  .mobile-comicnav {
+    display: none;
+  }
+}
 
-@media screen and (max-width: 425px ) {
+
+
+@media screen and (max-width: 26.563em /*425px*/ ) {
 
 /* 0-2   TYPOGRAPHY AND GENERAL STYLING                                 */
 /************************************************************************/
@@ -43,20 +60,23 @@
 
 /* 0-3   LAYOUT                                                         */
 /************************************************************************/
+
+
 	.container {
-    height:   745px;
+    height: 820px;
+    margin: 0;
     overflow: hidden;
-    padding:  0 .5% 0 .5%;
-    position: relative;
-    max-width: 425px;
+    // padding:  0 .5% 0 .5%;
+    // position: relative;
+    width: 100%;
   }
 
 	.content {
-    overflow: hidden;
-    height:   100%;
-    margin:   4em 0.2em 0em 0.2em;
-    width:    100%;
+    // margin:   4em 0.2em 0em 0.2em;
+    width:    99% ;
     z-index:  10;
+    // min-height: 820px;
+    padding-top: 5.5em;
   }
 
 
@@ -82,9 +102,10 @@
 	}
 
 	.mobile-comicnav {
-		position: relative;
-		top:     6em;
+		// position: relative;
+		// top:     6em;
 	}
+
 
 	.icon {
 	  font-size:   $com-nav-icon-size*2;
@@ -110,6 +131,14 @@
     overflow: hidden;
     display:  none;
   }
+
+  .nav-bottom {
+    display: none;
+  }
+
+  // .social-slide {
+  //   display: none;
+  // }
 } /*------- max-width: 425px -------*/
 
 
@@ -118,11 +147,11 @@
 
 
 
-@media screen and (max-width: 395px ) {
-	.container {
-		height: 715px;
-	} 
-}
+// @media screen and (max-width: 395px ) {
+// 	.container {
+// 		height: 715px;
+// 	} 
+// }
 
 @media screen and (max-width: 365px ) {
 	.container {

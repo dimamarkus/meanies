@@ -2,19 +2,25 @@
 <!--0-4 MAIN NAVIGATION ******************************************* -->
 <!--*************************************************************** -->
 
-	<nav class="desktop-nav">
-		<a href="<%= home_path %>"><h1>march of the meanies</h1></a>
-		<%= link_to 'Home',        home_path,    id: "home-link"    %>
-		<%= link_to 'Archive',     archive_path, id: "archive-link" %>
-		<%= link_to 'About',       about_path,   id: "about-link"   %>
+<nav class="desktop-nav">
+	<a href="<%= root_path %>"><h1>march of the meanies</h1></a>
+	<%= link_to 'Home',        root_path,    id: "home-link"    %>
+	<%= link_to 'Archive',     archive_path, id: "archive-link" %>
+	<%= link_to 'About',       about_path,   id: "about-link"   %>
 
-		<% if signed_in? %>
-		<%= link_to "Comic Index", comics_path,  id: "index-link"   %>
-		<%= link_to "Sign out",    signout_path, method: "delete"   %>
-		<% end %>
-	</nav>
-			<div class="nav-bottom">
-			<%= link_to '', feed_path,                   class: 'livicon', data: {name: "rss"},	title: "Subscribe!"     %>
+	<% if signed_in? %>
+	<%= link_to "Comic Index", comics_path,  id: "index-link"   %>
+	<%= link_to "Sign out",    signout_path, method: "delete"   %>
+	<% end %>
+</nav>
+
+
+
+<!-- Feed + Share Icons (Not visible in About/Archive)-->
+<!--**************************************************-->
+<% if params[:action] == "view"%>
+	<div class="nav-bottom ">
+<%= link_to '', feed_path,                   class: 'livicon', data: {name: "rss"},	title: "Subscribe!"     %>
 			<div class="social livicon" data-name="share" data-s="34">
     <a class="smedia icon icon-facebook-circled" 
        target="_blank" 
@@ -35,16 +41,18 @@
        href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= @comic.number %>"
        title="Email this comic to a friend">
     </a>
-</div>
-		</div>
+		</div><!-- .social livicon -->
+	</div><!-- .nav-bottom -->
+<% end %>
 
 
 
-
-	<nav class="nav-slide silver-box">
-		<%= link_to 'Home',        home_path,    id: "home-link" %>
-		<%= link_to 'Archive',     archive_path, id: "archive-link" %>
-		<%= link_to 'About',       about_path,   id: "about-link" %>
-		<a href="#"><h1>march of the meanies</h1></a>
-		<a href="#">...</a>
-	</nav>
+<!-- Mobile navigation menu (Not visible on desktop)-->
+<!--**************************************************-->
+<nav class="nav-slide silver-box">
+	<%= link_to 'Home',        root_path,    id: "home-link" %>
+	<%= link_to 'Archive',     archive_path, id: "archive-link" %>
+	<%= link_to 'About',       about_path,   id: "about-link" %>
+	<a href="#"><h1>march of the meanies</h1></a>
+	<a href="#">...</a>
+</nav>

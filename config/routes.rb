@@ -4,11 +4,9 @@ Meanies::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy ]
 
-  root to: 'static_pages#home'
+  root :to => "comics#view", :number => Comic.last.number
 
   match '/about',   to: 'static_pages#about'
-  match '/home',    to: 'static_pages#home'
-  # match '/archive', to: 'comics#index'
   match '/admin',   to: 'comics#index'
   match '/archive', to: 'comics#archive'
   

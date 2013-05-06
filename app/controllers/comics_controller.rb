@@ -2,9 +2,7 @@ class ComicsController < ApplicationController
 
   before_filter :signed_in_user, only: [:new, :index, :edit, :update] 
 
-  def index
-    @comics = Comic.order("number DESC")
-  end
+
 
   def archive
     @comics = Comic.order("number DESC")
@@ -14,12 +12,18 @@ class ComicsController < ApplicationController
     @comic = Comic.find_by_number(params[:number])
   end
 
-  def show
-    @comic = Comic.find(params[:id])
+
+
+  def index
+    @comics = Comic.order("number DESC")
   end
 
   def new
     @comic = Comic.new
+  end
+
+  def show
+    @comic = Comic.find(params[:id])
   end
 
   def edit
