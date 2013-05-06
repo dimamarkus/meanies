@@ -53,16 +53,12 @@
 }
 
 .comicnav {
-  // background: brown;
-  // margin-top: em;
   padding-top: .5em;
   padding-bottom: 1em;
 }
 
 /*------------------- 1-3-2   Comic Nav Icons - General Styles          */
 .icon {
-  // background:      transparent;
-  // background: white;
   color:           $com-nav-icon-color;
   font-size:      32px;
   text-decoration: none;
@@ -126,21 +122,24 @@
   }
 }
 
-a.livicon {
-  height: 44px !important;
-}
 
-.bottom-row {
+
+/*------------------- 1-3-7   Social Icons - Mobile View               */
+.social-icons-row {
   margin-top: 2em;
+  position: relative;
   a {
-  padding: 4px;
-  font-size: 2em;
-  &:last-child {
-    position: relative;
-    top: 4px;
+    padding: 4px;
+    font-size: 2em;
+    &:last-child {
+      position: relative;
+      top: 3px;
+    }
   }
 }
-}
+
+
+
 
 
 /*------------------- 1-3-6   Comic Over - For swipe navigation         */
@@ -157,85 +156,6 @@ a.livicon {
 
 
 
-/************************************************************************/
-/* 1-4   SOCIAL SLIDE (Only visible on mobile)                          */
-/************************************************************************/
-
-
-/*------------------- 1-4-1   Social Slide Container                    */
-// .social-slide-container {
-//   bottom:     4%;
-//   display:    block;
-//   height:     2em;
-//   margin-top: 5%;
-//   position:   absolute;
-//   width: 100%;
-//   background: pink;
-// }
-
-
-/*------------------- 1-4-2   Social Slide                              */
-.social-slide {
-  display: none;
-  border-top-left-radius:  1em;
-  border-top-right-radius: 1em;
-  bottom:         7em;
-  padding-bottom: 2em;
-  position:       relative;
-  width: 99%;
-  &:before {
-    z-index: 1;
-  }
-  a {
-    display: inline-block;
-    margin:  0 0 10px 0;
-    &.icon {
-      font-size:   $com-nav-icon-size*1.5;
-    }
-    &:first-child {
-      position:        relative;
-      left:            .10em;
-      font-size:       $baseline*2;
-      letter-spacing:  .25em;
-      text-decoration: none;
-      text-align:      center;
-      width:           100%;
-    }
-    &:nth-child(2) {
-      display: block;
-      width: 100%;
-      height: $baseline/2;
-    }
-  }/*- .social-slide a -*/
-}/*- .social-slide -*/
-
-
-/*------------------- 1-4-3   ToggleClass with JS to reveal slide       */
-.show-social {
-  bottom: 13em !important;
-}
-
-
-/*------------------- 1-4-4   Hide the slide on all other pages         */
-body {
-  &.archive_controller {
-    .social-slide {
-      display: none;
-    }
-  }
-
-  &.about_controller {
-    .social-slide {
-      display: none;
-    }
-  }
-
-  &.index_controller {
-    .social-slide {
-      display: none;
-    }
-  } 
-}
 
 
 

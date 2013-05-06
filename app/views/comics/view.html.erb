@@ -27,12 +27,9 @@
 
 
 <!--*********************************************************************** -->
-<!--1-3 COMIC NAVIGATION ************************************************** -->
+<!--1-3 COMIC NAVIGATION - DESKTOP **************************************** -->
 <!--*********************************************************************** -->
 
-
-<!-- Standard navigation menu (Not visible on mobile) -->
-<!--**************************************************-->
 <div class="comicnav">
 	<% if @comic == Comic.first %>
 		<%= link_to '', page_url(random),
@@ -82,8 +79,9 @@
 </div>
 
 
-<!-- Mobile navigation menu (Not visible on desktop)-->
-<!--**************************************************-->
+<!--*********************************************************************** -->
+<!--1-4 COMIC NAVIGATION - MOBILE  **************************************** -->
+<!--*********************************************************************** -->
 
 <% icon_size = "52" %>
 
@@ -142,31 +140,35 @@
 					title:  "Go to last",
 					method: 'get' %>		
 		<% end %>
-	</div>
+	</div><!-- .middle-row -->
 
-	<div class="bottom-row">
-
-    <a class="icon icon-facebook-circled" 
-       target="_blank" 
-       href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= @comic.number %>&p[summary]=My new favorite web comic." 
-       title="Share this comic on Facebook" =>
-    </a>
-    <a class="icon icon-twitter-circled" 
-       target="_blank" 
-       href="http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/<%= @comic.number %>" 
-       title="Share this comic on Twitter">
-    </a>
-    <a class="icon icon-gplus-circled" 
-       target="_blank"
-       href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= @comic.number %>"
-       title="Share this comic on Google Plus">
-    </a>
-    <a class="icon icon-mail" 
-       href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= @comic.number %>"
-       title="Email this comic to a friend">
-    </a>
-    		<%= link_to '', feed_path,                   class: 'livicon', data: {name: "rss"},	title: "Subscribe!"     %>
-	</div><!-- .bottom-row -->
+	<div class="social-icons-row">
+			<%= link_to '',
+				  "http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/#{@comic.number}&p[summary]=My new favorite web comic.",
+					class: "icon icon-facebook-circled",
+					target: "_blank",
+					title: "Share this comic on Facebook"				%>
+			<%= link_to '',
+				  "http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/#{@comic.number}" ,
+					class: "icon icon-twitter-circled",
+					target: "_blank",
+					title: "Share this comic on Twitter"				%>
+			<%= link_to '',
+				  "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
+					class: "icon icon-gplus-circled",
+					target: "_blank",
+					title: "Share this comic on Google Plus"				%>
+			<%= link_to '',
+					"mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/#{@comic.number}",
+					class: "icon icon-mail",
+					title: "Email this comic to a friend"
+					 %>
+	 		<%= link_to '',
+	 				feed_path,
+	 				class: 'livicon',
+	 				title: "Subscribe!",
+	 				data: {name: "rss"} %>
+	</div><!-- .social-icons-row -->
 </div><!-- .mobile-comicnav -->
 
 
