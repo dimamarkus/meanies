@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/************************************************************************/
+/* _1   TYPOGRAPHY                                                      */
+/************************************************************************/
+/************************************************************************/
+/* _2   COLORS                                                          */
+/************************************************************************/
+/* #000000;  /******Black******/
+/* #FFFFFF;  /******White******/
+/* #FFBF2A;  /*****Yellow******/
+/* #403D3D;  /****Dark Grey****/
+/* #7F797B;  /****Light Grey***/
+/******Black******/
+/******Black******/
+/******White******/
+/******Black******/
+/****Light Grey***/
+/******White******/
+/******Black******/
+/****Dark Grey****/
+/****Light Grey***/
+/****Light Grey***/
+/****Dark Grey****/
+/******Black******/
+/******Black******/
+/*****Yellow******/
+/****Light Grey***/
+/****Dark Grey****/
+/*****Yellow******/
+/******Black******/
+/******Black******/
+/************************************************************************/
+/* _3   COLORS                                                          */
+/************************************************************************/
+/************************************************************************/
+/* _4   MIX-INS                                                         */
+/************************************************************************/
+/************************************************************************/
+/* 0-1   CSS RESET                                                      */
+/************************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  padding: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+/************************************************************************/
+/* 0-2   TYPOGRAPHY AND GENERAL STYLING                                 */
+/************************************************************************/
+html {
+  background: white; }
+
+body {
+  color: white;
+  font: 300 16px/24px "AaarghNormal"; }
+
+p {
+  color: white;
+  font-family: "AaarghNormal";
+  font-size: 16px;
+  line-height: 24px; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  font: 16px/24px "AaarghNormal";
+  font-weight: bolder; }
+
+h3 {
+  color: #7f797b;
+  font: 16px/24px "AaarghNormal";
+  margin-left: 3px;
+  text-align: left;
+  text-transform: uppercase; }
+
+h4 {
+  color: #403d3d;
+  font: 16px/24px "AaarghNormal";
+  font-weight: 1600;
+  text-align: left; }
+
+/************************************************************************/
+/* 0-3   LAYOUT                                                         */
+/************************************************************************/
+.container {
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 44em; }
+
+.content {
+  overflow: hidden;
+  min-height: 720px;
+  width: 29em; }
+
+/************************************************************************/
+/* 0-4   MAIN NAVIGATION                                                */
+/************************************************************************/
+.desktop-nav {
+  float: left;
+  margin-right: 5em;
+  margin-top: 3em;
+  text-align: center;
+  width: 9em;
+  border-bottom: 2px solid grey;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+  .desktop-nav a {
+    color: black;
+    display: block;
+    padding: 1em;
+    font: 24px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    width: 100%;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out; }
+    .desktop-nav a:first-child {
+      padding-bottom: .5em;
+      border-bottom: 1px solid black; }
+      .desktop-nav a:first-child:hover {
+        background: transparent;
+        color: #7f797b; }
+    .desktop-nav a:nth-child(2) {
+      margin-top: .5em; }
+    .desktop-nav a:hover {
+      color: #7f797b; }
+
+.hidden {
+  visibility: hidden; }
+
+.nav-bottom {
+  width: 10em;
+  clear: both;
+  margin: 0 auto;
+  float: left;
+  padding-top: 1em;
+  text-align: center; }
+  .nav-bottom a {
+    display: inline-block; }
+  .nav-bottom div {
+    display: inline-block; }
+
+/*------- Change color of the nav link of the current page -------*/
+body.home_controller nav a#home-link {
+  color: #7f797b; }
+body.archive_controller nav a#archive-link {
+  color: #7f797b; }
+body.about_controller nav a#about-link {
+  color: #7f797b; }
+body.index_controller nav a#index-link {
+  color: #7f797b; }
+
+/************************************************************************/
+/* 0-5   NAVIGATION SLIDE (Only visible on mobile)                      */
+/************************************************************************/
+.nav-slide {
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  margin: 0;
+  position: fixed;
+  top: -21em; }
+  .nav-slide a {
+    color: black;
+    display: block;
+    font-size: 48px;
+    line-height: 60px;
+    margin: 0 auto;
+    padding: .5em;
+    text-align: center;
+    text-decoration: none;
+    width: 75%; }
+    .nav-slide a:nth-child(3) {
+      border-bottom: 1px solid black; }
+    .nav-slide a:nth-child(4) {
+      width: 98%; }
+      .nav-slide a:nth-child(4):hover {
+        background: transparent; }
+    .nav-slide a:nth-child(5) {
+      position: relative;
+      left: .10em;
+      bottom: 28px;
+      font-size: 48px;
+      line-height: 12px;
+      padding: 0;
+      letter-spacing: .25em;
+      text-decoration: none;
+      width: 100%; }
+      .nav-slide a:nth-child(5):hover {
+        background: transparent; }
+    .nav-slide a:hover {
+      background: grey; }
+
+/*------------------- ToggleClass with JS to reveal slide               */
+.show-nav {
+  top: -.8em; }
+
+/************************************************************************/
+/* 0-6   SLIDES BACKGROUND/TEXTURE                                      */
+/************************************************************************/
+.silver-box {
+  background: white;
+  border-radius: 1em;
+  box-shadow: inset #262626 0 0px 0px 4px, inset rgba(38, 38, 38, 0.8) 0 -1px 5px 4px, inset rgba(0, 0, 0, 0.25) 0 -1px 0px 7px, inset rgba(255, 255, 255, 0.7) 0 2px 1px 7px;
+  /* top HL */
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  width: 99%;
+  z-index: 50; }
+
+/************************************************************************/
+/* 0-7   FLASH NOTICES                                                  */
+/************************************************************************/
+.alert.alert-error {
+  color: red; }
+.alert.alert-success {
+  color: green; }
+.alert.alert-notice {
+  color: lightblue; }
+
+/************************************************************************/
+/* 0-8   BUTTONS                                                        */
+/************************************************************************/
+.button {
+  background: -webkit-linear-gradient(top, #ffbf2a, #aa7700);
+  background: -moz-linear-gradient(top, #ffbf2a, #aa7700);
+  background: -ms-linear-gradient(top, #ffbf2a, #aa7700);
+  background: -o-linear-gradient(top, #ffbf2a, #aa7700);
+  border: 1px solid #7f797b;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Bree Serif", serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 11px 25px;
+  text-shadow: 0px 1px 0 rgba(2, 2, 2, 0.25);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+  .button:hover, .button:focus {
+    background: #aa7700;
+    border: 1px solid #7f797b;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); }

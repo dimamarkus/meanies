@@ -41,19 +41,19 @@
 	<% else %>
 		<%= link_to '', page_url(Comic.first.number),
 				class:  'livicon',
-				data:   { name: "angle-double-left"},
+				data:   { name: "angle-double-left", animate: "true", eventtype: 'hover'},
 				title:  "Go to first",
 				method: 'get' %>
 		<%= link_to '', page_url(@comic.number-1),
 		 		class:  'livicon',
-		 		data:   { name: "angle-left"},
+		 		data:   { name: "angle-left", animate: "true", eventtype: 'hover'},
 		 		title:  "Previous comic",
 		 		method: 'get' %>
 	<% end %>
 
 		<%= link_to '', page_url(random),
 				class:  'livicon',
-				data:   { name: "shuffle"},
+				data:   { name: "shuffle", animate: "true", eventtype: "hover"},
 				title:  "Random comic",
 				method: 'get' %>
 
@@ -67,12 +67,12 @@
 	<% else %>
 		<%= link_to '', page_url(@comic.number+1),
 		 	  class:  'livicon',
-		 	  data:   { name: "angle-right"},
+		 	  data:   { name: "angle-right", animate: "true", eventtype: 'hover'},
 		 	  title:  "Next comic",
 		 	  method: 'get' %>
 		<%= link_to '', page_url(Comic.last.number),
 			  class:  'livicon',
-			  data:   { name: "angle-double-right"},
+			  data:   { name: "angle-double-right", animate: "true", eventtype: 'hover'},
 			  title:  "Go to last",
 			  method: 'get' %>
 	<% end %> 
@@ -94,7 +94,7 @@
 		<% else %>
 			<%= link_to '', page_url(@comic.number-1),
 			 		class:  'livicon',        
-					data:   { name: "angle-left",  size: "#{icon_size}" },
+					data:   { name: "angle-left",  size: "#{icon_size}", animate: "true", eventtype: 'click' },
 					title:  "Previous comic",
 					method: 'get' %>
 		<% end %>
@@ -106,7 +106,7 @@
 		<% else %>	
 			<%= link_to '', page_url(@comic.number+1),
 			 	  class:  'livicon',
-			  	data:   { name: "angle-right", size: "#{icon_size}" },
+			  	data:   { name: "angle-right", size: "#{icon_size}", animate: "true", eventtype: 'click' },
 		  		title:  "Next comic",
 		  		method: 'get' %>
 		<% end %>
@@ -116,31 +116,33 @@
 		<% if @comic == Comic.first %>
 			<%= link_to '', page_url(random),
 					class:  'livicon hidden',
-				  data:   { name: "shuffle", 		 			  size: "#{icon_size}"}%>
+				  data:   { name: "shuffle", 		 			  size: "#{icon_size}" }%>
 		<% else %>
 			<%= link_to '', page_url(Comic.first.number),
 					class:  'livicon',        
-					data:   { name: "angle-double-left",  size: "#{icon_size}" },
+					data:   { name: "angle-double-left",  size: "#{icon_size}", animate: "true", eventtype: 'click' },
 					title:  "Go to first",
 					method: 'get' %>
 		<% end %>
 			<%= link_to '', page_url(random),
 					class:  'livicon',
-		  		data:   { name: "shuffle", 					  size: "#{icon_size}" },
+		  		data:   { name: "shuffle", 					  size: "#{icon_size}", animate: "true", eventtype: 'click' },
 				  title:  "Random comic",
 				  method: 'get' %>
 		<% if @comic == Comic.last %>
 			<%= link_to '', page_url(random), 
 					class:  'livicon hidden',
-					data:   { name: "shuffle", 					  size: "#{icon_size}"} %>
+					data:   { name: "shuffle", 					  size: "#{icon_size}" } %>
 		<% else %>
 			<%= link_to '', page_url(Comic.last.number), 
 					class:  'livicon',
-					data:   { name: "angle-double-right", size: "#{icon_size}" },
+					data:   { name: "angle-double-right", size: "#{icon_size}", animate: "true", eventtype: 'click' },
 					title:  "Go to last",
 					method: 'get' %>		
 		<% end %>
+
 	</div><!-- .middle-row -->
+
 
 	<div class="social-icons-row">
 			<%= link_to '',
@@ -165,9 +167,8 @@
 					 %>
 	 		<%= link_to '',
 	 				feed_path,
-	 				class: 'livicon',
-	 				title: "Subscribe!",
-	 				data: {name: "rss"} %>
+	 				class: 'icon icon-rss',
+	 				title: "Subscribe!" %>
 	</div><!-- .social-icons-row -->
 </div><!-- .mobile-comicnav -->
 

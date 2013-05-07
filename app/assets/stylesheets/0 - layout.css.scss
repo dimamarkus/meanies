@@ -177,7 +177,8 @@ body {
   margin-top:     3em;
   // padding-bottom: 1em;
   text-align:     center;
-  width:          10em;
+  width:          9em;
+  border-bottom: 2px solid grey;
 
   // box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
   //             inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
@@ -222,16 +223,13 @@ body {
    visibility: hidden;
   }
 
-// .livicon { 
-// height: 18px !important;
-//   }
 
 .nav-bottom {
   width:          10em;
   clear: both;
   margin: 0 auto;
   float: left;
-  border-top: 1px solid black;
+  // border-top: 2px solid grey;
   padding-top: 1em;
 
 
