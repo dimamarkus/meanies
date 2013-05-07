@@ -3,14 +3,14 @@ class ComicsController < ApplicationController
   before_filter :signed_in_user, only: [:new, :index, :edit, :update] 
 
 
+  def home
+    @comic = Comic.find_by_number(params[:number])
+  end
 
   def archive
     @comics = Comic.order("number DESC")
   end
 
-  def view
-    @comic = Comic.find_by_number(params[:number])
-  end
 
 
 

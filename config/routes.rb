@@ -4,7 +4,7 @@ Meanies::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy ]
 
-  root :to => "comics#view", :number => Comic.last.number
+  root :to => "comics#home", :number => Comic.last.number
 
   match '/about',   to: 'static_pages#about'
   match '/admin',   to: 'comics#index'
@@ -14,7 +14,7 @@ Meanies::Application.routes.draw do
   match '/signout', to: 'sessions#destroy', via: :delete
 
   match '/feed',    to: 'comics#feed', :as => :feed, :defaults => { :format => 'atom' }
-  match '/:number', to: 'comics#view', as: :page
+  match '/:number', to: 'comics#home', as: :page
  
 
 

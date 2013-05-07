@@ -45,7 +45,7 @@ q:before, q:after {
 }
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing:  0;
 }
 
 * {
@@ -70,9 +70,15 @@ ul, ol, li {
 
 @charset "UTF-8";
 
-html {
-  // background: $background-color;
-  background: white;
+@font-face {
+    font-family: 'AaarghNormal';
+        src: url('Aaargh-webfont.eot');
+        src: url('Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+             url('Aaargh-webfont.woff') format('woff'),
+             url('Aaargh-webfont.ttf') format('truetype'),
+             url('Aaargh-webfont.svg#AaarghNormal') format('svg');
+    font-weight: normal;
+    font-style:  normal;
 }
 
 body {
@@ -91,28 +97,13 @@ a {
   text-decoration: none;
 }
 
-
-
-
-// h1 { 
-//   color: $banner-text-color;
-//   font: #{$h1-size}/#{$h1-leading} $banner-text-font;
-//   margin-left:  $base-font-size * 2;
-//   margin-top:   $baseline;
-//   a {
-//     color: $banner-text-color;  
-//     text-decoration: none;
-//   } 
-// }
-
-h2 {
-	font: #{$h2-size}/#{$h2-leading} $title-text-font;
-  font-weight: bolder;
+h1 {
+  line-height: $base-font-size*1.5;
 }
 
 h3 {  
   color: $thumb-title-color;
-  font: #{$h3-size}/#{$h3-leading} $title-text-font;
+  font:  #{$h3-size}/#{$h3-leading} $title-text-font;
   margin-left:    3px;
   text-align:     left;
   text-transform: uppercase;
@@ -120,9 +111,13 @@ h3 {
 
 h4 {
   color: $thumb-date-color;
-  font: #{$h4-size}/#{$h4-leading} $title-text-font;
+  font:  #{$h4-size}/#{$h4-leading} $title-text-font;
   font-weight: 1600;
   text-align:  left;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 
@@ -132,31 +127,25 @@ h4 {
 /************************************************************************/
 /* 0-3   LAYOUT                                                         */
 /************************************************************************/
-// body, .container, .comic, .comicnav, .nav {
-//   margin:  0 auto;
-// }
 
-body {
-  // background: black;
+.main-container {
+  margin:   0 auto 0 5%;
+  width:    100%;
 }
 
-.container {
-	// background: $container-color;
-  margin: 0 auto;
-  // background: blue;
-  margin-top: 5%;
-  // padding:    0 8% 0 8%;
-  // width: 58.8em;
-  width: 44em;
+.nav-container {
+  float:    left;
+  width:    9em;
+}
+
+.content-container {
+  overflow: hidden;
+  width:    80%;
 }
 
 .content {
-  overflow:   hidden;
-  // background: $content-box-color;
-  // background: pink;
-  min-height: 720px;
-  // max-width:  90%;
-  width: 29em;
+  margin:   0 auto;
+  width:    29em;
 }
 
 
@@ -168,24 +157,11 @@ body {
 /************************************************************************/
 
 .desktop-nav { 
-  // background:     hsl(0,0%,90%);
-  // background: green;
-  // border-radius:  .5em;
-  float:          left;
-  // margin-left: 2em;
-  margin-right:   5em;
-  margin-top:     3em;
-  // padding-bottom: 1em;
+  border-bottom:  2px solid grey;
+  margin:         0 auto; 
+  margin-top:     171px;
   text-align:     center;
-  width:          9em;
-  border-bottom: 2px solid grey;
-
-  // box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
-  //             inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
-  //             inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
-  //             inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
-  //                   hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
-  //                   hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+  width:          100%;
 
   -webkit-transition-duration: 0.5s;
      -moz-transition-duration: 0.5s;
@@ -202,65 +178,47 @@ body {
     @include transition(color);
     &:first-child {
       padding-bottom: .5em;
-      border-bottom: 1px solid black;
+      border-bottom:  2px solid grey;
       &:hover {
-        background: transparent;
-        color: $nav-btn-hov-color;
+        color:       $nav-btn-hov-color;
       } 
     }
     &:nth-child(2) {
       margin-top: .5em;
     }
     &:hover {
-      // background: #403D3D;  /****Dark Grey****/
       color: $nav-btn-hov-color;
     } 
   }
 }
 
-
- .hidden {
-   visibility: hidden;
-  }
-
-
-.nav-bottom {
-  width:          10em;
-  clear: both;
-  margin: 0 auto;
-  float: left;
-  // border-top: 2px solid grey;
+.nav-footer {
+  clear:       both;
+  float:       left;
+  margin:      0 auto;
   padding-top: 1em;
-
-
- text-align: center;
- a {
-  display: inline-block;
- }
- div {
-  display: inline-block;
- }
+  text-align:  center;
+  width:       100%;
+  div {
+   display:    inline-block;
   }
-
+}
 
 
 
 /*------- Change color of the nav link of the current page -------*/
 
 body {
-  &.home_controller nav a#home-link {
+  &.home_controller    nav a#home-link {
     color: $title-text-color;
   }
-
   &.archive_controller nav a#archive-link {
     color: $title-text-color;
   }
-
-  &.about_controller nav a#about-link {
+  &.about_controller   nav a#about-link {
     color: $title-text-color;
   }
-
-  &.index_controller nav a#index-link {
+  &.index_controller   nav a#index-link {
     color: $title-text-color;
   }
 }
@@ -268,16 +226,29 @@ body {
 
 
 
+
 /************************************************************************/
-/* 0-5   NAVIGATION SLIDE (Only visible on mobile)                      */
+/* 0-5   MAIN NAVIGATION SLIDER (Only visible on mobile)                */
 /************************************************************************/
 
-.nav-slide {
-  border-bottom-left-radius:  1em;
-  border-bottom-right-radius: 1em;
-  margin:                     0;
-  position:                   fixed;
-  top:                       -21em;
+.mobile-nav {
+    background:    white;
+    left:          2px;
+    margin:        0;
+    position:      fixed;
+    top:          -21em;
+    width:         99%;
+
+    box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+                inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+                inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+                inset hsla(0,0%,100%,.7) 0  2px 1px 7px; /* top HL */
+
+    -webkit-transition-duration: 0.5s;
+       -moz-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+
   a {
     color:           black;
     display:         block;
@@ -307,9 +278,6 @@ body {
       letter-spacing:  .25em;
       text-decoration: none;
       width: 100%;
-      &:hover {
-        background:  transparent;
-      }
     }
     &:hover {
       background: grey;
@@ -324,33 +292,10 @@ body {
 
 
 
-/************************************************************************/
-/* 0-6   SLIDES BACKGROUND/TEXTURE                                      */
-/************************************************************************/
-  .silver-box { 
-    // background-color: hsl(0,0%,90%);
-    background: white;
-    border-radius: 1em;
-
-    box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
-                inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
-                inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
-                inset hsla(0,0%,100%,.7) 0  2px 1px 7px; /* top HL */
-                      // hsla(0,0%, 0%,.15) 0 -5px 6px 4px; /* outer SD */
-                      // hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
-
-    -webkit-transition-duration: 0.5s;
-       -moz-transition-duration: 0.5s;
-         -o-transition-duration: 0.5s;
-            transition-duration: 0.5s;
-
-    width:   99%;
-    z-index: 50;
-  }
 
 
 /************************************************************************/
-/* 0-7   FLASH NOTICES                                                  */
+/* 0-6   FLASH NOTICES                                                  */
 /************************************************************************/
 
 .alert {
@@ -370,7 +315,7 @@ body {
 
 
 /************************************************************************/
-/* 0-8   BUTTONS                                                        */
+/* 0-7   BUTTONS                                                        */
 /************************************************************************/
 
 .button {

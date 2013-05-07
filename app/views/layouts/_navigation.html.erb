@@ -4,55 +4,60 @@
 
 <nav class="desktop-nav">
 	<a href="<%= root_path %>"><h1>march of the meanies</h1></a>
-	<%= link_to 'Home',        root_path,    id: "home-link"    %>
-	<%= link_to 'Archive',     archive_path, id: "archive-link" %>
-	<%= link_to 'About',       about_path,   id: "about-link"   %>
+	<%= link_to 'home',        root_path,    id: "home-link"    %>
+	<%= link_to 'archive',     archive_path, id: "archive-link" %>
+	<%= link_to 'about',       about_path,   id: "about-link"   %>
 
 	<% if signed_in? %>
-	<%= link_to "Comic Index", comics_path,  id: "index-link"   %>
-	<%= link_to "Sign out",    signout_path, method: "delete"   %>
+	<%= link_to "comic Index", comics_path,  id: "index-link"   %>
+	<%= link_to "sign out",    signout_path, method: "delete"   %>
 	<% end %>
-</nav>
+</nav><!-- nav -->
 
 
 
 <!-- Feed + Share Icons (Not visible in About/Archive)-->
 <!--**************************************************-->
-<% if params[:action] == "view"%>
-	<div class="nav-bottom ">
-    <%= link_to '', feed_path, class: 'livicon', data: {name: "rss", animate: "true", eventtype: 'hover', color: "original" },	title: "Subscribe!"     %>
-		<div class="social livicon" data-name="share" data-s="34">
-      <a class="smedia icon icon-facebook-circled" 
-         target="_blank" 
-         href="http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/<%= @comic.number %>&p[summary]=My new favorite web comic." 
-         title="Share this comic on Facebook" =>
-      </a>
-      <a class="smedia icon icon-twitter-circled" 
-         target="_blank" 
-         href="http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/<%= @comic.number %>" 
-         title="Share this comic on Twitter">
-      </a>
-      <a class="smedia icon icon-gplus-circled" 
-         target="_blank"
-         href="https://plus.google.com/share?url=http://marchofthemeanies.com/<%= @comic.number %>"
-         title="Share this comic on Google Plus">
-      </a>
-      <a class="smedia icon icon-mail" 
-         href="mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/<%= @comic.number %>"
-         title="Email this comic to a friend">
-      </a>
+<% if params[:action] == "home"%>
+	<div class="nav-footer ">
+      <%= link_to '',
+         feed_path,
+         class: 'livicon',
+         data: {name: "rss", animate: "true", eventtype: "hover", color: "original" },
+         title: "Subscribe!"     %>
+		<div class="share-menu livicon" data-name="share" data-animate="true" data-eventtype="hover" data-s="34">
+        <%= link_to '',
+            "http://www.facebook.com/sharer.php?u=http://marchofthemeanies.com/#{@comic.number}&p[summary]=My new favorite web comic.",
+            class: "smedia icon icon-facebook-circled",
+            target: "_blank",
+            title: "Share this comic on Facebook"       %>
+        <%= link_to '',
+            "http://twitter.com/share?text=My%20new%20favorite%20web%20comic:&url=http://marchofthemeanies.com/#{@comic.number}" ,
+            class: "smedia icon icon-twitter-circled",
+            target: "_blank",
+            title: "Share this comic on Twitter"        %>
+        <%= link_to '',
+            "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
+            class: "smedia icon icon-gplus-circled",
+            target: "_blank",
+            title: "Share this comic on Google Plus"        %>
+        <%= link_to '',
+            "mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/#{@comic.number}",
+            class: "smedia icon icon-mail",
+            title: "Email this comic to a friend"
+             %>
 		</div><!-- .social livicon -->
-	</div><!-- .nav-bottom -->
+	</div><!-- .nav-footer -->
 <% end %>
 
 
 
 <!-- Mobile navigation menu (Not visible on desktop)-->
 <!--**************************************************-->
-<nav class="nav-slide silver-box">
+<nav class="mobile-nav silver-box">
 	<%= link_to 'Home',        root_path,    id: "home-link" %>
 	<%= link_to 'Archive',     archive_path, id: "archive-link" %>
 	<%= link_to 'About',       about_path,   id: "about-link" %>
 	<a href="#"><h1>march of the meanies</h1></a>
-	<a href="#">...</a>
+  <%= link_to '...', '#' %>
 </nav>

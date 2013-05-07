@@ -9,6 +9,7 @@
 
 
 
+
 <!--*********************************************************************** -->
 <!--1-2 THE COMIC ********************************************************* -->
 <!--*********************************************************************** -->
@@ -20,7 +21,7 @@
 	<% else %>
 	<%= link_to image_tag(@comic.image_url), page_url(@comic.number-1), title: @comic.title %> 
 	<% end %>
-</figure>
+</figure><!-- figure.comic -->
 
 
 
@@ -76,7 +77,10 @@
 			  title:  "Go to last",
 			  method: 'get' %>
 	<% end %> 
-</div>
+</div><!-- .comicnav -->
+
+
+
 
 
 <!--*********************************************************************** -->
@@ -86,6 +90,7 @@
 <% icon_size = "52" %>
 
 <div class="mobile-comicnav">
+
 	<div class="top-row">
 		<% if @comic == Comic.first %>
 			<%= link_to '', page_url(random), 						
@@ -110,7 +115,7 @@
 		  		title:  "Next comic",
 		  		method: 'get' %>
 		<% end %>
-	</div>
+	</div><!-- .top-row -->
 
 	<div class="middle-row">
 		<% if @comic == Comic.first %>
@@ -140,7 +145,6 @@
 					title:  "Go to last",
 					method: 'get' %>		
 		<% end %>
-
 	</div><!-- .middle-row -->
 
 
@@ -175,7 +179,7 @@
 
 
 
-<!-- Mobile swipe navigation                          -->
+<!-- Mobile swipe navigation script                   -->
 <!--**************************************************-->
 
 

@@ -24,36 +24,32 @@
 	</head>
 
 	<body class="<%= params[:action] %>_controller">
-			
-			<div class='container'>
 
+		<div class='main-container'>
+
+			<div class="nav-container">
 				<%= render 'layouts/navigation' %>
+			</div>
 
+			<div class="content-container">
 				<div class="content">
 					<% flash.each do |key, value| %>
 						<%= content_tag(:div, value, class: "alert alert-#{key}") %>
 					<% end %>
 					<%= yield %>
-				</div>
-
-
-			</div>
-
+				</div><!-- .content -->
+			</div><!-- .content-container -->
+			
+		</div><!-- .main-container -->
+		
+		<%= render 'layouts/grid' %>
 
 		<script type="text/javascript">
-			$('.social-slide').on('click', function () {
-			    $(this).toggleClass('show-social');
-			});
-
-			$('.nav-slide').on('click', function () {
+			$('.mobile-nav').on('click', function () {
 			    $(this).toggleClass('show-nav');
 			});
-
-			$.mobile.ajaxEnabled=false;
-			$.mobile.loadingMessage = false;
+			// $.mobile.ajaxEnabled=false;
+			// $.mobile.loadingMessage = false;
 		</script>
-
-				<%= render 'layouts/grid' %>
-
 	</body>
 </html>
