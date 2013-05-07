@@ -37,8 +37,7 @@
   }
   .content {
     margin:      0;
-    min-height:  50em;
-    overflow:    auto;
+    overflow: hidden;
     padding-top: 2.5em;
     width:       99% ;
   }
@@ -47,12 +46,18 @@
       width:    100%;
     }
   }
-
+  .archive-container {
+    min-height: 36em;
+    position:   relative;
+    overflow:   auto;
+    top:        3em;
+  }
   .archive-list  {
-    margin: 0 auto;
-    text-align: center;
-    line-height: $baseline*2;
-    font-size: $base-font-size*1.5;
+    font-size:    1.3em;
+    line-height:  $baseline*2;
+    margin:       0 auto;
+    padding-left: 1em;
+    top:          3em;
   }
 } /*------- max-width: 425px -------*/
 
