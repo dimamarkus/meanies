@@ -86,13 +86,6 @@ body {
   font: 300 #{$base-font-size}/#{$baseline} $body-text-font;
 }
 
-p {
-  color:       $body-text-color;
-  font-family: $body-text-font;
-  font-size:   $base-font-size;  
-  line-height: $baseline;
-}
-
 a {
   text-decoration: none;
 }
@@ -139,12 +132,12 @@ h4 {
 }
 
 .content-container {
-  overflow: hidden;
-  width:    80%;
+  min-height: 30em;
+  width:      80%;
 }
 
 .content {
-  margin:   0 auto;
+  margin:   0 auto 0 33.5%;
   width:    29em;
 }
 
@@ -159,10 +152,10 @@ h4 {
 .desktop-nav { 
   border-bottom:  2px solid grey;
   margin:         0 auto; 
-  margin-top:     171px;
+  margin-top:     133.5px;
   text-align:     center;
   width:          100%;
-
+  
   -webkit-transition-duration: 0.5s;
      -moz-transition-duration: 0.5s;
        -o-transition-duration: 0.5s;
@@ -238,6 +231,7 @@ body {
     position:      fixed;
     top:          -21em;
     width:         99%;
+    z-index:       50;
 
     box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
                 inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */

@@ -4,18 +4,12 @@
 <!-- ARCHIVE GALLERY ****************************************************** -->
 <!--*********************************************************************** -->
 
+  <ul class="archive-list">
+    <% @comics.each do |comic| %>
+      <li><%= comic.number %>  <%= link_to comic.title, page_url(comic.number.to_s), title: "#{comic.created_at.strftime('%m/%d/%Y')} - #{comic.title}"  %></p>
+    <% end %>
+  </ul>
 
-<div id="gallery">
-    <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-    <div class="viewport">
-        <div class="overview">
-        	<% @comics.each do |comic| %>
-        	<div class="galleryItem">
-        		<%= link_to (image_tag comic.image_url(:thumb)), page_url(comic.number) %>
-        		<h3><%= comic.title %></h3>
-        		<h4><%= comic.created_at.strftime('%m/%d/%Y') %></h4>
-        	</div>
-            <% end %>
-        </div>
-    </div>
-</div>
+
+
+

@@ -1,10 +1,24 @@
 @import 'variables';
 
 /************************************************************************/
-/* 3-1   PORTRAIT                                                       */
+/* 3-1   ABOUT CONTAINER                                                           */
 /************************************************************************/
 
-#portrait {
+.about-container {
+  max-width: 95%;
+  position: relative;
+  top: 5em;
+}
+
+
+
+
+
+/************************************************************************/
+/* 3-2   PORTRAIT                                                       */
+/************************************************************************/
+
+.portrait {
   float:        left;
   margin-right: 24px; 
   max-width:    150px;
@@ -13,20 +27,20 @@
 
 
 
-
 /************************************************************************/
-/* 3-2   BODY                                                           */
+/* 3-3   ABOUT TEXT                                                       */
 /************************************************************************/
 
-.about-body {
-  margin-top: 2em;
-  max-width: 95%;
-  p {
-    color:          #FFFFFF;  /******White******/
-    font-family:    $body-text-font;
-    font-size:      16px;  
-    font-weight:    500;
-    letter-spacing: 2px;
-    line-height:    24px;
-  }
+p {
+  color:          #403D3D;  /****Dark Grey****/
+  font-family:    $body-text-font;
+  font-size:      16px;  
+  font-weight:    500;
+  letter-spacing: 2px;
+  line-height:    24px;
 }
+
+
+
+
+

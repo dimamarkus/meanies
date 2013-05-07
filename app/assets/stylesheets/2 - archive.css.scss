@@ -1,95 +1,99 @@
 @import 'variables';
 
-/************************************************************************/
-/* 2-1   THUMBNAIL GALLERY                                              */
-/************************************************************************/
+// /************************************************************************/
+// /* 2-1   THUMBNAIL GALLERY                                              */
+// /************************************************************************/
 
-#gallery {   /* Thumbnail gallery and scrollbar */
-  clear: both;
-  max-width:   90%; 
-  position: relative;
-  top: -2em;
-  .viewport {
-    height:        600px;
-    margin:        0 auto;
-    overflow:      hidden; 
-    position:      relative;
-    padding:       0 4em 0 4em;
+// #gallery {   /* Thumbnail gallery and scrollbar */
+//   clear: both;
+//   max-width:   90%; 
+//   position: relative;
+//   top: -2em;
+//   .viewport {
+//     height:        600px;
+//     margin:        0 auto;
+//     overflow:      hidden; 
+//     position:      relative;
+//     padding:       0 4em 0 4em;
 
-    .overview { 
-      padding-top: 4em;
-      position:    absolute; 
-      top:         0; 
-    }
-  }
+//     .overview { 
+//       padding-top: 4em;
+//       position:    absolute; 
+//       top:         0; 
+//     }
+//   }
 
-  .scrollbar {
-    float:         right;
-    position:      relative;
-    width:         16px; 
-    top:           3.5em;
-    .track { 
-      height:      100%;
-      position:    relative;
-      width:       16px;
+//   .scrollbar {
+//     float:         right;
+//     position:      relative;
+//     width:         16px; 
+//     top:           3.5em;
+//     .track { 
+//       height:      100%;
+//       position:    relative;
+//       width:       16px;
 
-       .thumb {
-        background:    $scrollbar-color;
-        border-radius: 8px; 
-        height:        20px;
-        overflow:      hidden; 
-        position:      absolute; 
-        top:           0;
-        width:         16px;
+//        .thumb {
+//         background:    $scrollbar-color;
+//         border-radius: 8px; 
+//         height:        20px;
+//         overflow:      hidden; 
+//         position:      absolute; 
+//         top:           0;
+//         width:         16px;
 
-        .end {
-          height:      5px; 
-          overflow:    hidden; 
-          width:       13px;
-        } 
-      }
-    }
-  }
-}
+//         .end {
+//           height:      5px; 
+//           overflow:    hidden; 
+//           width:       13px;
+//         } 
+//       }
+//     }
+//   }
+// }
 
-.noSelect {     /* Prevents elements from being selected when scrollbar is grabbed and dragged. */
-  -webkit-user-select: none;
-   -khtml-user-select: none; 
-     -moz-user-select: none; 
-       -o-user-select: none; 
-          user-select: none; 
-}
-
-
+// .noSelect {     /* Prevents elements from being selected when scrollbar is grabbed and dragged. */
+//   -webkit-user-select: none;
+//    -khtml-user-select: none; 
+//      -moz-user-select: none; 
+//        -o-user-select: none; 
+//           user-select: none; 
+// }
 
 
 
-/************************************************************************/
-/* 2-2   THUMBNAILS                                                     */
-/************************************************************************/
+
+
+// /************************************************************************/
+// /* 2-2   THUMBNAILS                                                     */
+// /************************************************************************/
        
-.galleryItem {  /* Each individual comic thumbnail */
-  float:      left;
-  margin:     0px 10px ($baseline*2) 10px;
-  max-height: 216px;
-  max-width:  168px;
-  text-align: center;
-  a img { 
-      -webkit-border-radius: 3px;
-         -moz-border-radius: 3px;
-              border-radius: 3px;
-                  max-width: 160px;
-      &:hover {    
-      -webkit-transform: scale(1.75) rotate(0.1deg);
-          -ms-transform: scale(1.75) rotate(0.1deg);
-              transform: scale(1.75) rotate(0.1deg);
-      -webkit-transition: -webkit-transform ease .75s;
-          -ms-transition:         transform ease .75s;
-              transition:         transform ease .75s;
-    }
-  }
+// .galleryItem {  /* Each individual comic thumbnail */
+//   float:      left;
+//   margin:     0px 10px ($baseline*2) 10px;
+//   max-height: 216px;
+//   max-width:  168px;
+//   text-align: center;
+//   a img { 
+//       -webkit-border-radius: 3px;
+//          -moz-border-radius: 3px;
+//               border-radius: 3px;
+//                   max-width: 160px;
+//       &:hover {    
+//       -webkit-transform: scale(1.75) rotate(0.1deg);
+//           -ms-transform: scale(1.75) rotate(0.1deg);
+//               transform: scale(1.75) rotate(0.1deg);
+//       -webkit-transition: -webkit-transform ease .75s;
+//           -ms-transition:         transform ease .75s;
+//               transition:         transform ease .75s;
+//     }
+//   }
+// }
+
+
+
+.archive-list  {
+  position: relative;
+  top: 12em;
 }
-
-
- 
 
