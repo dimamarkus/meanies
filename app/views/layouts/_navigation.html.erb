@@ -20,58 +20,44 @@
 <!--**************************************************-->
 <% if params[:action] == "home"%>
 	<div class="nav-footer ">
-     <div class="redessociales">
- </div>
-      <%= link_to '',
-         feed_path,
-         class: 'livicon',
-         data: {name: "rss", animate: "true", eventtype: "hover", color: "original", size: "24" },
-         title: "Subscribe!"     %>
+    
+    <div class="spacer"></div>
 
+    <%= link_to '',
+       feed_path,
+       class: 'livicon shadowed',
+       data: {name: "rss", animate: "true", eventtype: "hover", color: "original", size: "24" },
+       title: "Subscribe!"     %>
 
+    <div class="livicon shadowed" data-name="share" data-s="24"></div>
 
-  
-
-
- <div class="livicon" data-name="share" data-animate="true" data-eventtype="hover" data-s="24">
- </div>
-
- <div class="redessociales">
-   <%= link_to '',
-    "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
-    class:  "smedia livicon",
-    data:   { name: "facebook", size: "24" },
-    target: "_blank",
-    title: "Share this comic on Facebook"%>
-  <%= link_to '',
-    "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
-    class:  "smedia livicon",
-    data:   { name: "twitter", size: "24" },
-    target: "_blank",
-    title: "Share this comic on Twitter"%>
-  <%= link_to '',
-    "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
-    class:  "smedia livicon",
-    data:   { name: "google-plus", size: "24" },
-    target: "_blank",
-    title: "Share this comic on Google Plus"%>
-  <%= link_to '',
-    "mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/#{@comic.number}",
-    class:  "smedia livicon",
-    data:   { name: "mail", size: "24" },
-    target: "_blank",
-    title:  "Email this comic to a friend"%>
-</div>
-
-
-
-
-
-
-
-
-
-	</div><!-- .nav-footer -->
+    <div class="share-menu shadowed">
+     <%= link_to '',
+      "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
+      class:  "smedia livicon",
+      data:   { name: "facebook", size: "24" },
+      target: "_blank",
+      title: "Share this comic on Facebook"%>
+    <%= link_to '',
+      "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
+      class:  "smedia livicon",
+      data:   { name: "twitter", size: "24" },
+      target: "_blank",
+      title: "Share this comic on Twitter"%>
+    <%= link_to '',
+      "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
+      class:  "smedia livicon",
+      data:   { name: "google-plus", size: "24" },
+      target: "_blank",
+      title: "Share this comic on Google Plus"%>
+    <%= link_to '',
+      "mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/#{@comic.number}",
+      class:  "smedia livicon",
+      data:   { name: "mail", size: "24" },
+      target: "_blank",
+      title:  "Email this comic to a friend"%>
+    </div><!-- .share-menu -->
+  </div><!-- .nav-footer -->
 <% end %>
 
 

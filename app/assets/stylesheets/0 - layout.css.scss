@@ -214,23 +214,19 @@ body {
 
 .mobile-nav {
     background:    white;
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-shadow: 3px 3px 22px grey;
     left:          2px;
     margin:        0;
     position:      fixed;
     top:          -21em;
     width:         99%;
     z-index:       50;
-
-    box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
-                inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
-                inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
-                inset hsla(0,0%,100%,.7) 0  2px 1px 7px; /* top HL */
-
     -webkit-transition-duration: 0.5s;
        -moz-transition-duration: 0.5s;
          -o-transition-duration: 0.5s;
             transition-duration: 0.5s;
-
   a {
     color:           black;
     display:         block;
@@ -242,7 +238,7 @@ body {
     text-decoration: none;
     width:           75%;
     &:nth-child(3) {
-      border-bottom: 1px solid black;
+      border-bottom: 2px solid grey;
     }
     &:nth-child(4) {
       width: 98%;
