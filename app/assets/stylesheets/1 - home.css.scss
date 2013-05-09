@@ -35,7 +35,7 @@
 
 
 /*------------------- 1-3-1   Comiv Nav - Common Styles                 */
-.comicnav, .mobile-comicnav {
+.mobile-comicnav {
   // max-width:  480px;
   text-align: center;
 	a {
@@ -44,9 +44,9 @@
 }
 
 /*------------------- 1-3-2   Comiv Nav - Desktop                       */
-.comicnav {
-  padding-top:    .5em;
-}
+// .comicnav {
+//   padding-top:    .5em;
+// }
 
 /* To change the size of the navigation icons, change the icon_size 
    variable in the 'home' view template */
@@ -91,16 +91,82 @@
   width:      100%;
 }
 
+h3 {
+  font-size: .7em;
+}
 
 
+
+.comicnav {
+  width: 600px;
+  // height: 40px;
+  position: relative;
+  left: -10px;
+}
+
+
+.previous-preview, .next-preview {
+  position: relative;
+  top: 8px;
+}
 
 .previous-preview {
-  display: none;
+  text-align: right;
 }
 
-.next-preview {
-  display: none;
+.spacer {
+  width: 150px;
 }
+
+
+.fr {
+  background:   white;
+  height:       40px;
+  padding-left: 160px;
+  position:     absolute;
+  top:          0;
+}
+.left-side {
+  float: left;
+  text-align: right;
+  // height: 40px;
+  min-width: 200px;
+}
+.previous-button {
+  float: left;
+  // height: 40px;
+}
+
+
+
+.shuffle-button {
+  float: left;
+  // height: 40px;
+}
+
+
+
+.next-button {
+  float: left;
+  z-index: 10;
+  // height: 40px;
+}
+.right-side, {
+  float: left;
+  // height: 40px;
+}
+.ff {
+  background:    white;
+  // height: 40px;
+  padding-right: 160px;
+  position:      absolute;
+  top:           0;
+}
+
+
+
+
+
 
 
 

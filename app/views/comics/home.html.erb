@@ -33,61 +33,106 @@
 
 <% icon_size = "40" %>
 <% icon_color = "black" %>
-<% next_comic = @comic.number+1 %>
-<% previous_comic = @comic.number-1 %>
 
 <div class="comicnav">
-	<% if @comic == Comic.first %>
-		<%= link_to '', page_url(random),
-				class:  'livicon hidden',
-				data:   { name: "shuffle", size: "#{icon_size}", color: icon_color} %>
-		<%= link_to '', page_url(random),
-				class:  'livicon hidden',
-				data:   { name: "shuffle", size: "#{icon_size}", color: icon_color} %>
-	<% else %>
-		<%= link_to '', page_url(Comic.first.number),
-				class:  'livicon shadowed',
-				data:   { name: "angle-double-left", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color, shadow: "true" },
-				title:  "Go to first",
-				method: 'get' %>
-		<div class="previous-preview">
-			<%= @previous_comic.title %>
+
+ 	<% if @comic != Comic.first %>
+
+		<div class="left-side">
+	    	<h3 class="previous-preview">
+	    		<%= Comic.find_by_number(@comic.number-1).title %>
+	    	</h3>
+			<div class="fr">
+				<div class="fr-button">
+						<%= link_to '', page_url(Comic.first.number),
+					class:  'livicon shadowed',
+					data:   { name: "angle-double-left", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color, shadow: "true" },
+					title:  "Go to first",
+					method: 'get' %>
+				</div>
+			</div>
 		</div>
-		<%= link_to '', page_url(@previous_comic),
-		 		class:  'livicon shadowed',
-		 		data:   { name: "angle-left", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
-		 		title:  "Previous comic",
-		 		method: 'get' %>
+		
+		<div class="previous-button">
+			<%= link_to '', page_url(@comic.number-1),
+		 	  class:  'livicon shadowed',
+		 	  data:   { name: "angle-left", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
+		 	  title:  "Next comic",
+		 	  method: 'get' %>
+		</div>
+
+	<% else %>
+
+		<div class="left-side hidden ">
+	    <h3 class="previous-preview "><%= Comic.last.title %></h3>
+		</div>
+
 	<% end %>
 
+
+	<div class="shuffle-button">
 		<%= link_to '', page_url(random),
 				class:  'livicon shadowed',
 				data:   { name: "shuffle", animate: "true", eventtype: "hover", size: "#{icon_size}", color: icon_color },
 				title:  "Random comic",
 				method: 'get' %>
+	</div>
 
-	<% if @comic == Comic.last %>
-		<%= link_to '', page_url(random),
-				class:  'livicon hidden',
-				data:   { name: "shuffle", size: "#{icon_size}", color: icon_color} %>
-		<%= link_to '', page_url(random),
-				class:  'livicon hidden',
-				data:   { name: "shuffle", size: "#{icon_size}", color: icon_color} %>
-	<% else %>
-		<%= link_to '', page_url(@next_comic),
-		 	  class:  'livicon shadowed',
-		 	  data:   { name: "angle-right", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
-		 	  title:  "Next comic",
-		 	  method: 'get' %>
-		<div class="next-preview">
-			<%= @next_comic.title %>
+
+	<% if @comic != Comic.last %>
+		<div class="next-button">
+			<%= link_to '', page_url(@comic.number+1),
+			 	  class:  'livicon shadowed',
+			 	  data:   { name: "angle-right", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
+			 	  title:  "Next comic",
+			 	  method: 'get' %>
 		</div>
-		<%= link_to '', page_url(Comic.last.number),
-			  class:  'livicon shadowed',
-			  data:   { name: "angle-double-right", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
-			  title:  "Go to last",
-			  method: 'get' %>
-	<% end %> 
+
+		<div class="right-side">
+			<h3 class="next-preview"><%= Comic.find_by_number(@comic.number+1).title %></h3>
+			<div class="ff">
+				<div class="ff-button">
+				<%= link_to '', page_url(Comic.last.number),
+					  class:  'livicon shadowed',
+					  data:   { name: "angle-double-right", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
+					  title:  "Go to last",
+					  method: 'get' %>
+				</div>
+			</div>
+		</div>
+
+	<% else %>
+
+		<div class="right-side hidden ">
+	  	<div class="spacer"></div>
+		</div>
+
+	<% end %>
+		 
+
+
+	<script type="text/javascript"> 
+	$(window).load(function() {
+		$(".previous-button").hover(function(e){
+	    e.stopPropagation();
+	    $(".fr").stop(true, true).hide("slide", {direction: "left"}, "slow");
+		}, function(e){
+		    e.stopPropagation();
+		    $(".fr").stop(true, true).show("slide", {direction: "left"}, "slow");
+		});
+
+
+		$(".next-button").hover(function(e){
+	    e.stopPropagation();
+	    $(".ff").stop(true, true).hide("slide", {direction: "right"}, "slow");
+		}, function(e){
+	    e.stopPropagation();
+	    $(".ff").stop(true, true).show("slide", {direction: "right"}, "slow");
+		});
+	});
+	</script>
+
+
 </div><!-- .comicnav -->
 
 

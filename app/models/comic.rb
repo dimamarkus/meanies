@@ -13,6 +13,6 @@ class Comic < ActiveRecord::Base
 
   def to_params
   	"#{number.parameterize}"
- 	end
+  end
 
 end
