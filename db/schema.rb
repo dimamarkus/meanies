@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130419201756) do
+ActiveRecord::Schema.define(:version => 20130510053839) do
 
   create_table "comics", :force => true do |t|
     t.string   "image"
@@ -19,7 +19,10 @@ ActiveRecord::Schema.define(:version => 20130419201756) do
     t.datetime "updated_at", :null => false
     t.string   "title"
     t.integer  "number"
+    t.string   "permalink"
   end
+
+  add_index "comics", ["number"], :name => "index_comics_on_number", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "name"

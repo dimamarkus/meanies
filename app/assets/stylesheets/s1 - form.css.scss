@@ -6,7 +6,7 @@
 /************************************************************************/
 
 .form {
-	background: $title-text-color;
+	background: $nav-item-hover;
 	border-radius: 5px;
 	margin:        0 auto;
 	text-align:    center;
@@ -48,7 +48,7 @@
 		background:    #fff;
 		border:        1px solid #fff;
 		border-radius: 5px;
-		color:         $title-text-color;
+		color:         $heading-color;
 		font-family:   "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 		font-weight:   400;
 		font-size:     $base-font-size;
@@ -82,7 +82,7 @@
 /************************************************************************/
 
 .form-footer {
-	background:                 $com-nav-icon-color;
+	background:                 $heading-color;
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius:  5px;
 	border-top:                 1px solid #fff;

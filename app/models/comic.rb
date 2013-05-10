@@ -9,7 +9,8 @@ class Comic < ActiveRecord::Base
   mount_uploader :image, ComicUploader
 
   validates :image,  presence: true
-  validates :title,  presence: true,  length: { maximum: 50 }
+  validates :title,  uniqueness: true, presence: true,  length: { maximum: 50 }
+
 
   def to_params
   	"#{number.parameterize}"

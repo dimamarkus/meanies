@@ -35,9 +35,9 @@ table {
 	td {
 		vertical-align: middle;
 		a.icon {
-			color:   $nav-btn-bg-color;
+			color:   $comic-nav-icon-color;
 			&:hover {
-				color: $nav-btn-txt-color;
+				color: $comic-nav-icon-hover;
 			}
 		}
 		padding:        0 16px;
@@ -67,7 +67,7 @@ table {
 
 
 /*------------------- 4-1-4   Table - Alternate Row Highlighting        */
-.even { background: none; }
-.odd  { background: darken(#7F797B, 15%);  /****Light Grey***/}
+.even { background: $index-even-row-color; }
+.odd  { background: $index-odd-row-color}
 
 

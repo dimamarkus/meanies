@@ -36,49 +36,64 @@ $default-spacing:       $baseline * 2;
 /************************************************************************/
 /* _2   COLORS                                                          */
 /************************************************************************/
+ 
+$white:      #FFFFFF;
+$black:      #000000;
+$light-grey: #7F797B;
+$dark-grey:  #403D3D;
+$orange:     #F26F17;
 
-/* #000000;  /******Black******/
-/* #FFFFFF;  /******White******/
-/* #FFBF2A;  /*****Yellow******/
-/* #403D3D;  /****Dark Grey****/
-/* #7F797B;  /****Light Grey***/
+
+/*-------------------  _2-1   Layout Colors                             */
+$background-color:     $white;  
+$border-color:         $light-grey;  
+$heading-color:        $dark-grey;
+
+$nav-item-color:       $dark-grey;  
+$nav-item-hover:       $orange;  
+$nav-item-current:     $orange;  
+
+$mobile-nav-bg:        $white;  
 
 
-$background-color:         #000000;  /******Black******/
-  $container-color:        #000000;  /******Black******/
-    $banner-text-color:    #403D3D;  /****Dark Grey****/
-    $content-box-color:    #000000;  /******Black******/
-      $title-text-color:   #7F797B;  /****Light Grey***/
-      $body-text-color:    #403D3D;  /****Dark Grey****/
+/*-------------------  _2-2   Home Colors                               */
+$social-icons-color:   $black;  
+$social-icons-hover:   $black;  
 
-      $com-nav-bg-color:   #000000;  /******Black******/
-      $com-nav-icon-color: #403D3D;  /****Dark Grey****/
-      $com-nav-hov-color:  #7F797B;  /****Light Grey***/
+$comic-nav-icon-color: $black;  
+$comic-nav-icon-hover: $orange;  
 
-      $thumb-title-color:  #7F797B;  /****Light Grey***/
-      $thumb-date-color:   #403D3D;  /****Dark Grey****/
-    
-    $navigation-color:     #000000;  /******Black******/
-      $nav-btn-bg-color:   #000000;  /******Black******/
-      $nav-btn-txt-color:  #FFBF2A;  /*****Yellow******/
-      $nav-btn-hov-color:  #7F797B;  /****Light Grey***/
+$title-preview-color:  $dark-grey;  
+$title-preview-bg:     $white;  
 
-$scrollbar-color:          #403D3D;  /****Dark Grey****/
 
-$button-bg-color:          #FFBF2A;  /*****Yellow******/
-$button-txt-color:         #000000;  /******Black******/
-$button-hov-color:            blue;
+/*-------------------  _2-3   Archive Colors                            */
+$archive-item-color:   $dark-grey;  
+$archive-item-hover:   $light-grey;  
+$archive-item-visited: $orange;  
 
-$error-bg-color:               red;
-$error-txt-color:          #000000;  /******Black******/
 
+/*-------------------  _2-4   About Colors                              */
+$about-text-color:     $dark-grey;  
+
+
+/*-------------------  _2-5   Comic Index Colors                        */
+$button-background:    $orange;  
+$button-text-color:    $white;  
+
+$index-odd-row-color:  $white;  
+$index-even-row-color: $light-grey;  
+
+$alert-error-color:    red;
+$alert-success-color:  green;
+$alert-notice-color:   yelow;
 
 
 
 
 
 /************************************************************************/
-/* _3   COLORS                                                          */
+/* _3   RESPONSIVE BREAKPOINTS                                          */
 /************************************************************************/
 $desktop:    516px;
 $tablet-min: 431px;

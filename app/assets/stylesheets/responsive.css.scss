@@ -29,7 +29,7 @@
   }
   .main-container {
     margin:     0;
-    overflow:   hidden;
+    overflow:   none;
     width:      100%;
   }
   .content-container {
@@ -37,7 +37,7 @@
   }
   .content {
     margin:      0;
-    overflow: hidden;
+    overflow: auto;
     padding-top: 2.5em;
     width:       99% ;
   }
@@ -47,16 +47,17 @@
     }
   }
   .archive-container {
+    margin-top: 3em;
     min-height: 36em;
     position:   relative;
-    overflow:   auto;
-    top:        3em;
+    top:        0;
   }
   .archive-list  {
     font-size:    1em;
     line-height:  $baseline*2;
     margin:       0 auto;
     padding-left: 1em;
+    overflow: scroll;
     top:          3em;
   }
 } /*------- max-width: 425px -------*/

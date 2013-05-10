@@ -2,16 +2,27 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8283",
   "files" : {
-    "\/app\/assets\/javascripts\/application.js" : {
+    "\/public\/assets\/comics\/comic\/image\/75\/thumb_n16409555_30868020_7293.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/javascripts\/application.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/app\/assets\/javascripts\/application-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/75\/thumb_n16409555_30868020_7293.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/75\/thumb_n16409555_30868020_7293.jpg",
+      "initialSize" : 53230,
+      "fileType" : 4096
+    },
+    "\/app\/assets\/images\/mike.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/images\/mike.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/images\/mike.png",
+      "initialSize" : 22381,
+      "fileType" : 8192
     },
     "\/public\/assets\/comics\/comic\/image\/78\/thumb_n16409555_30868022_7944.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -33,24 +44,12 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/app\/assets\/stylesheets\/fonts.css.scss" : {
+    "\/app\/views\/static_pages\/about.html.erb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/fonts.css.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/css\/fonts.css.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/app\/views\/comics\/view.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/comics\/view.html.erb",
+      "inputAbbreviatedPath" : "\/app\/views\/static_pages\/about.html.erb",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -64,15 +63,6 @@
       "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2036-3036-5115\/March_Of_The_Meanies-1.jpg",
       "initialSize" : 301684,
       "fileType" : 4096
-    },
-    "\/app\/views\/static_pages\/about.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/static_pages\/about.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/public\/uploads\/tmp\/20130406-2030-3036-4159\/March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -117,6 +107,15 @@
       "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/80\/thumb_n16409555_30868021_7615.jpg",
       "initialSize" : 77948,
       "fileType" : 4096
+    },
+    "\/app\/assets\/css\/responsive.css.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/css\/responsive.css.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/vendor\/assets\/javascripts\/livicons.js" : {
       "ignoreWasSetByUser" : 0,
@@ -215,6 +214,15 @@
       "initialSize" : 94642,
       "fileType" : 4096
     },
+    "\/app\/views\/comics\/home.html.erb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/views\/comics\/home.html.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/public\/uploads\/tmp\/20130406-2037-3036-5356\/March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -258,6 +266,15 @@
       "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/105\/n16409555_30868027_7975.jpg",
       "initialSize" : 75120,
       "fileType" : 4096
+    },
+    "\/app\/assets\/css\/2 - archive.css.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/css\/2 - archive.css.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/vendor\/assets\/javascripts\/jquery.tinyscrollbar.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -314,15 +331,6 @@
       "initialSize" : 77948,
       "fileType" : 4096
     },
-    "\/app\/views\/static_pages\/home.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/static_pages\/home.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/public\/uploads\/tmp\/20130406-2030-3036-4159\/thumb_March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -365,6 +373,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/app\/assets\/css\/1 - home.css.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/css\/1 - home.css.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/public\/assets\/comics\/comic\/image\/77\/thumb_n16409555_30868024_6964.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -384,6 +401,15 @@
       "inputAbbreviatedPath" : "\/app\/views\/comics\/new.html.erb",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/app\/assets\/css\/3 - about.css.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/css\/3 - about.css.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/app\/assets\/images\/fallback\/default.png" : {
       "ignoreWasSetByUser" : 0,
@@ -407,17 +433,14 @@
       "initialSize" : 80122,
       "fileType" : 4096
     },
-    "\/app\/assets\/stylesheets\/phone.css.scss" : {
+    "\/app\/assets\/css\/4 - comic_index.css.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/phone.css.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/css\/phone.css.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/app\/assets\/css\/4 - comic_index.css.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/app\/views\/layouts\/application.html.erb" : {
       "ignoreWasSetByUser" : 0,
@@ -515,15 +538,6 @@
       "outputAbbreviatedPath" : "\/app\/assets\/css\/3 - about.css.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/app\/views\/comics\/_social.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/comics\/_social.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/public\/uploads\/tmp\/20130406-2034-3036-8041\/med_thumb_March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -707,16 +721,17 @@
       "outputAbbreviatedPath" : "\/vendor\/assets\/javascripts\/json2-ck.js",
       "fileType" : 64
     },
-    "\/public\/uploads\/tmp\/20130406-2036-3036-0928\/thumb_March_Of_The_Meanies-1.jpg" : {
+    "\/app\/assets\/stylesheets\/s1 - form.css.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2036-3036-0928\/thumb_March_Of_The_Meanies-1.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2036-3036-0928\/thumb_March_Of_The_Meanies-1.jpg",
-      "initialSize" : 35104,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/s1 - form.css.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/css\/s1 - form.css.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/app\/assets\/javascripts\/livicons.js" : {
       "ignoreWasSetByUser" : 0,
@@ -740,17 +755,16 @@
       "initialSize" : 45700,
       "fileType" : 4096
     },
-    "\/app\/assets\/stylesheets\/s1 - form.css.scss" : {
+    "\/public\/uploads\/tmp\/20130406-2036-3036-0928\/thumb_March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/s1 - form.css.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/css\/s1 - form.css.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2036-3036-0928\/thumb_March_Of_The_Meanies-1.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/uploads\/tmp\/20130406-2036-3036-0928\/thumb_March_Of_The_Meanies-1.jpg",
+      "initialSize" : 35104,
+      "fileType" : 4096
     },
     "\/public\/uploads\/tmp\/20130406-2054-3036-8200\/thumb_March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -785,17 +799,6 @@
       "initialSize" : 101227,
       "fileType" : 4096
     },
-    "\/public\/assets\/comics\/comic\/image\/83\/n16409555_30877211_8305.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/83\/n16409555_30877211_8305.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/83\/n16409555_30877211_8305.jpg",
-      "initialSize" : 74134,
-      "fileType" : 4096
-    },
     "\/public\/assets\/comics\/comic\/image\/76\/n16409555_30868023_8281.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -805,6 +808,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/76\/n16409555_30868023_8281.jpg",
       "initialSize" : 102770,
+      "fileType" : 4096
+    },
+    "\/public\/assets\/comics\/comic\/image\/83\/n16409555_30877211_8305.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/83\/n16409555_30877211_8305.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/83\/n16409555_30877211_8305.jpg",
+      "initialSize" : 74134,
       "fileType" : 4096
     },
     "\/public\/assets\/comics\/comic\/image\/79\/thumb_n16409555_30868027_7975.jpg" : {
@@ -883,6 +897,15 @@
       "initialSize" : 110281,
       "fileType" : 4096
     },
+    "\/app\/assets\/css\/s1 - form.css.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/css\/s1 - form.css.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/public\/uploads\/tmp\/20130406-2036-3036-5115\/thumb_March_Of_The_Meanies-1.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -927,15 +950,6 @@
       "initialSize" : 22381,
       "fileType" : 8192
     },
-    "\/app\/views\/static_pages\/coming_soon.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/static_pages\/coming_soon.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/app\/views\/layouts\/_grid.html.erb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -966,15 +980,6 @@
       "outputAbbreviatedPath" : "\/public\/assets\/images\/fallback\/default.png",
       "initialSize" : 26791,
       "fileType" : 8192
-    },
-    "\/app\/views\/layouts\/_social.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/layouts\/_social.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/public\/assets\/comics\/comic\/image\/105\/thumb_n16409555_30868027_7975.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -1270,16 +1275,25 @@
       "initialSize" : 75120,
       "fileType" : 4096
     },
-    "\/app\/assets\/images\/mike.png" : {
+    "\/app\/views\/sessions\/new.html.erb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/images\/mike.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/images\/mike.png",
-      "initialSize" : 22381,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/app\/views\/sessions\/new.html.erb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/vendor\/assets\/javascripts\/livicons-custom.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/vendor\/assets\/javascripts\/livicons-custom.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/vendor\/assets\/javascripts\/livicons-custom-ck.js",
+      "fileType" : 64
     },
     "\/public\/assets\/application-09322b4f43ad345dd2dfbb15c00c5433.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1291,38 +1305,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/public\/assets\/application-09322b4f43ad345dd2dfbb15c00c5433-ck.js",
       "fileType" : 64
-    },
-    "\/public\/assets\/comics\/comic\/image\/75\/thumb_n16409555_30868020_7293.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/75\/thumb_n16409555_30868020_7293.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/public\/assets\/comics\/comic\/image\/75\/thumb_n16409555_30868020_7293.jpg",
-      "initialSize" : 53230,
-      "fileType" : 4096
-    },
-    "\/app\/assets\/stylesheets\/0 - layout.css.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/0 - layout.css.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/app\/assets\/css\/0 - layout.css.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/app\/views\/sessions\/new.html.erb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/views\/sessions\/new.html.erb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/app\/views\/comics\/_form.html.erb" : {
       "ignoreWasSetByUser" : 0,
@@ -1341,6 +1323,29 @@
       "inputAbbreviatedPath" : "\/public\/500.html",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/app\/assets\/stylesheets\/0 - layout.css.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/stylesheets\/0 - layout.css.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/app\/assets\/css\/0 - layout.css.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/app\/assets\/javascripts\/application.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/assets\/javascripts\/application.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/app\/assets\/javascripts\/application-ck.js",
+      "fileType" : 64
     }
   },
   "manualImportLinks" : [

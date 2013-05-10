@@ -7,6 +7,15 @@
 .archive-container  {
   position: relative;
   top: 12em;
+  a {
+  	color: $archive-item-color;
+  	&:hover {
+	  color:	$archive-item-hover;
+  	}
+  	&:visited {
+	  color:	$archive-item-visited;
+  	}
+  }
 }
 
 

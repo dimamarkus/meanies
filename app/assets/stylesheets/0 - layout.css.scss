@@ -82,7 +82,7 @@ ul, ol, li {
 }
 
 body {
-  color: $body-text-color;
+  background: $background-color;
   font: 300 #{$base-font-size}/#{$baseline} $body-text-font;
 }
 
@@ -95,18 +95,11 @@ h1 {
 }
 
 h3 {  
-  color: $thumb-title-color;
-  font:  #{$h3-size}/#{$h3-leading} $title-text-font;
+  color: $title-preview-color;
+  font:  .7em/#{$h3-leading} $title-text-font;
   margin-left:    3px;
   text-align:     left;
   text-transform: uppercase;
-}
-
-h4 {
-  color: $thumb-date-color;
-  font:  #{$h4-size}/#{$h4-leading} $title-text-font;
-  font-weight: 1600;
-  text-align:  left;
 }
 
 .hidden {
@@ -161,7 +154,7 @@ h4 {
        -o-transition-duration: 0.5s;
           transition-duration: 0.5s;
     a {
-    color:           black;
+    color:           $nav-item-color;
     display:         block;
     padding:         1em;
     font:            $nav-font;
@@ -171,16 +164,13 @@ h4 {
     @include transition(color);
     &:first-child {
       padding-bottom: .5em;
-      border-bottom:  2px solid grey;
-      &:hover {
-        color:       $nav-btn-hov-color;
-      } 
+      border-bottom:  2px solid $border-color;
     }
     &:nth-child(2) {
       margin-top: .5em;
     }
     &:hover {
-      color: $nav-btn-hov-color;
+      color: $nav-item-hover;
     } 
   }
 }
@@ -191,16 +181,16 @@ h4 {
 
 body {
   &.home_controller    nav a#home-link {
-    color: $title-text-color;
+    color: $nav-item-current;
   }
   &.archive_controller nav a#archive-link {
-    color: $title-text-color;
+    color: $nav-item-current;
   }
   &.about_controller   nav a#about-link {
-    color: $title-text-color;
+    color: $nav-item-current;
   }
   &.index_controller   nav a#index-link {
-    color: $title-text-color;
+    color: $nav-item-current;
   }
 }
 
@@ -213,8 +203,8 @@ body {
 /************************************************************************/
 
 .mobile-nav {
-    background:    white;
-    border: 2px solid grey;
+    background:       $mobile-nav-bg;
+    border: 2px solid $border-color;
     border-radius: 5px;
     box-shadow: 3px 3px 22px grey;
     left:          2px;
@@ -228,7 +218,7 @@ body {
          -o-transition-duration: 0.5s;
             transition-duration: 0.5s;
   a {
-    color:           black;
+    color:           $nav-item-color;
     display:         block;
     font-size:       $baseline*2;
     line-height:     $baseline*2.5;
@@ -238,7 +228,7 @@ body {
     text-decoration: none;
     width:           75%;
     &:nth-child(3) {
-      border-bottom: 2px solid grey;
+      border-bottom: 2px solid $border-color;
     }
     &:nth-child(4) {
       width: 98%;
@@ -275,13 +265,13 @@ body {
 
 .alert {
   &.alert-error {
-    color: red;
+    color: $alert-error-color;
   }
   &.alert-success {
-    color: green;
+    color: $alert-success-color;
   }
   &.alert-notice {
-    color: lightblue;
+    color: $alert-notice-color;
   }
 }
 
@@ -294,13 +284,13 @@ body {
 /************************************************************************/
 
 .button {
-  background: -webkit-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
-  background:    -moz-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
-  background:     -ms-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
-  background:      -o-linear-gradient(top, $nav-btn-txt-color, darken($nav-btn-txt-color, 25%));
-  border:        1px solid $title-text-color;
+  background: -webkit-linear-gradient(top, $button-background, darken($button-background, 25%));
+  background:    -moz-linear-gradient(top, $button-background, darken($button-background, 25%));
+  background:     -ms-linear-gradient(top, $button-background, darken($button-background, 25%));
+  background:      -o-linear-gradient(top, $button-background, darken($button-background, 25%));
+  border:        1px solid $border-color;
   border-radius: 5px;
-  color:         #fff;
+  color:         $button-text-color;
   cursor:        pointer;
   font-family:   'Bree Serif', serif;
   font-size:     $h3-size*1.25;
@@ -312,8 +302,8 @@ body {
           box-shadow:  0 1px 3px rgba(0,0,0,0.5);
 
   &:hover, &:focus  {
-    background:         darken($nav-btn-txt-color, 25%);
-    border:             1px solid $title-text-color;
+    background:         darken($button-background, 25%);
+    border:             1px solid $border-color;
     -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
        -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
             box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);

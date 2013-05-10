@@ -70,11 +70,11 @@
   a {
     font-size: 2em;
     padding:   4px;
-    color:           $com-nav-icon-color;
+    color:           $social-icons-color;
     text-decoration: none;
     @include transition(color);
     &:hover {
-      color:         $com-nav-hov-color;
+      color:         $social-icons-hover;
     }
   }
 }
@@ -91,9 +91,7 @@
   width:      100%;
 }
 
-h3 {
-  font-size: .7em;
-}
+
 
 
 
@@ -120,13 +118,14 @@ h3 {
 
 
 .fr {
-  background:   white;
+  background:   $background-color;
   height:       40px;
   padding-left: 160px;
   position:     absolute;
   top:          0;
 }
 .left-side {
+  background: $title-preview-bg;
   float: left;
   text-align: right;
   // height: 40px;
@@ -151,12 +150,13 @@ h3 {
   z-index: 10;
   // height: 40px;
 }
-.right-side, {
-  float: left;
-  // height: 40px;
+.right-side {
+  background:  $title-preview-bg;
+  float:      left;
+  // height:  40px;
 }
 .ff {
-  background:    white;
+  background:    $background-color;
   // height: 40px;
   padding-right: 160px;
   position:      absolute;
