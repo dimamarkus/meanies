@@ -1,0 +1,89 @@
+/************************************************************************/
+/* _1   TYPOGRAPHY                                                      */
+/************************************************************************/
+/************************************************************************/
+/* _2   COLORS                                                          */
+/************************************************************************/
+/*-------------------  _2-1   Layout Colors                             */
+/*-------------------  _2-2   Home Colors                               */
+/*-------------------  _2-3   Archive Colors                            */
+/*-------------------  _2-4   About Colors                              */
+/*-------------------  _2-5   Comic Index Colors                        */
+/************************************************************************/
+/* _3   RESPONSIVE BREAKPOINTS                                          */
+/************************************************************************/
+/************************************************************************/
+/* _4   MIX-INS                                                         */
+/************************************************************************/
+@media screen and (min-width: 25.564em) {
+  .mobile-nav {
+    overflow: hidden;
+    display: none; }
+
+  .social-slide {
+    display: none; }
+
+  #swipey {
+    display: none; }
+
+  .mobile-comicnav {
+    display: none; } }
+@media screen and (max-width: 26.563em) {
+  h1 {
+    font-size: 21.6px; }
+
+  .desktop-nav, .nav-footer, .comicnav {
+    display: none; }
+
+  .main-container {
+    margin: 0;
+    overflow: none;
+    width: 100%; }
+
+  .content-container {
+    width: 100%; }
+
+  .content {
+    margin: 0;
+    overflow: auto;
+    padding-top: 2.5em;
+    width: 99%; }
+
+  .comic img {
+    width: 100%; }
+
+  .archive-container {
+    margin-top: 3em;
+    min-height: 36em;
+    position: relative;
+    top: 0; }
+
+  .archive-list {
+    font-size: 1em;
+    line-height: 48px;
+    margin: 0 auto;
+    padding-left: 1em;
+    overflow: scroll;
+    top: 3em; }
+
+  .about-container {
+    margin: 0 auto;
+    padding: 0 0.5em 2em 0.5em;
+    position: relative;
+    top: 4em; } }
+/*------- max-width: 425px -------*/
+@media screen and (max-width: 365px) {
+  .container {
+    height: 685px; } }
+@media screen and (max-width: 335px) {
+  .container {
+    height: 655px; } }
+@media screen and (max-width: 327px) {
+  .container {
+    height: 640px; }
+
+  .arrow {
+    font-size: 108px; }
+
+  .social-slide a.icon {
+    font-size: 50.4px; } }

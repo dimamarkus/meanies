@@ -57,8 +57,15 @@
     line-height:  $baseline*2;
     margin:       0 auto;
     padding-left: 1em;
-    overflow: scroll;
+    overflow:     scroll;
     top:          3em;
+  }
+
+  .about-container {
+    margin:      0 auto;
+    padding:     0 .5em 2em .5em;
+    position:    relative;
+    top:         4em;
   }
 } /*------- max-width: 425px -------*/
 
