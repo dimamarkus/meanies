@@ -14,6 +14,32 @@
   .mobile-comicnav {
     display: none;
   }
+  
+  body {
+	  font-size: 130%;
+  }
+  .nav-footer a, .share-icon {
+	  zoom: 1.5;
+  }
+  .share-menu {
+  	.smedia {
+      top:     -.15em;
+    }
+    &:hover .smedia {
+	    &:first-child {
+	      left: .8em;    
+	    } 
+	    &:nth-child(2) {
+	      left: 2.4em;
+	    }
+	    &:nth-child(3) {
+	      left: 4em;
+	    }
+	    &:last-child {
+	      left: 5.6em;
+	    }         
+	  }
+  }
 }
 
 
@@ -28,16 +54,16 @@
     display:    none;
   }
   .main-container {
-    margin:     0;
-    overflow:   none;
-    width:      100%;
+    margin:      0;
+    overflow:    none;
+    width:       100%;
   }
   .content-container {
-    width:      100%;
+		margin-left: 0;
+    width:       100%;
   }
   .content {
-    margin:      0;
-    overflow: auto;
+    overflow:    auto;
     padding-top: 2.5em;
     width:       99% ;
   }

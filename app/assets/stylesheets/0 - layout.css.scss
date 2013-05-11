@@ -115,22 +115,25 @@ h3 {
 /************************************************************************/
 
 .main-container {
-  margin:   0 auto 0 5%;
+/*   margin:   0 auto 0 0; */
   width:    100%;
 }
 
 .nav-container {
   float:    left;
+  margin-left: 5%;
   width:    9em;
 }
 
 .content-container {
+/*   margin-left: 10.2em; */
+  margin-left: 9em;
   min-height: 30em;
   width:      80%;
 }
 
 .content {
-  margin:   0 auto 0 33.5%;
+  margin:   0 auto;
   width:    29em;
 }
 
