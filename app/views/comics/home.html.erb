@@ -28,6 +28,7 @@
 
 
 
+
 <!--*********************************************************************** -->
 <!--1-3 COMIC NAVIGATION - DESKTOP **************************************** -->
 <!--*********************************************************************** -->
@@ -159,6 +160,8 @@
 
 
 
+
+
 <!--*********************************************************************** -->
 <!--1-4 COMIC NAVIGATION - MOBILE  **************************************** -->
 <!--*********************************************************************** -->
@@ -166,7 +169,6 @@
 <% mobile_icon_size = "52" %>
 
 <div class="mobile-comicnav">
-
 	<div class="top-row">
 		<% if @comic == Comic.first %>
 			<%= link_to '', page_url(random), 						
@@ -222,7 +224,10 @@
 					method: 'get' %>		
 		<% end %>
 	</div><!-- .middle-row -->
+	
 
+	
+</div><!-- .mobile-comicnav -->
 
 	<div class="social-icons-row">
 			<%= link_to '',
@@ -250,9 +255,6 @@
 	 				class: 'icon-rss shadowed',
 	 				title: "Subscribe!" %>
 	</div><!-- .social-icons-row -->
-</div><!-- .mobile-comicnav -->
-
-
 
 
 <!-- Mobile swipe navigation script                   -->
@@ -272,6 +274,68 @@
 		}
 	});
 </script>
+
+
+
+<!--*********************************************************************** -->
+<!--1-4 COMIC NAVIGATION - LANDSCAPE ************************************** -->
+<!--*********************************************************************** -->
+<% landscape_icon_size = "92" %>
+
+	<div class="mobile-left-side">
+		<% if @comic == Comic.first %>
+			<%= link_to '', page_url(random), 						
+					class:  'livicon hidden', 
+					data:   { name: "shuffle", 		 size: "#{landscape_icon_size}" } %>
+								<%= link_to '', page_url(random), 						
+					class:  'livicon hidden', 
+					data:   { name: "shuffle", 		 size: "#{landscape_icon_size}" } %>
+		<% else %>
+
+			
+
+						<%= link_to '', page_url(Comic.first.number),
+					class:  'livicon shadowed',        
+					data:   { name: "angle-double-left",  size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+					title:  "Go to first",
+					method: 'get' %>
+					
+								<%= link_to '', page_url(@previous_comic),
+			 		class:  'livicon shadowed',        
+					data:   { name: "angle-left",  size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+					title:  "Previous comic",
+					method: 'get' %>
+					
+
+
+			
+		<% end %>
+							<%= link_to '', page_url(random),
+					class:  'livicon shadowed',
+		  		data:   { name: "shuffle", 					  size: "50", animate: "true", eventtype: 'click' },
+				  title:  "Random comic",
+				  method: 'get' %>
+	</div><!-- left-side -->
+
+	<div class="mobile-right-side">
+		<% if @comic == Comic.last %>
+			<%= link_to '', page_url(random),
+					class:  'livicon hidden',
+			  	data:   { name: "shuffle", 		 size: "#{landscape_icon_size}" } %>
+		<% else %>	
+		
+					<%= link_to '', page_url(Comic.last.number), 
+					class:  'livicon shadowed',
+					data:   { name: "angle-double-right", size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+					title:  "Go to last",
+					method: 'get' %>	
+			<%= link_to '', page_url(@next_comic),
+			 	  class:  'livicon shadowed',
+			  	data:   { name: "angle-right", size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+		  		title:  "Next comic",
+		  		method: 'get' %>
+		<% end %>
+	</div><!-- .right-side -->
 
 
 
