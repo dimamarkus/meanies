@@ -13,7 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require raphael
-//= require_tree .
-//= require jquery.tinyscrollbar.min
 //= require json2
-//= require livicons.js
+//= require livicons
+//= require_tree .
+
+
