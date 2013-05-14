@@ -1,7 +1,7 @@
 <% provide(:title, @comic.title) %>
 
 <!--*********************************************************************** -->
-<!--1-1 COMIC TITLE ******************************************************* -->
+<!--1-1 COMIC TITLE - Meant to be invisible ******************************* -->
 <!--*********************************************************************** -->
 
 <h2 class="title"><%= @comic.title %></h2>
@@ -36,7 +36,7 @@
 <% icon_size = "40" %>
 <% icon_color = "black" %>
 
-<div class="comicnav">
+<div class="desktop-comicnav">
 
  	<% if @comic != Comic.first %>
 		<div class="left-side">
@@ -99,8 +99,7 @@
 	<% else %>
 		<div class="right-side hidden "><div class="spacer"></div></div>
 	<% end %>
-		 
-</div><!-- .comicnav -->
+</div><!-- .desktop-comicnav -->
 
 
 
@@ -112,7 +111,7 @@
 
 <% mobile_icon_size = "52" %>
 
-<div class="mobile-comicnav">
+<div class="portrait-comicnav">
 	<div class="top-row">
 		<% if @comic == Comic.first %>
 			<%= link_to '', page_url(random), 						
@@ -168,7 +167,7 @@
 					method: 'get' %>		
 		<% end %>
 	</div><!-- .middle-row -->
-</div><!-- .mobile-comicnav -->
+</div><!-- .portrait-comicnav -->
 
 
 <!-- Mobile swipe navigation script                   -->
@@ -197,7 +196,7 @@
 
 <% landscape_icon_size = "92" %>
 
-	<div class="mobile-left-side">
+	<div class="landscape-left-side">
 		<% if @comic == Comic.first %>
 			<%= link_to '', page_url(random), 						
 					class:  'livicon hidden', 
@@ -227,7 +226,7 @@
 				  method: 'get' %>
 	</div><!-- left-side -->
 
-	<div class="mobile-right-side">
+	<div class="landscape-right-side">
 		<% if @comic == Comic.last %>
 			<%= link_to '', page_url(random),
 					class:  'livicon hidden',
@@ -252,7 +251,7 @@
 
 
 <!--*********************************************************************** -->
-<!--1-6 SOCIAL ICONS (Only on Mobile) ************************************* -->
+<!--1-6 SOCIAL ICONS (Only visible on Mobile) ***************************** -->
 <!--*********************************************************************** -->
 
 <div class="social-icons-row">
