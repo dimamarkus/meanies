@@ -25,35 +25,35 @@
 
     <%= link_to '',
        feed_path,
-       class: 'livicon shadowed',
+       class: 'livicon',
        data: {name: "rss", animate: "true", eventtype: "hover", color: "original", size: "24" },
        title: "Subscribe!"     %>
 
-    <div class="livicon shadowed share-icon" data-name="share" data-s="24"></div>
+    <div class="livicon share-icon" data-name="share" data-c="#71c442" data-s="24"></div>
 
-    <div class="share-menu shadowed">
+    <div class="share-menu">
      <%= link_to '',
       "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
       class:  "smedia livicon",
-      data:   { name: "facebook", size: "24" },
+      data:   { name: "facebook", size: "24", color: "original" },
       target: "_blank",
       title: "Share this comic on Facebook"%>
     <%= link_to '',
       "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
       class:  "smedia livicon",
-      data:   { name: "twitter", size: "24" },
+      data:   { name: "twitter", size: "24", color: "original"  },
       target: "_blank",
       title: "Share this comic on Twitter"%>
     <%= link_to '',
       "https://plus.google.com/share?url=http://marchofthemeanies.com/#{@comic.number}",
       class:  "smedia livicon",
-      data:   { name: "google-plus", size: "24" },
+      data:   { name: "google-plus", size: "24", color: "original"  },
       target: "_blank",
       title: "Share this comic on Google Plus"%>
     <%= link_to '',
       "mailto:email@echoecho.com?subject=My%20new%20favorite%20web%20comic.&body=Check it out!    http://marchofthemeanies.com/#{@comic.number}",
       class:  "smedia livicon",
-      data:   { name: "mail", size: "24" },
+      data:   { name: "mail", size: "24", color: "original"  },
       target: "_blank",
       title:  "Email this comic to a friend"%>
     </div><!-- .share-menu -->
@@ -65,9 +65,9 @@
 <!-- Mobile navigation menu (Not visible on desktop)-->
 <!--**************************************************-->
 <nav class="mobile-nav silver-box">
-	<%= link_to 'About',       about_path,   id: "about-link" %>
-  <%= link_to 'Archive',     archive_path, id: "archive-link" %>
-  <%= link_to 'Home',        root_path,    id: "home-link" %>
+	<%= link_to 'about',       about_path,   id: "about-link" %>
+  <%= link_to 'archive',     archive_path, id: "archive-link" %>
+  <%= link_to 'home',        root_path,    id: "home-link" %>
 	<a href="#"><h1>march of the meanies</h1></a>
   <%= link_to '...', '#' %>
 </nav>

@@ -81,6 +81,10 @@ ul, ol, li {
     font-style:  normal;
 }
 
+@font-face {
+	font-family: 'Quicksand', sans-serif;
+}
+
 body {
   background: $background-color;
   font: 300 #{$base-font-size}/#{$baseline} $body-text-font;
@@ -160,12 +164,15 @@ h3 {
     color:           $nav-item-color;
     display:         block;
     padding:         1em;
-    font:            $nav-font;
+   /*  font:            $nav-font; */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
     letter-spacing:  1px;
     text-decoration: none;
     width:           100%;
     @include transition(color);
     &:first-child {
+      font-weight: 700;
       padding-bottom: .5em;
       border-bottom:  2px solid $border-color;
     }
@@ -223,6 +230,7 @@ body {
   a {
     color:           $nav-item-color;
     display:         block;
+    font-family:     'Quicksand', sans-serif;
     font-size:       $baseline*2;
     line-height:     $baseline*2.5;
     margin:          0 auto;
@@ -235,6 +243,7 @@ body {
     }
     &:nth-child(4) {
       width: 98%;
+      font-weight: 700;
       &:hover {
         background:  transparent;
       }
