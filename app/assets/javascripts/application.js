@@ -15,6 +15,7 @@
 //= require raphael
 //= require json2
 //= require livicons
+//= require extra
 //= require_tree .
 
 
