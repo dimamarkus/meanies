@@ -70,24 +70,11 @@ ul, ol, li {
 
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'AaarghNormal';
-        src: url('Aaargh-webfont.eot');
-        src: url('Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
-             url('Aaargh-webfont.woff') format('woff'),
-             url('Aaargh-webfont.ttf') format('truetype'),
-             url('Aaargh-webfont.svg#AaarghNormal') format('svg');
-    font-weight: normal;
-    font-style:  normal;
-}
-
-@font-face {
-	font-family: 'Quicksand', sans-serif;
-}
-
 body {
-  background: $background-color;
-  font: 300 #{$base-font-size}/#{$baseline} $body-text-font;
+  background:  $background-color;
+  font-family: $body-text-font, sans-serif;
+  font-size:   $base-font-size;
+  line-height: $baseline;
 }
 
 a {
@@ -95,12 +82,14 @@ a {
 }
 
 h1 {
-  line-height: $base-font-size*1.5;
+  font-family: $main-heading-font, sans-serif;
 }
 
 h3 {  
-  color: $title-preview-color;
-  font:  .7em/#{$h3-leading} $title-text-font;
+  color:          $title-preview-color;
+  font-family:    $body-text-font, sans-serif;
+  font-size:      $base-font-size;
+  line-height:    $baseline;
   margin-left:    3px;
   text-align:     left;
   text-transform: uppercase;
@@ -140,8 +129,6 @@ h3 {
   margin:   0 auto;
   width:    29em;
 }
-
-
 
 
 

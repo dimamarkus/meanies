@@ -2,7 +2,7 @@
 
 
 /************************************************************************/
-/* 0-4   MAIN NAVIGATION                                                */
+/*  0-1 MAIN NAVIGATION                                                 */
 /************************************************************************/
 
 .desktop-nav { 
@@ -20,20 +20,14 @@
     color:           $nav-item-color;
     display:         block;
     padding:         1em;
-   /*  font:            $nav-font; */
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
+    font-family:     $navigation-font, sans-serif;
     letter-spacing:  1px;
     text-decoration: none;
     width:           100%;
     @include transition(color);
     &:first-child {
-      font-weight: 700;
       padding-bottom: .5em;
       border-bottom:  2px solid $border-color;
-    }
-    &:nth-child(2) {
-      margin-top: .5em;
     }
     &:hover {
       color: $nav-item-hover;
@@ -62,7 +56,7 @@ body {
 
 
 /************************************************************************/
-/* 1-4   MAIN NAVIGATION FOOTER - Only visible in Home view             */
+/*  0-2 MAIN NAVIGATION FOOTER - Only visible in Home view              */
 /************************************************************************/
 
 .nav-footer {
@@ -78,25 +72,15 @@ body {
 
 .nav-spacer{
   width: 1.5em;
-
 }
 
-// .spacer {
-//   width: 1.5em;
-//   height: 1.5em;
-//   position: relative;
-//   left: -2em;
-//   background: transparent;
-// }
-
-
-/*------------------- 1-4-1   Share Menu + Share Menu Icons             */
+/*--------------------------- Share Menu + Share Menu Icons             */
 .share-menu {
   background: transparent;
-  height:   1.5em;
-  left:     -2em;
-  position: relative;
-  width:    1.5em;
+  height:     1.5em;
+  left:       -2em;
+  position:   relative;
+  width:      1.5em;
   .smedia {
     display:  inline-block;
     height:   2.875em;
@@ -135,8 +119,10 @@ body {
 
 
 
+
+
 /************************************************************************/
-/* 0-5   MAIN NAVIGATION SLIDER (Only visible on mobile)                */
+/*  0-3 MAIN NAVIGATION SLIDER - Only visible on mobile                 */
 /************************************************************************/
 
 .mobile-nav {
@@ -157,7 +143,7 @@ body {
   a {
     color:           $nav-item-color;
     display:         block;
-    font-family:     'Quicksand', sans-serif;
+    font-family:     $navigation-font, sans-serif;
     font-size:       $baseline*2;
     line-height:     $baseline*2.5;
     margin:          0 auto;
@@ -171,6 +157,9 @@ body {
     &:nth-child(4) {
       width: 98%;
       font-weight: 700;
+      font-size:       $base-font-size;
+      line-height:     $baseline*2;
+      padding:         0.5em 0 1.5em 0;
       &:hover {
         background:  transparent;
       }
@@ -179,8 +168,8 @@ body {
       position:        relative;
       left:            .10em;
       bottom:          28px;
-      font-size:       $baseline*2;
-      line-height:     12px;
+      font-size:       3em;
+      line-height:     0;
       padding:         0;
       letter-spacing:  .25em;
       text-decoration: none;

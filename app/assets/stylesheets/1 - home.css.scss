@@ -36,23 +36,26 @@
 }
 
 .desktop-comicnav {
-  left:    -1.75em;
+  left:    -7.85em;
   position: relative;
-  width:    37.5em;
+  width:    40.5em;
   .left-side {
-    min-width:  12.5em;
+    width:  19.5em;
+    text-align: right;
     .previous-preview {
       position:   relative;
       text-align: right;
-      top:        .5em;
+      top:        0.5em;
+      
     }
     .fr {
-      background:   $background-color;
-      height:       2.5em;
-      left:         0.5em;
-      padding-left: 10em;
-      position:     absolute;
-      top:          0;
+      background:    $background-color;
+      height:        2.5em;
+      left:          2.5em;
+      padding-left:  15em;
+      padding-right: 0.1em;
+      position:      absolute;
+      top:           0;
     }
   }
   .right-side .next-preview {
@@ -61,14 +64,14 @@
   }
   .ff {
     background:    $background-color;
-    padding-right: 10em;
+    padding-right: 13em;
     position:      absolute;
     top:           0;
   }
 }
 
-.spacer {
-  width: 9.375em;
+.comicnav-spacer {
+  width: 21.425em !important;
 }
 
 .shadowed {

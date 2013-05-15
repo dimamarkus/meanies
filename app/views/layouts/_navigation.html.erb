@@ -16,8 +16,12 @@
 
 
 
-<!-- Feed + Share Icons (Not visible in About/Archive)-->
-<!--**************************************************-->
+
+
+<!--*************************************************************** -->
+<!--0-2 MAIN NAVIGATION FOOTER - Only visible in Home view ******** -->
+<!--*************************************************************** -->
+
 <% if params[:action] == "home"%>
 	<div class="nav-footer ">
     
@@ -62,8 +66,12 @@
 
 
 
-<!-- Mobile navigation menu (Not visible on desktop)-->
-<!--**************************************************-->
+
+
+<!--*************************************************************** -->
+<!--0-3 MAIN NAVIGATION SLIDER - Only visible on mobile *********** -->
+<!--*************************************************************** -->
+
 <nav class="mobile-nav silver-box">
 	<%= link_to 'about',       about_path,   id: "about-link" %>
   <%= link_to 'archive',     archive_path, id: "archive-link" %>
