@@ -45,6 +45,10 @@
         </div>  
 
         <%= f.text_field :title, class: "input title-input", placeholder: "Title" %>
+        <div class="input visibility"> 
+          <%= f.label :visible, "Visible?" %>
+          <%= f.check_box :visible, class: "checkbox" %>
+        </div>
       </div>
 
       <div class="form-footer">
@@ -53,3 +57,4 @@
     </div>
   <% end %>
 </div>
+         

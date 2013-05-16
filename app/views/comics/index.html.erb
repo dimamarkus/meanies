@@ -8,7 +8,17 @@
 
 <div id="comic-index">
   <table>
+
+    <tr>
+      <th>#         </th>
+      <th>Title     </th>
+      <th>Created At</th>
+      <th>Visible?  </th>
+      <th>          </th>
+    </tr>
+
     <% @comics.each do |comic| %>
+
     <tr class="<%= cycle('odd', 'even') %>">
       <td class="col1">
       	<%= comic.number %>
@@ -20,13 +30,18 @@
       	<%= comic.created_at.strftime('%m/%d/%Y')   %>
       </td>
       <td class="col4">
+        <%= comic.visible  ? "Yes" : "No"%>
+      </td>
+      <td class="col5">
       	<%= link_to '', page_url(comic.number), class: 'livicon index-preview-icon', data: { name: "eye-open"} %>
       		<div class="index-preview"><%= image_tag comic.image_url(:thumb) %></div>
         <%= link_to '', edit_comic_path(comic),   method: 'get', class: 'livicon', data: { name: "edit"} %>
         <%= link_to '', comic, method: :delete, confirm: 'Are you sure?', class: 'livicon', data: { name: "remove", hovercolor: "#F26F17"} %>
       </td>
     </tr>
+
     <% end %>
+
   </table>
 </div>
 

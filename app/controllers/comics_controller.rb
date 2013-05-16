@@ -4,7 +4,7 @@ class ComicsController < ApplicationController
 
 
   def home
-    @comic = Comic.find_by_number(params[:number])
+    @comic = Comic.find_by_number(params[:number]) 
     @previous_comic = Comic.find_by_number(@comic.number - 1)
     @next_comic = Comic.find_by_number(@comic.number + 1)
   end
@@ -12,9 +12,6 @@ class ComicsController < ApplicationController
   def archive
     @comics = Comic.order("number DESC")
   end
-
-
-
 
   def index
     @comics = Comic.order("number DESC")

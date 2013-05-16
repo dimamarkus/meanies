@@ -40,16 +40,29 @@ table {
 	width:        100%;
 	tr {
 		font-size:   $base-font-size;
+		&:first-child {
+			border-bottom: 2px solid grey;
+			font-size:  .8em;
+		}
+	}
+	th {
+		text-align: left;
+		font-family:   "QuicksandBold", sans-serif;
+		padding-left:   1em;
+		vertical-align: middle;
 	}
 	td {
 		font-family:   "QuicksandBook", sans-serif;
 		padding-left:   1em;
 		vertical-align: middle;
 	}
-	.col1, .col2, .col3 {
+	.col1, .col2, .col3, .col4 {
 		font-size:  1.1em;	
 	}
-	.col4 {
+	.col4{
+		text-align: center;
+	}
+	.col5 {
 		padding-top: .5em;
 	}
 }
