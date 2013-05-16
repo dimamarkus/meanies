@@ -5,7 +5,6 @@
 /************************************************************************/
 
 .about-container {
-/*   max-width: 95%; */
   position: relative;
   top: 5em;
 }
@@ -34,10 +33,10 @@
 p {
   color:          #403D3D;  /****Dark Grey****/
   font-family:    $about-text-color;
-  font-size:      16px;  
+  font-size:      $base-font-size * 1.1;  
   font-weight:    500;
   letter-spacing: 2px;
-  line-height:    24px;
+  line-height:    $baseline * 1.1;
 }
 
 

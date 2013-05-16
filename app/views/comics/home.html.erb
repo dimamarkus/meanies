@@ -55,7 +55,7 @@
 		<div class="previous-button">
 			<%= link_to '', page_url(@comic.number-1),
 			 	  class:  'livicon shadowed',
-			 	  data:   { name: "angle-left", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
+			 	  data:   { name: "angle-wide-left", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
 			 	  title:  "Next comic",
 			 	  method: 'get' %>
 		</div><!-- .previous-button -->
@@ -78,7 +78,7 @@
 		<div class="next-button">
 			<%= link_to '', page_url(@comic.number+1),
 			 	  class:  'livicon shadowed',
-			 	  data:   { name: "angle-right", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
+			 	  data:   { name: "angle-wide-right", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
 			 	  title:  "Next comic",
 			 	  method: 'get' %>
 		</div>
@@ -119,7 +119,7 @@
 		<% else %>
 			<%= link_to '', page_url(@previous_comic),
 			 		class:  'livicon shadowed',        
-					data:   { name: "angle-left",  size: "#{mobile_icon_size}", animate: "true", eventtype: 'click' },
+					data:   { name: "angle-wide-left",  size: "#{mobile_icon_size}", animate: "true", eventtype: 'click' },
 					title:  "Previous comic",
 					method: 'get' %>
 		<% end %>
@@ -131,7 +131,7 @@
 		<% else %>	
 			<%= link_to '', page_url(@next_comic),
 			 	  class:  'livicon shadowed',
-			  	data:   { name: "angle-right", size: "#{mobile_icon_size}", animate: "true", eventtype: 'click' },
+			  	data:   { name: "angle-wide-right", size: "#{mobile_icon_size}", animate: "true", eventtype: 'click' },
 		  		title:  "Next comic",
 		  		method: 'get' %>
 		<% end %>
@@ -213,7 +213,7 @@
 					
 			<%= link_to '', page_url(@previous_comic),
 			 		class:  'livicon shadowed',        
-					data:   { name: "angle-left",         size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+					data:   { name: "angle-wide-left",         size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
 					title:  "Previous comic",
 					method: 'get' %>
 		<% end %>
@@ -239,7 +239,7 @@
 					method: 'get' %>	
 			<%= link_to '', page_url(@next_comic),
 			 	  class:  'livicon shadowed',
-			  	data:   { name: "angle-right",        size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+			  	data:   { name: "angle-wide-right",        size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
 		  		title:  "Next comic",
 		  		method: 'get' %>
 		<% end %>

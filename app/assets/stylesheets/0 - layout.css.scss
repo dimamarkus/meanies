@@ -143,6 +143,7 @@ h3 {
 	position:   relative;
 	text-align: center;
 	top:        4em;
+	z-index: 		100;
   &.alert-error {
     color: $alert-error-color;
   }

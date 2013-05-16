@@ -68,12 +68,13 @@ $h3-leading:        $h3-size  * 1.5;
 /************************************************************************/
 /* _2   COLORS                                                          */
 /************************************************************************/
- 
-$white:      #FFFFFF;
-$black:      #000000;
-$light-grey: #7F797B;
+
+$black:      #000000; 
 $dark-grey:  #403D3D;
+$green:      #71C442;
+$light-grey: #7F797B;
 $orange:     #F26F17;
+$white:      #FFFFFF;
 
 
 /*-------------------  _2-1   Layout Colors                             */
@@ -117,8 +118,8 @@ $index-odd-row-color:  $white;
 $index-even-row-color: $light-grey;  
 
 $alert-error-color:    red;
-$alert-success-color:  green;
-$alert-notice-color:   yelow;
+$alert-success-color:  yellow;
+$alert-notice-color:   $green;
 
 
 

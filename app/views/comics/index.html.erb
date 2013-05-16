@@ -11,17 +11,19 @@
     <% @comics.each do |comic| %>
     <tr class="<%= cycle('odd', 'even') %>">
       <td class="col1">
-           <%= comic.number %>
+      	<%= comic.number %>
       </td>
-      <td class="col2 title">
-        <p><%= comic.title %><%= link_to  (image_tag comic.image_url(:thumb)), page_url(comic.number.to_s) %></p>
+      <td class="col2">
+      	<%= comic.title %>
       </td>
       <td class="col3">
-           <%= comic.created_at.strftime('%m/%d/%Y')   %>
+      	<%= comic.created_at.strftime('%m/%d/%Y')   %>
       </td>
       <td class="col4">
-           <%= link_to '', edit_comic_path(comic),   method: 'get', class: 'icon-pencil icon' %>
-           <%= link_to '', comic, method: :delete, data: { confirm: 'Are you sure?'}, class: 'icon-cancel icon ' %>
+      	<%= link_to '', page_url(comic.number), class: 'livicon index-preview-icon', data: { name: "eye-open"} %>
+      		<div class="index-preview"><%= image_tag comic.image_url(:thumb) %></div>
+        <%= link_to '', edit_comic_path(comic),   method: 'get', class: 'livicon', data: { name: "edit"} %>
+        <%= link_to '', comic, method: :delete, confirm: 'Are you sure?', class: 'livicon', data: { name: "remove", hovercolor: "#F26F17"} %>
       </td>
     </tr>
     <% end %>
