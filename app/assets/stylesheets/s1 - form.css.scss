@@ -5,8 +5,18 @@
 /* s1-1   FORM CONTAINER                                                */
 /************************************************************************/
 
+.form-container {
+	position: relative;
+	top: 8em;
+}
+
+
+/************************************************************************/
+/* s1-1   FORM CONTAINER                                                */
+/************************************************************************/
+
 .form {
-	background: $nav-item-hover;
+	background:    $light-grey;
 	border-radius: 5px;
 	margin:        0 auto;
 	text-align:    center;
@@ -21,7 +31,7 @@
 
 .form-header {
 	color:       #fff;
-  font-family: 'Bree Serif', serif;
+  font-family: 'QuicksandBook', sans-serif;
   font-size:   $h3-size*1.25;
   font-weight: 300;
   padding:     25px 25px 0 25px;

@@ -139,6 +139,10 @@ h3 {
 /************************************************************************/
 
 .alert {
+	margin: 	  0 auto;
+	position:   relative;
+	text-align: center;
+	top:        4em;
   &.alert-error {
     color: $alert-error-color;
   }
@@ -167,10 +171,10 @@ h3 {
   border-radius: 5px;
   color:         $button-text-color;
   cursor:        pointer;
-  font-family:   'Bree Serif', serif;
+  font-family:   'QuicksandBook', serif;
   font-size:     $h3-size*1.25;
   font-weight:   300;
-  padding:       11px 25px;
+  padding:       .75em 1em .5em 1em;
   text-shadow:   0px 1px 0 rgba(2,2,2,0.25);
   -webkit-box-shadow:  0 1px 3px rgba(0,0,0,0.5);
      -moz-box-shadow:  0 1px 3px rgba(0,0,0,0.5);

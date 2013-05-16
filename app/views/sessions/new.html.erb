@@ -4,7 +4,7 @@
 <!-- SIGN IN FORM ********************************************************* -->
 <!--*********************************************************************** -->
 
-<div class="form-wrapper">
+<div class="form-container">
 		<%= form_for(:session, url: sessions_path) do |f| %>
 		<div class="form">
 			<div class="form-header">
@@ -17,7 +17,7 @@
 			</div>
 
 			<div class="form-footer">
-					<%= f.submit "Sign in", class: "button" %>
+					<%= f.submit "Submit", class: "button" %>
 			</div>
 		</div>
 		<% end %>

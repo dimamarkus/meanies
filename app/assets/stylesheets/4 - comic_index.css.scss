@@ -18,10 +18,11 @@
 /*------------------- 4-1-2   Table Container                           */
 #comic-index {
 	background:    #403D3D;  /****Dark Grey****/
-	clear:         both;
 	height:        88%;
 	margin-bottom: $baseline;
 	overflow:      auto;
+	position: 		 relative;
+	top: 					 8em;
 }
 
 
