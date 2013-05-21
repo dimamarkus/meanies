@@ -3,28 +3,30 @@
 /************************************************************************/
 /* SMARTPHONES - LANDSCAPE                                              */
 /************************************************************************/
-@media only screen and (min-width : 426px) {
+@media only screen and (min-width : 426px) and (max-width : 1024px) {
 	.content-container {
-		margin: 0 auto;
-		width: 80%;
+		margin:  0 auto;
+		width:   100%;
 		padding: 0;
 	}
 	body {
-		font-size: 75%;
+		font-size:  75%;
 	}
+  .content { 
+    width:      29em;
+  }
 	.nav-container, .desktop-comicnav, .title, .portrait-comicnav {
-		display: none;
+		display:    none;
 	}
 	.social-icons-row {
 		text-align: center;
 		margin-top: .5em;
 	  a {
-    font-size: 3em;
-    padding:   5px;
+    font-size:  3em;
+    padding:    5px;
 	  }
 	}
 }
-
 
 
 
@@ -92,8 +94,7 @@
 									 and (max-device-width : 1024px) 
 									 and (orientation : portrait) {
 
-				
-
+			
 
 }
 
@@ -123,7 +124,7 @@
 /************************************************************************/
 /* DESKTOPS and LAPTOPS                                                 */
 /************************************************************************/
-@media screen and (min-width : 1224px) {
+@media screen and (min-width : 1025px) {
 	.mobile-nav, .social-icons-row, .landscape-left-side,
 	.landscape-right-side, .portrait-comicnav, #swipey { 
 	 	display:  none;
