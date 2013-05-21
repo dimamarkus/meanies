@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20130516195157) do
     t.datetime "updated_at",                    :null => false
     t.string   "title"
     t.integer  "number"
+    t.string   "permalink"
     t.boolean  "visible",    :default => false
   end
 
