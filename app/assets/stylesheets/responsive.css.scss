@@ -42,16 +42,15 @@
     display:    none;
   }
   .main-container {
-    margin:      0;
     overflow:    none;
     width:       100%;
+    min-height:  35em;
   }
   .content-container {
 		margin-left: 0;
     width:       100%;
   }
   .content {
-    overflow:    auto;
     padding-top: 2.5em;
     width:       99% ;
   }
@@ -76,10 +75,29 @@
     top:          3em;
   }
   .about-container {
+    height:       67em;
     margin:       0 auto;
     padding:      0 .5em 2em .5em;
     position:     relative;
+    text-align:   center;
     top:          4em;
+    .portrait {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+  footer {
+    left:           50%;
+    margin-left:   -8.5em;
+    padding-bottom: 2em;
+    position:       relative;
+    top:            2em;
+    width:          17em;
+    p {
+      height:      3em;
+      font-size:   $base-font-size/2;
+      line-height: 1.5em;
+    }
   }
 } /*------- max-width: 425px -------*/
 

@@ -120,15 +120,27 @@ h3 {
 .content-container {
   float:       left;
   margin-left: 10%;
-  min-height:  30em;
+  min-height:  36em;
   width:       29em;
 }
 
 .content {
   margin:      0 auto;
+  max-height:  70em;
 }
 
-
+footer {
+  position: fixed;
+  left: 50%;
+  bottom: .5em;
+  margin-left: -12em;
+  width: 24em;
+  p {
+    font-family: 'QuicksandBold', sans-serif;
+    font-size: $base-font-size/1.5;
+    text-align: center;
+  }
+}
 
 
 
