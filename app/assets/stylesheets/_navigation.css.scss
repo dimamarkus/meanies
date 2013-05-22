@@ -9,8 +9,7 @@
   // background-image: url("navbg-flip.jpg");
   border-bottom:  2px solid grey;
   margin:         0 auto; 
-/*   margin-top:     8.344em; */
-	margin-top: 5.5em;
+	margin-top:     5.5em;
   text-align:     center;
   width:          100%;
   
@@ -28,8 +27,12 @@
     width:           100%;
     @include transition(color);
     &:first-child {
+      color: $dark-grey;
       padding-bottom: .5em;
       border-bottom:  2px solid $border-color;
+      &:hover {
+        color: $light-grey;
+      }
     }
     &:hover {
       color: $nav-item-hover;
