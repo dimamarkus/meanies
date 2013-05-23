@@ -26,6 +26,19 @@
     padding:    5px;
 	  }
 	}
+    footer {
+    left:           50%;
+    margin-left:   -11.5em;
+    padding-bottom: 2em;
+    position:       relative;
+    top:            2em;
+    width:          23em;
+    p {
+      height:      3em;
+      font-size:   $base-font-size/2;
+      line-height: 1.5em;
+    }
+  }
 }
 
 
