@@ -7,7 +7,9 @@
 <div class="archive-container">
   <ul class="archive-list">
     <% @comics.each do |comic| %>
-      <li><%= comic.number %>  <%= link_to comic.title, page_url(comic.number.to_s), title: "#{comic.created_at.strftime('%m/%d/%Y')} - #{comic.title}"  %></li>
+    <ul>
+      <li class="comic-number"><%= comic.number %></li> <li> <%= link_to comic.title, page_url(comic.number.to_s), title: "#{comic.created_at.strftime('%m/%d/%Y')} - #{comic.title}"  %></li>
+      </ul>
     <% end %>
   </ul>
 </div>

@@ -29,7 +29,7 @@
 
     <%= link_to '',
        feed_path,
-       class: 'livicon',
+       class: 'livicon feed-icon',
        data: {name: "rss", animate: "true", eventtype: "hover", color: "original", size: "24" },
        title: "Subscribe!"     %>
 
@@ -81,3 +81,13 @@
 </nav>
 
 
+
+
+<!--*************************************************************** -->
+<!--0-3 MAIN NAVIGATION SLIDER - Only visible on mobile *********** -->
+<!--*************************************************************** -->
+<nav class="tablet-nav">
+  <%= link_to 'home',        root_path,    id: "home-link"    %>
+  <%= link_to 'archive',     archive_path, id: "archive-link" %>
+  <%= link_to 'about',       about_path,   id: "about-link"   %>
+</nav>
