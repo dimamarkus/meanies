@@ -13,7 +13,7 @@
 	position:       relative;
 	text-align:     center;
 	text-transform: uppercase;
-  top:            29em;
+  top:            23em;
 	width:          $baseline * 8;
 }
 
@@ -23,12 +23,9 @@
 	height:        20em;
 	margin:        0 auto;
 	margin-bottom: $baseline;
+	margin-top:    8.15em;
 	overflow:      auto;
-	position: 		 relative;
-	top: 					 3em;
 	width: 				 35em;
-	
-
 }
 
 
@@ -77,13 +74,8 @@ table {
 .index-preview {
 	display:  none;
 	position: fixed;
-<<<<<<< HEAD
 	top:      12.5em;
 	left:     38em;
-=======
-	top: 			11.4em;
-	left: 		44em;
->>>>>>> cd8abb755a6cf2932538116d30e241fc98f0057f
 	width:    20em;
 	img { 
 		width:         100%;
