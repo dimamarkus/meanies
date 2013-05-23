@@ -53,7 +53,7 @@
 		</div><!-- .left-side -->
 
 		<div class="previous-button">
-			<%= link_to '', page_url(@comic.number-1),
+			<%= link_to '', page_url(@previous_comic),
 			 	  class:  'livicon shadowed',
 			 	  data:   { name: "angle-wide-left", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
 			 	  title:  "Next comic",
@@ -76,7 +76,7 @@
 
 	<% if @comic != Comic.last %>
 		<div class="next-button">
-			<%= link_to '', page_url(@comic.number+1),
+			<%= link_to '', page_url(@next_comic),
 			 	  class:  'livicon shadowed',
 			 	  data:   { name: "angle-wide-right", animate: "true", eventtype: 'hover', size: "#{icon_size}", color: icon_color },
 			 	  title:  "Next comic",
@@ -109,6 +109,8 @@
 <!--*********************************************************************** -->
 
 <% mobile_icon_size = "52" %>
+
+
 
 <div class="portrait-comicnav">
 	<div class="top-row">
