@@ -7,13 +7,15 @@
 
 /*------------------- 4-1-1   Add Comic Button                          */
 .add_comic {
-	float:          right;
-	left:           -8em;
+	// float:          right;
+	// left:           -8em;
+	margin: 0 auto;
+	margin-left: 12.8em;
 	margin-bottom:  $baseline;
 	position:       relative;
 	text-align:     center;
 	text-transform: uppercase;
-  top:            23em;
+  // top:            23em;
 	width:          $baseline * 8;
 }
 
@@ -56,10 +58,7 @@ table {
 	.col1, .col2, .col3, .col4 {
 		font-size:  1.1em;	
 	}
-	.col4{
-		text-align: center;
-	}
-	.col5 {
+	.col4 {
 		padding-top: .5em;
 	}
 }
@@ -74,7 +73,7 @@ table {
 .index-preview {
 	display:  none;
 	position: fixed;
-	top:      12.5em;
+	top:      14em;
 	left:     38em;
 	width:    20em;
 	img { 

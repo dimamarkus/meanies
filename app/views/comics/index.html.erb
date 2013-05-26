@@ -4,8 +4,6 @@
 <!--* COMIC INDEX                                                         * -->
 <!--*********************************************************************** -->
 
-<%= link_to raw('<div class="button add_comic">Add Comic</div>'), new_comic_path %>
-
 <div id="comic-index">
   <table>
 
@@ -13,7 +11,6 @@
       <th>#         </th>
       <th>Title     </th>
       <th>Created At</th>
-      <th>Visible?  </th>
       <th>          </th>
     </tr>
 
@@ -29,9 +26,6 @@
       <td class="col3">
       	<%= comic.created_at.strftime('%m/%d/%Y')   %>
       </td>
-      <td class="col4">
-        <%= comic.visible  ? "Yes" : "No"%>
-      </td>
       <td class="col5">
       	<%= link_to '', page_url(comic.number), class: 'livicon index-preview-icon', data: { name: "eye-open"} %>
       		<div class="index-preview"><%= image_tag comic.image_url(:thumb) %></div>
@@ -44,6 +38,9 @@
 
   </table>
 </div>
+
+<%= link_to raw('<div class="button add_comic">Add Comic</div>'), new_comic_path %>
+
 
 
 
