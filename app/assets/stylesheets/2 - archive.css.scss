@@ -5,8 +5,7 @@
 /************************************************************************/
 
 .archive-container  {
-  position: relative;
-  top: 7em;
+  margin-top: 7em;
   a {
   	color: $archive-item-color;
   	&:hover {

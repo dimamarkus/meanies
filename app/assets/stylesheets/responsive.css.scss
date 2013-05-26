@@ -214,11 +214,8 @@
     display: block;
   }
   .tablet-nav {
-    position: absolute;
-    width: 26em;
-    margin-left: -13em;
-    top: 35em;
-    left: 50%;
+    margin: 0 auto;
+    width:        26em;
     a {
       font-size: $base-font-size *2;
       padding: .75em;
@@ -230,20 +227,25 @@
 		left: -4.3em;
 	}
   .main-container, .content-container {
-    width: 100%;
     margin: 0;
+    width: 100%;
+  }
+  .landscape-left-side, .landscape-right-side {
+    top: 8em;
+  }
+  .social-icons-row {
+    margin: 2em 0 2em 0;
   }
   .archive-container  {
-    position: relative;
-    top: 2em;
+    margin-bottom: 2em;
   }
-  .about-container {
-    position: absolute;
-    left: 50%;
-    margin: 0 auto;
-    margin-left: -22.5em;
-    width: 45em;
-  }
+  // .about-container {
+  //   left: 50%;
+  //   margin: 0 auto;
+  //   margin-left: -22.5em;
+  //   position: absolute;
+  //   width: 45em;
+  // }
   footer {
     margin-left:   -10em;
     width:          20em; 
