@@ -252,6 +252,62 @@
 
 
 <!--*********************************************************************** -->
+<!--1-5 COMIC NAVIGATION - TABLET - PORTRAIT ****************************** -->
+<!--*********************************************************************** -->
+
+<% landscape_icon_size = "92" %>
+
+	<div class="tablet-comicnav">
+		<% if @comic == Comic.first %>
+			<%= link_to '', page_url(random), 						
+					class:  'livicon hidden', 
+					data:   { name: "shuffle", 		        size: "#{landscape_icon_size}" } %>
+			<%= link_to '', page_url(random), 						
+					class:  'livicon hidden', 
+					data:   { name: "shuffle", 		        size: "#{landscape_icon_size}" } %>
+
+		<% else %>
+			<%= link_to '', page_url(Comic.first.number),
+					class:  'livicon shadowed',        
+					data:   { name: "angle-double-left",  size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+					title:  "Go to first",
+					method: 'get' %>
+					
+			<%= link_to '', page_url(@previous_comic),
+			 		class:  'livicon shadowed',        
+					data:   { name: "angle-wide-left",         size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+					title:  "Previous comic",
+					method: 'get' %>
+		<% end %>
+
+			<%= link_to '', page_url(random),
+					class:  'livicon shadowed',
+		  		data:   { name: "shuffle", 					  size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+				  title:  "Random comic",
+				  method: 'get' %>
+
+		<% if @comic == Comic.last %>
+			<%= link_to '', page_url(random),
+					class:  'livicon hidden',
+			  	data:   { name: "shuffle", 		        size: "#{landscape_icon_size}" } %>
+
+		<% else %>	
+			<%= link_to '', page_url(@next_comic),
+			 	  class:  'livicon shadowed',
+			  	data:   { name: "angle-wide-right",        size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+		  		title:  "Next comic",
+		  		method: 'get' %>
+			<%= link_to '', page_url(Comic.last.number), 
+					class:  'livicon shadowed',
+					data:   { name: "angle-double-right", size: "#{landscape_icon_size}", animate: "true", eventtype: 'click' },
+					title:  "Go to last",
+					method: 'get' %>	
+		<% end %>
+	</div>
+
+
+
+<!--*********************************************************************** -->
 <!--1-6 SOCIAL ICONS (Only visible on Mobile) ***************************** -->
 <!--*********************************************************************** -->
 
