@@ -20,13 +20,20 @@
 	}
 	.social-icons-row {
 		text-align: center;
-		margin-top: .5em;
+		margin: 1em 0 3em 0;
 	  a {
     font-size:  3em;
     padding:    5px;
 	  }
 	}
-    footer {
+  .bottom-nav {
+    margin: 0 auto;
+    width:  38em;
+  }
+  .archive-container {
+    margin:  2em auto;
+  }
+  footer {
     left:           50%;
     margin-left:   -11.5em;
     padding-bottom: 2em;
@@ -52,7 +59,7 @@
     font-size:  $base-font-size * 1.35;
   }
   .desktop-nav, .nav-footer, .desktop-comicnav, .landscape-left-side,
-  .landscape-right-side, .tablet-nav, .tablet-comicnav { 
+  .landscape-right-side, .bottom-nav, .tablet-comicnav { 
     display:    none;
   }
   .main-container {
@@ -79,14 +86,13 @@
     min-height:  36em;
     position:    relative;
     top:         0em;
-  }
-  .archive-list  {
-    font-size:    1em;
-    line-height:  $baseline*2;
-    margin:       0 auto;
-    padding-left: 1em;
-    overflow:     scroll;
-    top:          3em;
+    .archive-list  {
+      font-size:    1em;
+      line-height:  $baseline*2;
+      margin:       0 auto;
+      padding-left: 1em;
+      overflow:     scroll;
+    }
   }
   .about-container {
     height:       67em;
@@ -98,6 +104,9 @@
     .portrait {
       float: none;
       margin: 0 auto;
+    }
+    .signature {
+      margin: 2em 0 0 1em;
     }
   }
   footer {
@@ -158,16 +167,6 @@
     zoom: 1.4;
     margin-bottom: 2em;
   }
-
-  .tablet-nav {
-    margin-left: 10em;
-    width: 30em;
-    a {
-      font-size: $base-font-size *2;
-      padding:   .75em;
-      color:     $nav-item-color;
-    }
-  }
   .content {
     margin: 0 auto;
   }
@@ -209,14 +208,9 @@
   .nav-container {
     display: block;
   }
-  .tablet-nav {
+  .bottom-nav {
     margin: 0 auto;
     width:        26em;
-    a {
-      font-size: $base-font-size *2;
-      padding:   .75em;
-      color:     $nav-item-color;
-    }
   }
   .main-container, .content-container {
     margin: 0;
@@ -254,7 +248,7 @@
 /* DESKTOPS and LAPTOPS                                                 */
 /************************************************************************/
 @media screen and (min-width : 1025px) {
-	.mobile-nav, .tablet-nav, .social-icons-row, .landscape-left-side,
+	.mobile-nav, .bottom-nav, .social-icons-row, .landscape-left-side,
 	.landscape-right-side, .portrait-comicnav, #swipey, .tablet-comicnav { 
 	 	display:  none;
 	}

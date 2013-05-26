@@ -125,9 +125,32 @@ body {
 
 
 
+/************************************************************************/
+/*  0-3 MAIN NAVIGATION on BOTTOM - Only visible on mobile              */
+/************************************************************************/
+
+  .bottom-nav {
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    height: 3em;
+    line-height: 2em;
+    padding-top: .6em;
+    margin: 0 auto;
+    margin-left: 10em;
+    padding-top: .5em;
+    width: 29em;
+    a {
+      font-size: $base-font-size *2;
+      padding:   .75em;
+      color:     $nav-item-color;
+    }
+  }
+
+
+
 
 /************************************************************************/
-/*  0-3 MAIN NAVIGATION SLIDER - Only visible on mobile                 */
+/*  0-4 MAIN NAVIGATION SLIDER - Only visible on mobile portrait        */
 /************************************************************************/
 
 .mobile-nav {
