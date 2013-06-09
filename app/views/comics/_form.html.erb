@@ -31,9 +31,12 @@
       </div>
 
       <div class="form-content">
+      	
+      	<% if params[:action] == "edit" %>
         <div class="comic-thumb">
           <%= link_to (image_tag yield(:comic_thumb)), @comic %>
         </div>
+        <% end %>
 
         <div class="upload-button">
           <div id="file-input"  onclick="getFile()">
@@ -44,7 +47,6 @@
           </div>
         </div>  
         <%= f.text_field :title, class: "input title-input", placeholder: "Title" %>
-        <%= f.text_area :content, class: "input content-input", placeholder: "Content" %>
       </div>
 
       <div class="form-footer">
